@@ -1,0 +1,4 @@
+{
+    "appService.defaultWebAppToDeploy": "/subscriptions/b749a651-351f-4c7a-8aac-c80fb07a1737/AppServices/subscriptions/b749a651-351f-4c7a-8aac-c80fb07a1737/resourceGroups/sobrecodigo-test/providers/Microsoft.Web/sites/sobrecodigo",
+    "appService.deploySubpath": "dist"
+}
