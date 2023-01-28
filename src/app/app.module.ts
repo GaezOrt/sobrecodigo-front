@@ -9,11 +9,13 @@ import {Component} from '@angular/core';
 import { MatCardModule } from '@angular/material/card';
 import { CardsListComponent } from './cards-list/cards-list.component';
 import { NavbarLandingComponent } from './navbar-landing/navbar-landing.component';
+import { SignUpComponent } from './sign-up/sign-up.component';
 @NgModule({
   declarations: [
     AppComponent,
     CardsListComponent,
-    NavbarLandingComponent
+    NavbarLandingComponent,
+    SignUpComponent
   ],
   imports: [
     BrowserModule,
