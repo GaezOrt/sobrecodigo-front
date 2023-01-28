@@ -13,6 +13,7 @@ import { SignUpComponent } from './sign-up/sign-up.component';
 import { DesafiosComponent } from './desafios/desafios.component';
 import { RankingUsersComponent } from './ranking-users/ranking-users.component';
 import { CardsActiveUsersComponent } from './cards-active-users/cards-active-users.component';
+import { UserCardComponent } from './user-card/user-card.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -21,7 +22,8 @@ import { CardsActiveUsersComponent } from './cards-active-users/cards-active-use
     SignUpComponent,
     DesafiosComponent,
     RankingUsersComponent,
-    CardsActiveUsersComponent
+    CardsActiveUsersComponent,
+    UserCardComponent
   ],
   imports: [
     BrowserModule,
