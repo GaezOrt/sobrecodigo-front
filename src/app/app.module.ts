@@ -14,6 +14,8 @@ import { DesafiosComponent } from './desafios/desafios.component';
 import { RankingUsersComponent } from './ranking-users/ranking-users.component';
 import { CardsActiveUsersComponent } from './cards-active-users/cards-active-users.component';
 import { UserCardComponent } from './user-card/user-card.component';
+import { ProfilePageComponent } from './profile-page/profile-page.component';
+import { LandingComponent } from './landing/landing.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -23,7 +25,9 @@ import { UserCardComponent } from './user-card/user-card.component';
     DesafiosComponent,
     RankingUsersComponent,
     CardsActiveUsersComponent,
-    UserCardComponent
+    UserCardComponent,
+    ProfilePageComponent,
+    LandingComponent
   ],
   imports: [
     BrowserModule,
