@@ -10,12 +10,18 @@ import { MatCardModule } from '@angular/material/card';
 import { CardsListComponent } from './cards-list/cards-list.component';
 import { NavbarLandingComponent } from './navbar-landing/navbar-landing.component';
 import { SignUpComponent } from './sign-up/sign-up.component';
+import { DesafiosComponent } from './desafios/desafios.component';
+import { RankingUsersComponent } from './ranking-users/ranking-users.component';
+import { CardsActiveUsersComponent } from './cards-active-users/cards-active-users.component';
 @NgModule({
   declarations: [
     AppComponent,
     CardsListComponent,
     NavbarLandingComponent,
-    SignUpComponent
+    SignUpComponent,
+    DesafiosComponent,
+    RankingUsersComponent,
+    CardsActiveUsersComponent
   ],
   imports: [
     BrowserModule,
