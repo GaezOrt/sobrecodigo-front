@@ -2,11 +2,14 @@
     width:50%;
     margin:auto;
     margin-top: 15%;
-    height:300px;
+    height:200px;
     transition: transform .2s;
     background-color: #043050;
 }
-
+.card{
+    margin:auto;
+    height:600px;
+}
 .main-card:hover{
     transform: scale(1.2);
 }
@@ -42,3 +45,31 @@
     margin-top:5%;
     text-align: center;
 }
+nav {
+    background-color: #333;
+    overflow: hidden;
+  }
+  
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 16px;
+    text-decoration: none;
+  }
+  
+  /* Change the link color to #111 (black) on hover */
+  li a:hover {
+    background-color: #111;
+  }
