@@ -7,9 +7,13 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 import {Component} from '@angular/core';
 import { MatCardModule } from '@angular/material/card';
+import { CardsListComponent } from './cards-list/cards-list.component';
+import { NavbarLandingComponent } from './navbar-landing/navbar-landing.component';
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    CardsListComponent,
+    NavbarLandingComponent
   ],
   imports: [
     BrowserModule,
