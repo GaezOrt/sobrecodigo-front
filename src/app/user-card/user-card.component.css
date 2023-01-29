@@ -7,7 +7,6 @@ body {
   .card {
     transition: 0.4s;
     width: 175px;
-    margin: 0 auto;
     background-color: black;
     padding: 20px;
     border-radius: 5px;

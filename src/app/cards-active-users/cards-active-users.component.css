@@ -3,51 +3,9 @@
     z-index: 0;
     width: 100%;
     display: flex;
-    justify-content: space-around;
     flex-wrap: wrap;
   }
 
-  .card {
-    margin: 30px auto;
-    width: 150px;
-    height: 150px;
-    border-radius: 25px;
-  box-shadow: 5px 5px 30px 7px rgba(0,0,0,0.25), -5px -5px 30px 7px rgba(0,0,0,0.22);
-    cursor: pointer;
-    transition: 0.4s;
-  }
-  
-  .card .card_image {
-    width: inherit;
-    height: inherit;
-    border-radius: 40px;
-  }
-  
-  .card .card_image img {
-    width: inherit;
-    height: inherit;
-    border-radius: 40px;
-    object-fit: cover;
-  }
-  
-  .card .card_title {
-    text-align: center;
-    border-radius: 0px 0px 40px 40px;
-    font-family: sans-serif;
-    font-weight: bold;
-    font-size: 15px;
-    margin-top: -30px!important;
-    height: 40px;
-  }
-  
- .card_owner{
-    text-align: center;
-    border-radius: 0px 0px 40px 40px;
-    font-family: sans-serif;
-    font-weight: bold;
-    font-size: 15px;
-    height: 40px;
- }
   .card:hover {
     transform: scale(0.9, 0.9);
     box-shadow: 5px 5px 30px 15px rgba(0,0,0,0.25), 
@@ -55,25 +13,3 @@
   }
 
   
-  .title-white {
-    color: white;
-    
-  }
-  
-  .title-black {
-    color: black;
-  }
- 
-  .cardx {
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-    transition: 0.3s;
-    width: 300px;
-    border-width: 10px;
-    border:1px solid white;
-    border-radius: 20px;
-  }
-
-  .cardimage {
-    width: 100%;
-    border-radius: 20px;
-  }

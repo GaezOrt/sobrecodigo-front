@@ -3,12 +3,11 @@
     z-index: 0;
     width: 100%;
     display: flex;
-    justify-content: space-around;
     flex-wrap: wrap;
   }
 
   .card {
-    margin: 30px auto;
+    margin: 30px;
     width: 150px;
     height: 150px;
     border-radius: 25px;
