@@ -16,9 +16,9 @@ import { CardsActiveUsersComponent } from './cards-active-users/cards-active-use
 import { UserCardComponent } from './user-card/user-card.component';
 import { ProfilePageComponent } from './profile-page/profile-page.component';
 import { LandingComponent } from './landing/landing.component';
+import { MatIconModule } from '@angular/material/icon';
 import { ProjectPageComponent } from './project-page/project-page.component';
-import { HttpClientModule} from '@angular/common/http';
-
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -42,6 +42,7 @@ import { HttpClientModule} from '@angular/common/http';
     MatCardModule,
     HttpClientModule,
     
+    MatIconModule
   ],
   providers: [],
   bootstrap: [AppComponent]
