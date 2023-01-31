@@ -6,6 +6,10 @@ nav{
   height: 70px;
 }
 
+.logo img {
+  height: 70px;
+}
+
 .logo {
   height: 100%;
   display: flex;
@@ -61,6 +65,7 @@ hr {
 label {
   display: none;
   padding-right: 1em;
+  cursor: pointer
 }
 
 
@@ -98,6 +103,7 @@ label {
   #checkbox:checked + .list{
     display: flex;
     }
+
 }
 
 
