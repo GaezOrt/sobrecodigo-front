@@ -16,6 +16,10 @@ import { CardsActiveUsersComponent } from './cards-active-users/cards-active-use
 import { UserCardComponent } from './user-card/user-card.component';
 import { ProfilePageComponent } from './profile-page/profile-page.component';
 import { LandingComponent } from './landing/landing.component';
+import { ProjectPageComponent } from './project-page/project-page.component';
+import { HttpClientModule} from '@angular/common/http';
+
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -27,14 +31,17 @@ import { LandingComponent } from './landing/landing.component';
     CardsActiveUsersComponent,
     UserCardComponent,
     ProfilePageComponent,
-    LandingComponent
+    LandingComponent,
+    ProjectPageComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     MatSlideToggleModule,
-    MatCardModule
+    MatCardModule,
+    HttpClientModule,
+    
   ],
   providers: [],
   bootstrap: [AppComponent]
