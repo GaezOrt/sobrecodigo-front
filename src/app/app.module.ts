@@ -16,6 +16,8 @@ import { CardsActiveUsersComponent } from './cards-active-users/cards-active-use
 import { UserCardComponent } from './user-card/user-card.component';
 import { ProfilePageComponent } from './profile-page/profile-page.component';
 import { LandingComponent } from './landing/landing.component';
+import { MatIconModule } from '@angular/material/icon';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -34,7 +36,8 @@ import { LandingComponent } from './landing/landing.component';
     AppRoutingModule,
     BrowserAnimationsModule,
     MatSlideToggleModule,
-    MatCardModule
+    MatCardModule,
+    MatIconModule
   ],
   providers: [],
   bootstrap: [AppComponent]
