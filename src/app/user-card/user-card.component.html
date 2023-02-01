@@ -1,6 +1,17 @@
-<div class="card" style="margin:20px; cursor:pointer; " routerLink="/profile-page">
-    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRr0YlatAy-hrNCQjzZ7fqDzNiXt7HGmzVaA&usqp=CAU" alt="card image" />
-    <p style="margin-top:10px;">Username: {{username}}</p>
-    <p>Contribuciones GIT: {{cantidadContribuciones}}</p>
-    <p>Desafíos completos: {{desafiosCompletados}}</p>
+<div class="card" routerLink="/profile-page">
+
+  <div class="img">
+    <mat-icon id="user">perm_identity</mat-icon>
+    <mat-icon id="medal">workspace_premium</mat-icon>
   </div>
+  
+
+
+
+    <!-- <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRr0YlatAy-hrNCQjzZ7fqDzNiXt7HGmzVaA&usqp=CAU" alt="card image" /> -->
+    
+    <p > Username: {{username}}</p>
+    <p> Contribuciones GIT: {{cantidadContribuciones}}</p>
+    <p> Desafíos completos: {{desafiosCompletados}}</p>
+
+</div>

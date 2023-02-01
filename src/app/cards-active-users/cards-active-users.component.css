@@ -1,15 +1,7 @@
-
 .cards-list {
-    z-index: 0;
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-  }
-
-  .card:hover {
-    transform: scale(0.9, 0.9);
-    box-shadow: 5px 5px 30px 15px rgba(0,0,0,0.25), 
-      -5px -5px 30px 15px rgba(0,0,0,0.22);
-  }
-
-  
+  margin: 0 auto;
+  width: 80%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
