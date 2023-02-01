@@ -1,14 +1,15 @@
 <div class="card" routerLink="/profile-page">
 
-  <div class="img">
+  <div class="img-container" [ngStyle]="{'border-color':'gold' }">
     <mat-icon id="user">perm_identity</mat-icon>
-    <mat-icon id="medal">workspace_premium</mat-icon>
+    <!-- <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRr0YlatAy-hrNCQjzZ7fqDzNiXt7HGmzVaA&usqp=CAU" alt="card image" /> -->
+    <mat-icon id="cup" [ngStyle]="{'color':'gold' }">emoji_events</mat-icon>
   </div>
   
 
 
 
-    <!-- <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRr0YlatAy-hrNCQjzZ7fqDzNiXt7HGmzVaA&usqp=CAU" alt="card image" /> -->
+    
     
     <p > Username: {{username}}</p>
     <p> Contribuciones GIT: {{cantidadContribuciones}}</p>
