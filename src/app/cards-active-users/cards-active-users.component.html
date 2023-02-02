@@ -1,13 +1,9 @@
-<div class="cards-list">
-  
-    <app-user-card username="@Gaezort" desafiosCompletados=20 cantidadContribuciones=30></app-user-card>
-    
-    <app-user-card username="@SantiT" desafiosCompletados=90 cantidadContribuciones=50></app-user-card>
-   
-    
-    <app-user-card username="@Pascal" desafiosCompletados=25 cantidadContribuciones=498></app-user-card>
-    <app-user-card username="@Kim" desafiosCompletados=1000 cantidadContribuciones=1500></app-user-card>
-   
-    
-  
-  
+<div class="cards-list" >
+
+    <app-user-card *ngFor="let user of users"
+     username= {{user.nombre}} 
+     desafiosCompletados= {{user.desafiosCompletados}} 
+     cantidadContribuciones= {{user.cantidadContribuciones}} 
+     ></app-user-card>
+
+</div>

@@ -10,6 +10,7 @@ export class UserCardComponent implements OnInit {
   @Input() username: string;
   @Input() desafiosCompletados: string;
   @Input() cantidadContribuciones: string;
+
   constructor() { }
 
   ngOnInit(): void {
