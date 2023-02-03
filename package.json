@@ -21,6 +21,7 @@
     "@angular/platform-browser": "~12.1.0-",
     "@angular/platform-browser-dynamic": "~12.1.0-",
     "@angular/router": "~12.1.0-",
+    "@fortawesome/angular-fontawesome": "^0.12.1",
     "@popperjs/core": "^2.11.6",
     "ajv": "^6.12.6",
     "bootstrap": "^5.2.3",
