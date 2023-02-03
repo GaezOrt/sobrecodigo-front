@@ -1,0 +1,31 @@
+{
+  "rankings": [{
+      "username": "@Ana",
+      "desafiosCompletados":"20",
+      "proyectosFinalizados": "20",
+      "commitsRealizados": "20",
+      "contacto":["Discord","LinkedIn","GitHub"]
+  },
+  {
+    "username": "@Ana",
+    "desafiosCompletados":"20",
+    "proyectosFinalizados": "20",
+    "commitsRealizados": "20",
+    "contacto":["Discord","LinkedIn","GitHub"]
+},
+{
+  "username": "@Federico",
+  "desafiosCompletados":"20",
+  "proyectosFinalizados": "20",
+  "commitsRealizados": "20",
+  "contacto":["Discord","LinkedIn","GitHub"]
+},
+{
+  "username": "@Potter",
+  "desafiosCompletados":"20",
+  "proyectosFinalizados": "20",
+  "commitsRealizados": "20",
+  "contacto":["Discord","LinkedIn","GitHub"]
+}
+]
+}

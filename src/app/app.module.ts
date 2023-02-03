@@ -19,6 +19,7 @@ import { LandingComponent } from './landing/landing.component';
 import { MatIconModule } from '@angular/material/icon';
 import { ProjectPageComponent } from './project-page/project-page.component';
 import { HttpClientModule } from '@angular/common/http';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 @NgModule({
   declarations: [
@@ -41,8 +42,8 @@ import { HttpClientModule } from '@angular/common/http';
     MatSlideToggleModule,
     MatCardModule,
     HttpClientModule,
-    
-    MatIconModule
+    MatIconModule,
+    FontAwesomeModule
   ],
   providers: [],
   bootstrap: [AppComponent]
