@@ -20,6 +20,11 @@ table th {
   padding-top: 12px;
   padding-bottom: 12px;
   text-align: left;
-  background-color: #4CAF50;
+  background-color: #4472c3;
   color: white;
+}
+
+.icon{
+color:#4472c3;
+font-size:1.7rem
 }

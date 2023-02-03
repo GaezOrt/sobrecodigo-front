@@ -1,5 +1,7 @@
 <app-navbar-landing></app-navbar-landing>
 
+
+
 <table>
     <thead>
       <tr>
@@ -7,38 +9,20 @@
         <th>Desafíos completados</th>
         <th>Proyectos finalizados</th>
         <th>Commits realizados</th>
+        <th>Contacto</th>
       </tr>
     </thead>
     <tbody>
-      <tr>
-        <td>@Santiago</td>
-        <td>45</td>
-        <td>7</td>
-        <td>900</td>
-      </tr>
-      <tr>
-        <td>@Ana</td>
-        <td>43</td>
-        <td>9</td>
-        <td>1200</td>
-      </tr>
-      <tr>
-        <td>@Ana</td>
-        <td>43</td>
-        <td>9</td>
-        <td>1200</td>
-      </tr>
-      <tr>
-        <td>@Ana</td>
-        <td>43</td>
-        <td>9</td>
-        <td>1200</td>
-      </tr>
-      <tr>
-        <td>@Ana</td>
-        <td>43</td>
-        <td>9</td>
-        <td>1200</td>
-      </tr>
+      <tr  *ngFor="let ranking of rankings">
+
+          <td>{{ranking.username}}</td>
+          <td>{{ranking.desafiosCompletados}}</td>
+          <td>{{ranking.proyectosFinalizados}}</td>
+          <td>{{ranking.commitsRealizados}}</td>
+          <td><i class="fa-brands fa-linkedin icon" ></i> <i class="fab fa-discord icon"></i> <i class="fa-brands fa-github icon"></i></td>
+
+        </tr>
+
+
     </tbody>
   </table>
