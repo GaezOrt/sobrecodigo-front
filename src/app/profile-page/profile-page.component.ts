@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { ProjectService } from '../service/project.service';
-import { faGithub } from '@fortawesome/free-brands-svg-icons';
 
 @Component({
   selector: 'app-profile-page',
@@ -10,7 +9,6 @@ import { faGithub } from '@fortawesome/free-brands-svg-icons';
 
 
 export class ProfilePageComponent implements OnInit {
-  faGithub = faGithub;
 
   projects:any;
   constructor(private dataProject:ProjectService) { }
