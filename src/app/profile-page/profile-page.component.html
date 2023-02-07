@@ -1,25 +1,44 @@
 <app-navbar-landing></app-navbar-landing>
 
-	<div id="main-container">
-		<div id="user-info">
-			<img class="user-image" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRr0YlatAy-hrNCQjzZ7fqDzNiXt7HGmzVaA&usqp=CAU" />
-			<div class="user-details">
-				<span><strong>Nombre:</strong>@Sobrecodigo</span>
-				<span><strong>Nivel:</strong> 1</span>
-				<span><strong>Ubicación:</strong> Buenos Aires, Argentina</span>
-			</div>
+<div class="profile">
+	<div class="user-details">
+		<img src="../../assets/imgs/img-profile.png" alt="Foto Perfil" class="img-profile">
+		<h2 class="user-fullname">
+			NOMBRE APELLIDO
+		</h2>
+		<h3 class="user-title">Full Stack Developer</h3>
+		<p class="user-location"> <mat-icon>location_on</mat-icon> Argentina</p>
+		<div class="user-counters">
+			<!--ACA van los contadores-->
 		</div>
-		<div id="user-posts">
-			<div class="user-posts">
-				<div>
-					<span><strong>Desafíos completados:</strong> 15</span>
-				</div>
-				<div>
-					<span><strong>Cantidad de commits: </strong> 300</span>
-				</div>
-				<div>
-					<span><strong>Tiempo en Sobrecodigo: </strong> 3 años</span>
-				</div>
-			</div>
+		<div class="user-social">
+			<a href="https://github.com"><i class="fa-brands fa-github"></i></a>
+			<a href="https://linkedin.com"><i class="fa-brands fa-linkedin"></i></a>
+			<a href="https://discord.com"><i class="fa-brands fa-discord"></i></a>
 		</div>
 	</div>
+	<div class="user-projects">
+		<div class="content">
+			<div class="cards">
+			  <div  *ngFor="let project of projects">
+				<mat-card class="mat-elevation-z4 projectCard" >
+				  <img mat-card-image src="../../assets/imgs/img-project.png" class="img-replace">
+				  <mat-card-header class="title-project">
+					<mat-card-title>{{project.title}}</mat-card-title>
+				  </mat-card-header>
+				  
+				  <mat-card-content>
+					<div class="description-project">
+						<p>{{project.description}}</p>
+					</div>                
+					<div class="tags-project">
+						<p>{{project.tags}}</p>
+					</div>        
+				  </mat-card-content>          
+				
+				</mat-card>
+			  </div>
+			</div>
+			</div>
+	</div>
+</div>
