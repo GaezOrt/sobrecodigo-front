@@ -15,9 +15,9 @@ export class NavbarLandingComponent implements OnInit {
   ngOnInit(): void {
     this.route = this.router.url;
   }
-  
+
   // show : boolean = true;
-  
+
   // switch() :void {
   //   this.show = !this.show;
   // }

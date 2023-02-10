@@ -23,6 +23,7 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { JobsComponent } from './jobs/jobs.component';
 import { MatCommonModule } from '@angular/material/core';
 import {MatSelectModule} from '@angular/material/select';
+import { RouterModule } from '@angular/router';
 
 @NgModule({
   declarations: [
@@ -49,7 +50,8 @@ import {MatSelectModule} from '@angular/material/select';
     MatIconModule,
     FontAwesomeModule,
     MatCommonModule,
-    MatSelectModule
+    MatSelectModule,
+    RouterModule
   ],
   providers: [],
   bootstrap: [AppComponent]

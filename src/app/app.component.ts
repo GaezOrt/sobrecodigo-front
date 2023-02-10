@@ -10,7 +10,7 @@ import { Router } from '@angular/router';
 export class AppComponent implements OnInit{
   title = 'sobrecodigo-front';
   constructor(private router: Router) {
- 
+
    }
 
    ngOnInit() {
