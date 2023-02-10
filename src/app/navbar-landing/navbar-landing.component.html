@@ -10,15 +10,17 @@
 
 
   <div class="list">
-    <li><a routerLink="/home" [ngClass]="{'selected' : route === '/home'}">Inicio</a></li>
+    <li><a routerLink="/home" routerLinkActive="selected">Inicio</a></li>
     <hr>
-    <li><a routerLink="/project-page" [ngClass]="{'selected' : route === '/project-page'}">Proyectos</a></li>
+    <li><a routerLink="/project-page" routerLinkActive="selected">Proyectos</a></li>
     <hr>
-    <li><a routerLink="/ranking-users" [ngClass]="{'selected' : route === '/ranking-users'}">Ranking usuarios</a></li>
+    <li><a routerLink="/ranking-users" routerLinkActive="selected">Ranking usuarios</a></li>
     <hr>
-    <li><a routerLink="/challenges" [ngClass]="{'selected' : route === '/challenges'}">Desafíos</a></li>
+    <li><a routerLink="/challenges" routerLinkActive="selected">Desafíos</a></li>
     <hr>
-    <li><a routerLink="/profile-page" [ngClass]="{'selected' : route === '/profile-page'}">Mi Perfil</a></li>
+    <li><a routerLink="/jobs-page" routerLinkActive="selected" >Empleos</a></li>
+    <hr>
+    <li><a routerLink="/profile-page" routerLinkActive="selected">Mi Perfil</a></li>
     <hr>
     <li routerLink="/sign-up" id="login"><a>Registrarme</a></li>
   </div>
