@@ -1,0 +1,25 @@
+<app-navbar-landing></app-navbar-landing>
+<br><br>
+<div class="row">
+  <mat-select class="dropdowns" placeholder="Ubicación">
+
+      <mat-option *ngFor="let job of jobs" [value]="job">
+        {{job}}
+      </mat-option>
+
+  </mat-select>
+  <mat-select class="dropdowns" placeholder="Puesto">
+
+    <mat-option *ngFor="let position of positions" [value]="position">
+      {{position}}
+    </mat-option>
+
+</mat-select>
+<mat-select class="dropdowns" placeholder="Experiencia">
+
+  <mat-option *ngFor="let experience of experiences" [value]="experience">
+    {{experience}}
+  </mat-option>
+
+</mat-select>
+</div>

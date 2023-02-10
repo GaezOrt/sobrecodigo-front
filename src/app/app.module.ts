@@ -20,6 +20,9 @@ import { MatIconModule } from '@angular/material/icon';
 import { ProjectPageComponent } from './project-page/project-page.component';
 import { HttpClientModule } from '@angular/common/http';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { JobsComponent } from './jobs/jobs.component';
+import { MatCommonModule } from '@angular/material/core';
+import {MatSelectModule} from '@angular/material/select';
 
 @NgModule({
   declarations: [
@@ -33,7 +36,8 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
     UserCardComponent,
     ProfilePageComponent,
     LandingComponent,
-    ProjectPageComponent
+    ProjectPageComponent,
+    JobsComponent
   ],
   imports: [
     BrowserModule,
@@ -43,7 +47,9 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
     MatCardModule,
     HttpClientModule,
     MatIconModule,
-    FontAwesomeModule
+    FontAwesomeModule,
+    MatCommonModule,
+    MatSelectModule
   ],
   providers: [],
   bootstrap: [AppComponent]
