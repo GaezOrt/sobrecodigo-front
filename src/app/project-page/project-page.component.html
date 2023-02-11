@@ -6,7 +6,7 @@
 <div class="content">
     <div class="cards">
       <tr *ngFor= "let project of projects">
-        <app-project-card ></app-project-card> 
+        <app-project-card [cardInfo]="project"></app-project-card> 
         </tr>
     </div>
     </div>
