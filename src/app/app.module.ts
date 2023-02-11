@@ -20,6 +20,7 @@ import { MatIconModule } from '@angular/material/icon';
 import { ProjectPageComponent } from './project-page/project-page.component';
 import { HttpClientModule } from '@angular/common/http';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { ProjectCardComponent } from './project-card/project-card.component';
 
 @NgModule({
   declarations: [
@@ -33,7 +34,8 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
     UserCardComponent,
     ProfilePageComponent,
     LandingComponent,
-    ProjectPageComponent
+    ProjectPageComponent,
+    ProjectCardComponent
   ],
   imports: [
     BrowserModule,

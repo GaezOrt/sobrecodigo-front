@@ -14,7 +14,7 @@ export class ProjectPageComponent implements OnInit {
 
     this.dataProject.obtenerProjects().subscribe(data => {
       console.log(data);
-      this.projects = data.project;
+      this.projects = data.projects;
     });
   }
 
