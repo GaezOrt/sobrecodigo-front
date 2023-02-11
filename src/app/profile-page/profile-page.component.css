@@ -134,5 +134,52 @@
 }
 
 @media screen and (max-width: 480px) {
+  .user-details {
+    width: 380px;
+    height: 468px;
+  }
+
+  .img-profile {
+    width: 138px;
+  }
   
+  .user-fullname {
+    height: 30px;
+  
+    font-size: 24px;
+  }
+  
+  .user-title {
+    height: 23px;
+    font-size: 18px;
+    line-height: 20px;  
+  }
+  
+  .user-location {
+    height: 20px;
+    font-size: 18px;
+    line-height: 20px;
+    }
+  
+    .icon-counter {
+      padding: 0 28px;
+      margin-top: 20px;
+      font-size: 18px;
+    }
+    
+    .detail-counters{
+      font-size: 7px;
+    }
+    .detail {
+      padding: 0 16px;
+      text-align: center;
+    }
+
+    .user-social i {
+      font-size: 30px;
+        }
+    
+        .user-social {
+          margin-top: 24px;
+        }
 }
