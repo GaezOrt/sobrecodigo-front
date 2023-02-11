@@ -7,13 +7,12 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class ProjectCardComponent implements OnInit {
 
-  @Input() title: String;
-  @Input() description: String;
-  @Input() tags: String;
 
+  @Input() cardInfo:any;
   constructor() { }
 
   ngOnInit(): void {
+    console.log(this.cardInfo);
   }
 
 }
