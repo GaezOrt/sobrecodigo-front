@@ -1,5 +1,5 @@
 {
-    "project": [{
+    "projects": [{
         "title": "Demo Title",
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque cursus sed nulla vitae lacinia. Curabitur eget efficitur turpis. Fusce id lorem a est pulvinar tincidunt. Cras et ullamcorper justo. Integer consectetur suscipit neque ut consectetur.",
         "tags": "html, css, java, js, python"

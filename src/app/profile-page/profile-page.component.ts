@@ -8,16 +8,16 @@ import { ProjectService } from '../service/project.service';
 })
 export class ProfilePageComponent implements OnInit {
 
-  projects:any;
+  projects:any; 
   constructor(private dataProject:ProjectService) { }
 
   ngOnInit(): void {
 
     this.dataProject.obtenerProjects().subscribe(data => {
-      console.log(data);
-      this.projects = data.project;
+      console.log(data.projects);
+      this.projects = data.projects;
     });
-  
+
   }
 
 }
