@@ -4,71 +4,72 @@
     align-items: center;
     flex-direction: column;
   }
-  
+
   .user-details {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin: 40px auto;
+    margin-bottom:15px;
     width: 929px;
     height: 619px;
-  
+
     background: #f3f3f3;
     box-shadow: 4px 4px 4px 2px rgba(0, 0, 0, 0.25);
     border-radius: 30px;
   }
-  
+
   .img-profile {
     width: 168px;
     padding: 16px;
   }
-  
+
   .user-fullname {
     height: 39px;
-  
+
     font-family: "Inter";
     font-style: normal;
     font-weight: 300;
     font-size: 32px;
     line-height: 39px;
     /* identical to box height */
-  
+
     color: #4472c3;
   }
-  
+
   .user-title {
     height: 24px;
-  
+
     font-family: "Inter";
     font-style: normal;
     font-weight: 300;
     font-size: 20px;
     line-height: 24px;
-  
+
     color: #3d3d3d;
   }
-  
+
   .user-location {
     height: 24px;
-  
+
     font-family: "Inter";
     font-style: normal;
     font-weight: 300;
     font-size: 20px;
     line-height: 24px;
-  
+
     color: #4e4e4e;
   }
   .company-counters{
     display: flex;
     flex-direction: column;
   }
-  
+
   .icons-counter{
     display: flex;
     list-style: none;
   }
-  
+
   .icon-counter {
     padding: 0 65px;
     margin-top: 25px;
@@ -76,15 +77,15 @@
     color: #4472c3;
     font-size: 48px;
   }
-  
+
   .detail-counters {
     display: flex;
     list-style: none;
     color: #3d3d3d;
     font-size: 18px;
-    
+
   }
-  
+
   .detail {
     padding: 0 30px;
     text-align: center;
@@ -95,7 +96,7 @@
     align-items: center;
     margin-top: 32px;
   }
-  
+
   .user-social i {
     font-size: 45px;
     padding: 16px;
@@ -107,11 +108,13 @@
     align-items: flex-end;
     justify-content: center;
     float: right;
+    width: 929px;
+    justify-content: end;
   }
   .btn-add {
     color: #30c961;
     font-size: 34px;
     background: none;
     border: none;
-    
+
   }
