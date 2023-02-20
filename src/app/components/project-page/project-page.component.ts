@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ProjectService } from '../service/project.service';
+import { ProjectService } from '../../services/project.service';
 
 @Component({
   selector: 'app-project-page',
@@ -7,11 +7,11 @@ import { ProjectService } from '../service/project.service';
   styleUrls: ['./project-page.component.css']
 })
 export class ProjectPageComponent implements OnInit {
-  projects:any;
-  constructor(private dataProject:ProjectService) { }
+  public projects: any;
+
+  constructor(private readonly dataProject:ProjectService) { }
 
   ngOnInit(): void {
-
     this.dataProject.obtenerProjects().subscribe(data => {
       console.log(data);
       this.projects = data.projects;

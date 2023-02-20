@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ProjectService } from '../service/project.service';
+import { ProjectService } from '../../services/project.service';
 
 @Component({
   selector: 'app-profile-page',
@@ -8,16 +8,14 @@ import { ProjectService } from '../service/project.service';
 })
 export class ProfilePageComponent implements OnInit {
 
-  projects:any; 
+  projects:any;
+  
   constructor(private dataProject:ProjectService) { }
 
   ngOnInit(): void {
-
     this.dataProject.obtenerProjects().subscribe(data => {
       console.log(data.projects);
       this.projects = data.projects;
     });
-
   }
-
 }

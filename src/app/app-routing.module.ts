@@ -1,11 +1,11 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { JobsComponent } from './jobs/jobs.component';
-import { LandingComponent } from './landing/landing.component';
-import { ProfilePageComponent } from './profile-page/profile-page.component';
-import { ProjectPageComponent } from './project-page/project-page.component';
-import { RankingUsersComponent } from './ranking-users/ranking-users.component';
-import { SignUpComponent } from './sign-up/sign-up.component';
+import { JobsComponent } from './components/jobs/jobs.component';
+import { LandingComponent } from './components/landing/landing.component';
+import { ProfilePageComponent } from './components/profile-page/profile-page.component';
+import { ProjectPageComponent } from './components/project-page/project-page.component';
+import { RankingUsersComponent } from './components/ranking-users/ranking-users.component';
+import { SignUpComponent } from './components/sign-up/sign-up.component';
 
 const routes: Routes = [
   { path: 'sign-up', component: SignUpComponent },
@@ -13,8 +13,8 @@ const routes: Routes = [
   { path: 'profile-page', component: ProfilePageComponent },
   { path: 'project-page', component: ProjectPageComponent},
   { path: 'jobs', component: JobsComponent},
-  {path: 'home', component:LandingComponent},
-  { path: '', redirectTo: '/home', pathMatch: 'full'},
+  {path: 'home', component: LandingComponent},
+  { path: '**', redirectTo: '/home', pathMatch: 'full'},
 ];
 
 @NgModule({

@@ -8,8 +8,8 @@ import { Component, Input, OnInit } from '@angular/core';
 export class UserCardComponent implements OnInit {
 
   @Input() username: string;
-  @Input() desafiosCompletados: string;
-  @Input() cantidadContribuciones: string;
+  @Input() challengesCompleted: string;
+  @Input() amountContributions: string;
 
   constructor() { }
 

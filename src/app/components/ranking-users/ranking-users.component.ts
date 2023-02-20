@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { RankingService } from './ranking-service.service';
+import { RankingService } from '../../services/ranking-service.service';
 @Component({
   selector: 'app-ranking-users',
   templateUrl: './ranking-users.component.html',

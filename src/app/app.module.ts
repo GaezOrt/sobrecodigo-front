@@ -7,24 +7,24 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 import {Component} from '@angular/core';
 import { MatCardModule } from '@angular/material/card';
-import { CardsListComponent } from './cards-list/cards-list.component';
-import { NavbarLandingComponent } from './navbar-landing/navbar-landing.component';
-import { SignUpComponent } from './sign-up/sign-up.component';
-import { DesafiosComponent } from './desafios/desafios.component';
-import { RankingUsersComponent } from './ranking-users/ranking-users.component';
-import { CardsActiveUsersComponent } from './cards-active-users/cards-active-users.component';
-import { UserCardComponent } from './user-card/user-card.component';
-import { ProfilePageComponent } from './profile-page/profile-page.component';
-import { LandingComponent } from './landing/landing.component';
+import { CardsListComponent } from './components/cards-list/cards-list.component';
+import { NavbarLandingComponent } from './components/navbar-landing/navbar-landing.component';
+import { SignUpComponent } from './components/sign-up/sign-up.component';
+import { ChallengesComponent } from './components/challenges/challenges.component';
+import { RankingUsersComponent } from './components/ranking-users/ranking-users.component';
+import { CardsActiveUsersComponent } from './components/cards-active-users/cards-active-users.component';
+import { UserCardComponent } from './components/user-card/user-card.component';
+import { ProfilePageComponent } from './components/profile-page/profile-page.component';
+import { LandingComponent } from './components/landing/landing.component';
 import { MatIconModule } from '@angular/material/icon';
-import { ProjectPageComponent } from './project-page/project-page.component';
+import { ProjectPageComponent } from './components/project-page/project-page.component';
 import { HttpClientModule } from '@angular/common/http';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
-import { JobsComponent } from './jobs/jobs.component';
+import { JobsComponent } from './components/jobs/jobs.component';
 import { MatCommonModule } from '@angular/material/core';
 import {MatSelectModule} from '@angular/material/select';
 import { RouterModule } from '@angular/router';
-import { ProjectCardComponent } from './project-card/project-card.component';
+import { ProjectCardComponent } from './components/project-card/project-card.component';
 
 @NgModule({
   declarations: [
@@ -32,7 +32,7 @@ import { ProjectCardComponent } from './project-card/project-card.component';
     CardsListComponent,
     NavbarLandingComponent,
     SignUpComponent,
-    DesafiosComponent,
+    ChallengesComponent,
     RankingUsersComponent,
     CardsActiveUsersComponent,
     UserCardComponent,
