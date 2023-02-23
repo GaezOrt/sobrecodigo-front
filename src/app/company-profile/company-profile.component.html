@@ -41,20 +41,42 @@
 <div class="jobs-list">
 
 <mat-card class="mat-elevation-z4 jobCard" >
-  <img mat-card-image src="../../assets/imgs/img-company.png" class="img-replace">
-  <mat-card-header class="title-job">
-    <mat-card-title>Titulo</mat-card-title>
-    <mat-card-subtitle>Trainee</mat-card-subtitle>
+  
+  <mat-card-header >
+    <mat-card-subtitle class="buttons-jobCard">
+      <button class="btn-edit"><i class="fa-solid fa-pencil"></i></button>
+      <button class="btn-delete"><i class="fa-solid fa-trash"></i></button>
+    </mat-card-subtitle>
+    <mat-card-title class="title-job">Desarrollador Full Stack</mat-card-title>
+    <mat-card-subtitle class="subtitle-job">Trainee</mat-card-subtitle>
+    <img mat-card-avatar src="../../assets/imgs/img-company.png" class="img-company">
   </mat-card-header>
 
-  <mat-card-content>
-    <div class="description-job">
-        <p>Description</p>
-    </div>
-    <div class="technology">
-        <p>Java JS Angular Vue Spring Django</p>
-    </div>
+  <mat-card-content class="content-job">
+      <mat-card-subtitle class="description-job">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate voluptates amet ratione ex aliquid quaerat doloribus ipsum incidunt fugiat corporis fugit delectus quod, laudantium accusamus facilis tempore autem suscipit ipsa</p>
+        <br>
+
+        <p>----------------Leer más (acá debería estar un boton para que no se muestren las ofertas completas hasta que no se abran----------------------</p>
+        <ul class="icons-company">
+          <li><i class="fa-solid fa-briefcase"></i> Tipo de Jornada</li>
+          <li><i class="fa-solid fa-building"></i> Cantidad de Empleados</li>
+          <li><i class="fa-solid fa-list-check"></i> Requisitos:</li>
+        </ul>    
+        
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate voluptates amet ratione ex aliquid quaerat doloribus ipsum incidunt fugiat corporis fugit delectus quod, laudantium accusamus facilis tempore autem suscipit ipsa
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate voluptates amet ratione ex aliquid quaerat doloribus ipsum incidunt fugiat corporis fugit delectus quod, laudantium accusamus facilis tempore autem suscipit ipsa
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate voluptates amet ratione ex aliquid quaerat doloribus ipsum incidunt fugiat corporis fugit delectus quod, laudantium accusamus facilis tempore autem suscipit ipsa
+        </p>
+
+      </mat-card-subtitle>
+     
   </mat-card-content>
+  <mat-card-footer>
+    <mat-card-actions>
+      <button class="btn-apply">Aplicar</button>
+    </mat-card-actions>
+  </mat-card-footer>
 
 </mat-card>
 
