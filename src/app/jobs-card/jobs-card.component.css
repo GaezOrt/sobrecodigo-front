@@ -1,0 +1,90 @@
+/*------------- Jobs Card -----------*/
+.jobCard {
+    display: flex;
+    flex-direction: column;
+    width: 650px;
+    height: auto;
+    top: 130px;
+    left: 10px;
+  
+    background: #ffffff;
+    box-shadow: 0px 4px 20px 3px rgba(0, 0, 0, 0.25);
+    border-radius: 30px;
+  }
+  
+  .buttons-jobCard {
+    margin-left: 420px;
+  }
+  
+  .btn-edit, .btn-delete {
+    background: none;
+    border: none;
+    font-size: 16px;
+  }
+  
+  .btn-edit {
+    color: #30c961;
+  }
+  
+  .btn-delete {
+    color: #ff0000;
+  }
+  
+  .img-company {
+    display: flex;
+    width: 96px;
+    height: 96px;
+    padding: 16px;
+    align-self: flex-start;  
+  }
+  
+  .title-job {
+  
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 44px;
+    /* or 138% */
+  
+    letter-spacing: -0.02em;
+  
+    color: #212121;
+    margin-top: 23px;
+  }
+  
+  .subtitle-job {
+    font-family: "Roboto";
+    font-style: italic;
+    font-weight: 400;
+    font-size: 18px;
+    color: #3d3d3d;
+  }
+  
+  .content-job {
+    padding: 35px;
+    margin-top: 18px;  
+  }
+  
+  .description-job {
+    font-size: 18px;
+    color: #4e4e4e;
+  }
+  
+  .icons-company {
+    list-style: none;  
+  }
+  
+  .icons-company li {
+    padding: 8px;
+  }
+  
+  .btn-apply {
+    width: 150px;
+    height: 37px;
+    background-color: #4472c3;
+    border: 1px solid #4472c3;
+    border-radius: 11px 11px 18.5px 18.5px;
+    color: #ffffff;
+    margin-left: 250px;
+  }
