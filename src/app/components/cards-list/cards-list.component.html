@@ -1,47 +1,17 @@
-
-
 <div class="cards-list">
-  
-  <div class="card 1">
-    <div class="card_image"> <img src="https://i.redd.it/b3esnz5ra34y.jpg" /> </div>
-    <div class="card_title title-white">
-      <p>Montañas</p>
-    </div>
-  </div>
-  
-    <div class="card 2">
-    <div class="card_image">
-      <img src="https://i.gifer.com/origin/86/867536d1390d47a35f0c0e29ed9aef0f.gif" />
-      </div>
-    <div class="card_title title-white">
-      <p>AI</p>
-    </div>
-  
-  </div>
-  
 
-  <div class="card 3">
-    <div class="card_image">
+  <div class="card 1" *ngFor="let project of projects ">
 
-      <img src="https://media.giphy.com/media/10SvWCbt1ytWCc/giphy.gif" />
-    </div>
+    <div class="card_image"> <img src={{project.image}} /> </div>
+    
     <div class="card_title title-white">
-      <p>GIF proyecto</p>
+      <p>{{project.title}}</p>
     </div>
-   
+
+    <div class="description_short">
+      <p>{{project.description}}</p>
+    </div>
+
   </div>
-    
-    <div class="card 4">
-    
-    <div class="card_image">
-      <img src="https://media.giphy.com/media/LwIyvaNcnzsD6/giphy.gif" />
-      </div>
-    
-    <div class="card_title title-white">
-      
-      <p>Proyecto Pizza</p>
-    </div>
-    
-    </div>
-  
 
+</div>
