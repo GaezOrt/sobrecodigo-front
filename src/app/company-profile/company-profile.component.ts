@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { JobService } from '../service/job.service';
+import { JobService } from '../services/job.service';
 
 @Component({
   selector: 'app-company-profile',
@@ -12,7 +12,7 @@ export class CompanyProfileComponent implements OnInit {
 
   ngOnInit(): void {
 
-    this.dataJob.obtenerJobs().subscribe(data => {
+    this.dataJob.obtenerJobs().subscribe((data:any) => {
       console.log(data);
       this.jobs = data.jobs;
     });
