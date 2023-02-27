@@ -1,120 +1,199 @@
 .profile {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-direction: column;
-  }
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+}
 
+.user-details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 40px auto;
+  margin-bottom: 15px;
+  width: 929px;
+  height: 619px;
+
+  background: #f3f3f3;
+  box-shadow: 4px 4px 4px 2px rgba(0, 0, 0, 0.25);
+  border-radius: 30px;
+}
+
+.img-profile {
+  width: 168px;
+  padding: 16px;
+}
+
+.user-fullname {
+  height: 39px;
+
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 32px;
+  line-height: 39px;
+  /* identical to box height */
+
+  color: #4472c3;
+}
+
+.user-title {
+  height: 24px;
+
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 24px;
+
+  color: #3d3d3d;
+}
+
+.user-location {
+  height: 24px;
+
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 24px;
+
+  color: #4e4e4e;
+}
+.company-counters {
+  display: flex;
+  flex-direction: column;
+}
+
+.icons-counter {
+  display: flex;
+  list-style: none;
+}
+
+.icon-counter {
+  padding: 0 65px;
+  margin-top: 25px;
+  align-items: center;
+  color: #4472c3;
+  font-size: 48px;
+}
+
+.detail-counters {
+  display: flex;
+  list-style: none;
+  color: #3d3d3d;
+  font-size: 18px;
+}
+
+.detail {
+  padding: 0 40px;
+  text-align: center;
+}
+.user-social {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 32px;
+}
+
+.user-social i {
+  font-size: 45px;
+  padding: 16px;
+  color: #3d3d3d;
+}
+
+.buttons-cu {
+  display: flex;
+  align-items: flex-end;
+  float: right;
+  width: 929px;
+  justify-content: flex-end;
+}
+.btn-add {
+  color: #30c961;
+  font-size: 34px;
+  background: none;
+  border: none;
+}
+
+
+/*----------- Medias Queries ------------------*/
+@media screen and (min-width: 481px) and (max-width: 780px) {
   .user-details {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 40px auto;
-    margin-bottom:15px;
-    width: 929px;
-    height: 619px;
-
-    background: #f3f3f3;
-    box-shadow: 4px 4px 4px 2px rgba(0, 0, 0, 0.25);
-    border-radius: 30px;
-  }
-
-  .img-profile {
-    width: 168px;
-    padding: 16px;
-  }
-
-  .user-fullname {
-    height: 39px;
-
-    font-family: "Inter";
-    font-style: normal;
-    font-weight: 300;
-    font-size: 32px;
-    line-height: 39px;
-    /* identical to box height */
-
-    color: #4472c3;
-  }
-
-  .user-title {
-    height: 24px;
-
-    font-family: "Inter";
-    font-style: normal;
-    font-weight: 300;
-    font-size: 20px;
-    line-height: 24px;
-
-    color: #3d3d3d;
-  }
-
-  .user-location {
-    height: 24px;
-
-    font-family: "Inter";
-    font-style: normal;
-    font-weight: 300;
-    font-size: 20px;
-    line-height: 24px;
-
-    color: #4e4e4e;
-  }
-  .company-counters{
-    display: flex;
-    flex-direction: column;
-  }
-
-  .icons-counter{
-    display: flex;
-    list-style: none;
+    width: 700px;
+    height: 560px;
   }
 
   .icon-counter {
-    padding: 0 65px;
-    margin-top: 25px;
-    align-items: center;
-    color: #4472c3;
-    font-size: 48px;
+    padding: 0 45px;
+    margin-top: 20px;
+    font-size: 38px;
   }
 
   .detail-counters {
-    display: flex;
-    list-style: none;
-    color: #3d3d3d;
-    font-size: 18px;
-
+    font-size: 14px;
   }
-
   .detail {
-    padding: 0 30px;
+    padding: 0 19px;
     text-align: center;
   }
-  .user-social {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    margin-top: 32px;
+  .buttons-cu {  
+    width: 700px;
+  }
+
+}
+
+@media screen and (max-width: 480px) {
+  .user-details {
+    width: 380px;
+    height: 468px;
+  }
+
+  .img-profile {
+    width: 138px;
+  }
+
+  .user-fullname {
+    height: 30px;
+
+    font-size: 24px;
+  }
+
+  .user-title {
+    height: 23px;
+    font-size: 18px;
+    line-height: 20px;
+  }
+
+  .user-location {
+    height: 20px;
+    font-size: 18px;
+    line-height: 20px;
+  }
+
+  .icon-counter {
+    padding: 0 28px;
+    margin-top: 20px;
+    font-size: 18px;
+  }
+
+  .detail-counters {
+    font-size: 7px;
+  }
+  .detail {
+    padding: 0 16px;
+    text-align: center;
   }
 
   .user-social i {
-    font-size: 45px;
-    padding: 16px;
-    color: #3d3d3d;
+    font-size: 30px;
   }
 
-  .buttons-cu{
-    display: flex;
-    align-items: flex-end;
-    justify-content: center;
-    float: right;
-    width: 929px;
-    justify-content: end;
+  .user-social {
+    margin-top: 24px;
   }
-  .btn-add {
-    color: #30c961;
-    font-size: 34px;
-    background: none;
-    border: none;
 
+  .buttons-cu {
+    width: 470px;
   }
+}

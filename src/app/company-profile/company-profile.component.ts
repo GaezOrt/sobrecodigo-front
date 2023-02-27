@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { JobService } from '../service/job.service';
 
 @Component({
   selector: 'app-company-profile',
@@ -6,10 +7,16 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./company-profile.component.css']
 })
 export class CompanyProfileComponent implements OnInit {
-
-  constructor() { }
+  jobs:any;
+  constructor(private dataJob:JobService) { }
 
   ngOnInit(): void {
+
+    this.dataJob.obtenerJobs().subscribe(data => {
+      console.log(data);
+      this.jobs = data.jobs;
+    });
   }
 
-}
+  }
+

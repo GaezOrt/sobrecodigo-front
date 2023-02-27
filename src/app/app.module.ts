@@ -26,6 +26,7 @@ import {MatSelectModule} from '@angular/material/select';
 import { RouterModule } from '@angular/router';
 import { ProjectCardComponent } from './components/project-card/project-card.component';
 import { CompanyProfileComponent } from './company-profile/company-profile.component';
+import { JobsCardComponent } from './jobs-card/jobs-card.component';
 
 @NgModule({
   declarations: [
@@ -42,7 +43,8 @@ import { CompanyProfileComponent } from './company-profile/company-profile.compo
     ProjectPageComponent,
     JobsComponent,
     ProjectCardComponent,
-    CompanyProfileComponent
+    CompanyProfileComponent,
+    JobsCardComponent
   ],
   imports: [
     BrowserModule,
