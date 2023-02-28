@@ -23,3 +23,10 @@
 
 </mat-select>
 </div>
+<div class="jobList">
+  <div class="cards">
+    <tr *ngFor= "let job of jobs">
+      <app-job-description [cardInfo]="job"></app-job-description>
+      </tr>
+  </div>
+</div>
