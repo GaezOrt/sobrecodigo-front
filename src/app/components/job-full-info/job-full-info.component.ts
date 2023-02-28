@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-job-full-info',
@@ -7,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class JobFullInfoComponent implements OnInit {
 
+  @Input() cardInfo:any;
   constructor() { }
 
   ngOnInit(): void {
