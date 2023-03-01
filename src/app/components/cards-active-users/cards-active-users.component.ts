@@ -12,16 +12,19 @@ export class CardsActiveUsersComponent implements OnInit {
   users: ICardsActiveUsers[] = [
     {
       name: '@Gaezort',
+      image: "../../../assets/imgs/random-onesvg.svg",
       challengesCompleted: '345',
       amountContributions: '30'
     },
     {
       name: '@valen',
+      image:"../../../assets/imgs/random-two.svg",
       challengesCompleted: '35',
       amountContributions: '450'
     },
     {
       name: '@eagle',
+      image:"../../../assets/imgs/randon-threee.svg",
       challengesCompleted: '335',
       amountContributions: '20'
     },
