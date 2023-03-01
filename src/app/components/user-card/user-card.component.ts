@@ -10,6 +10,7 @@ export class UserCardComponent implements OnInit {
   @Input() username: string;
   @Input() challengesCompleted: string;
   @Input() amountContributions: string;
+  @Input() image:string;
 
   constructor() { }
 

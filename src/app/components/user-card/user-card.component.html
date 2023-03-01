@@ -1,12 +1,11 @@
 <div class="card" routerLink="/profile-page">
 
-  <div class="img-container" [ngStyle]="{'border-color':'gold' }">
-    <mat-icon id="user">perm_identity</mat-icon>
-    <!-- <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRr0YlatAy-hrNCQjzZ7fqDzNiXt7HGmzVaA&usqp=CAU" alt="card image" /> -->
+  <div class="img-container" [ngStyle]="{'border':'3px solid #1a98cf' }">
+    <img src={{image}} width="100%" height="100%" alt="user-image">
     <mat-icon id="cup" [ngStyle]="{'color':'gold' }">emoji_events</mat-icon>
   </div>
 
-    <p> Username: {{username}}</p>
+    <p> Usuario: {{username}}</p>
     <p> Contribuciones GIT: {{amountContributions}}</p>
     <p> Desafíos completos: {{challengesCompleted}}</p>
 

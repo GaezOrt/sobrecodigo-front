@@ -1,10 +1,11 @@
 .card {
-  width: 12em;
+  width: 14em;
   aspect-ratio: 2/3;
   padding: 1.2em;
   background-color: white;
   border-radius: 30px;
-  box-shadow: 1px 1px 2px grey;
+  /* box-shadow: 1px 1px 2px grey; */
+  box-shadow: 0px 4px 20px 3px rgba(0, 0, 0, 0.25);
   margin: 1em;
 
   display: flex;
@@ -15,7 +16,9 @@
   transition: 0.4s;
 
 }
-
+.card:hover {
+  transform: scale(0.9);
+}
 .img-container {
   width: 40%;
   margin: 1em;
@@ -50,6 +53,7 @@
   font-size: 14px;
   line-height: 1.5;
   align-self: flex-start;
+  
 
 }
 

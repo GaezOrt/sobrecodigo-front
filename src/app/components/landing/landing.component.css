@@ -1,3 +1,9 @@
+main{
+    /* inline-size: 100%; */
+    margin: 0 0;
+    overflow: hidden;
+    padding-top: 20px;
+}
 .main-card{
     width:50%;
     margin:auto;
@@ -13,49 +19,25 @@
 .main-card:hover{
     transform: scale(1.2);
 }
-
-.title{
-    font-size: 30px;
+ 
+.header{
+    width: 100%;
+    padding: 40px;
+    box-sizing:border-box ;
+}
+.header h1 {
+    font-size: 28px;
     font-weight:bold;
-    margin-top:8%!important;
-   text-align: center;
-}
-.body{
-    margin-top:100px;
-}
-.discord-img{
-    width:80px;
-    transition: transform .2s;
-}
-.discord-img:hover{
-    transform: scale(1.2);
-}
-.instagram-img{
-    width:65px;
-    transition: transform .2s;
-}
-.instagram-img:hover{
-    transform: scale(1.2);
+    margin:  0 0;
 }
 
-.row{
-    float:center;
+span{
+    color: #1a98cf;
 }
 
-.texto{
-    font-size: 20px;
-    margin-top:5%;
-    text-align: center;
-}
-
-  
-  .letras{
-    margin-left:20px!important;
-}
-  .line{ 
-width:100%;
-  height:1.5px;
-  background-color:black;
-  margin:12px 0;
-  margin-left:20px;
+hr{ 
+    width: calc(100vw - 8%);
+    border-color: var(--blue-light);
+    margin: 0 auto;
+    margin-bottom: 10px;
 }
