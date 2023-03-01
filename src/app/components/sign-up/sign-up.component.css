@@ -58,7 +58,7 @@ form label {
 }
 
 form input:required:focus {
-  outline-color: red;
+  outline-color: var(--blue);
 }
 
 form input:not([type="password"]):valid:focus {
