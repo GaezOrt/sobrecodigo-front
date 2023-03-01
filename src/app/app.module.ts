@@ -27,6 +27,7 @@ import { RouterModule } from '@angular/router';
 import { ProjectCardComponent } from './components/project-card/project-card.component';
 import { CompanyProfileComponent } from './company-profile/company-profile.component';
 import { JobsCardComponent } from './jobs-card/jobs-card.component';
+import { SignInComponent } from './components/sign-in/sign-in.component';
 
 @NgModule({
   declarations: [
@@ -44,7 +45,8 @@ import { JobsCardComponent } from './jobs-card/jobs-card.component';
     JobsComponent,
     ProjectCardComponent,
     CompanyProfileComponent,
-    JobsCardComponent
+    JobsCardComponent,
+    SignInComponent
   ],
   imports: [
     BrowserModule,

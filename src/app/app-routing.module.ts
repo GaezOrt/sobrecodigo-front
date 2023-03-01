@@ -6,10 +6,12 @@ import { LandingComponent } from './components/landing/landing.component';
 import { ProfilePageComponent } from './components/profile-page/profile-page.component';
 import { ProjectPageComponent } from './components/project-page/project-page.component';
 import { RankingUsersComponent } from './components/ranking-users/ranking-users.component';
+import { SignInComponent } from './components/sign-in/sign-in.component';
 import { SignUpComponent } from './components/sign-up/sign-up.component';
 
 const routes: Routes = [
   { path: 'sign-up', component: SignUpComponent },
+  { path: 'sign-in', component: SignInComponent },
   { path: 'ranking-users', component: RankingUsersComponent },
   { path: 'profile-page', component: ProfilePageComponent },
   { path: 'company-profile', component: CompanyProfileComponent },
