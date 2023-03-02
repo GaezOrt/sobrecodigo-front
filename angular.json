@@ -108,5 +108,8 @@
       }
     }
   },
-  "defaultProject": "sobrecodigo-front"
+  "defaultProject": "sobrecodigo-front",
+  "cli": {
+    "analytics": "44df04e7-a503-4cf5-8d81-94b900c8c42a"
+  }
 }
