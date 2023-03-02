@@ -6,7 +6,7 @@ import { Component, Input, OnInit } from '@angular/core';
   styleUrls: ['./job-description.component.css']
 })
 export class JobDescriptionComponent implements OnInit {
-
+  showFull = false;
   @Input() cardInfo:any;
   constructor() { }
 
@@ -15,4 +15,7 @@ export class JobDescriptionComponent implements OnInit {
     
   }
 
+  showDetails() {
+    this.showFull = true;
+  }
 }

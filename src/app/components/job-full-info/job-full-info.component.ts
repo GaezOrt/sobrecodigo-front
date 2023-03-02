@@ -6,7 +6,7 @@ import { Component, Input, OnInit } from '@angular/core';
   styleUrls: ['./job-full-info.component.css']
 })
 export class JobFullInfoComponent implements OnInit {
-
+  showDetails = true;
   @Input() cardInfo:any;
   constructor() { }
 
