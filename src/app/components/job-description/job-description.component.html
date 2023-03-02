@@ -13,12 +13,15 @@
           <p>{{cardInfo.description}}</p>
           
         </mat-card-subtitle>
-       
-
+        <div *ngIf="showFull">
+        <app-job-full-info ></app-job-full-info>
+      </div>
     </mat-card-content>
     <mat-card-footer>
       <mat-card-actions>
-        <button class="btn-apply" (click)="showDetails()">Leer más</button>
+ 
+        <button class="btn-apply" (click)="showDetails()" *ngIf="showFull">Aplicar</button>
+        <button class="btn-apply" (click)="showDetails()" *ngIf="!showFull">Leer más</button>
       </mat-card-actions>
     </mat-card-footer>
   

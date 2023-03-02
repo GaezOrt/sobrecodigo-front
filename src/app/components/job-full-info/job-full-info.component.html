@@ -1,16 +1,6 @@
-<mat-card class="mat-elevation-z4 jobCard" *ngIf="showDetails">
-  
+
     <mat-card-header >
-      <mat-card-subtitle class="buttons-jobCard">
-        <button class="btn-edit"><i class="fa-solid fa-pencil"></i></button>
-        <button class="btn-delete"><i class="fa-solid fa-trash"></i></button>
-      </mat-card-subtitle>
-      <mat-card-title class="title-job">{{cardInfo.title}}
-      </mat-card-title>
-      <mat-card-subtitle class="subtitle-job">{{cardInfo.subtitle}}</mat-card-subtitle>
-      <img mat-card-avatar src="../../assets/imgs/img-company.png" class="img-company">
-    </mat-card-header>
-  
+     
     <mat-card-content class="content-job">
         <mat-card-subtitle class="description-job">
           <p>{{cardInfo.description}}</p>
@@ -29,8 +19,6 @@
     </mat-card-content>
     <mat-card-footer>
       <mat-card-actions>
-        <button class="btn-apply">Aplicar</button>
+        
       </mat-card-actions>
     </mat-card-footer>
-  
-  </mat-card>
