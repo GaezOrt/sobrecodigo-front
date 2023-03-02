@@ -28,6 +28,7 @@ import { ProjectCardComponent } from './components/project-card/project-card.com
 import { CompanyProfileComponent } from './company-profile/company-profile.component';
 import { JobsCardComponent } from './jobs-card/jobs-card.component';
 import { SignInComponent } from './components/sign-in/sign-in.component';
+import { JobFormComponent } from './modals/job-form/job-form.component';
 
 @NgModule({
   declarations: [
@@ -46,7 +47,8 @@ import { SignInComponent } from './components/sign-in/sign-in.component';
     ProjectCardComponent,
     CompanyProfileComponent,
     JobsCardComponent,
-    SignInComponent
+    SignInComponent,
+    JobFormComponent
   ],
   imports: [
     BrowserModule,
