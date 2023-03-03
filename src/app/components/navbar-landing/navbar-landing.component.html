@@ -25,7 +25,14 @@
     <li><a routerLink="/jobs" [ngClass]="{'selected' : route === '/jobs'}">Empleos</a></li>
     <hr>
     <li><img src="../../../assets/imgs/moon-1.svg" alt="dark-mode" style=" height: 30px; margin: auto 0; aspect-ratio: 1/1;"></li>
-    <li routerLink="/sign-up" id="login"><a>Registrarme</a></li>
+    <li>
+      <button id="login" mat-button [matMenuTriggerFor]="menu"><a>Registrarse</a></button>
+        <mat-menu #menu="matMenu">
+          <a routerLink="/sign-up" mat-menu-item>Usuarios</a>
+          <a routerLink="/sign-up-company" mat-menu-item>Empresas</a>
+        </mat-menu>
+    </li>
+    <li routerLink="/sign-in" id="login"><a mat-button>Entrar</a></li>
   </div>
 
 </nav>
