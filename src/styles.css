@@ -5,3 +5,4 @@
 }
 html, body { height: 100%; background-color:white; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+.mat-menu-panel{ border-radius: 20px !important; }

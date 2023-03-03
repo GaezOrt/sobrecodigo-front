@@ -1,0 +1,70 @@
+body {
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+}
+
+.form-container {
+  max-width: 400px;
+  min-width: 200px;
+  margin: 50px auto;
+  border-radius: 30px;
+  /* possible global variable */
+  box-shadow: 0px 4px 20px 3px rgba(0, 0, 0, 0.25);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+form {
+  padding: 20px;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"] {
+  width: 100%;
+  box-sizing: border-box;
+  margin-top: 8px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 18px;
+  padding: 10px 25px;
+}
+
+input[type="submit"] {
+  background-color: var(--blue);
+  color: white;
+  padding: 12px 20px;
+  margin-top: 10px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  border-radius: 18px;
+}
+
+input[type="submit"]:hover {
+  background-color: var(--blue-light);
+}
+
+form label {
+  color: #ccc;
+  margin-left: 13px;
+}
+
+#header {
+  text-align: center;
+  padding-top: 30px;
+  margin: 0 0;
+}
+
+form input:required:focus {
+  outline-color: var(--blue);
+}
+
+form input:not([type="password"]):valid:focus {
+  outline-color: var(--blue-light);
+}
+
+form input[type="password"]:valid:focus {
+  outline-color: var(--blue-light);
+}
