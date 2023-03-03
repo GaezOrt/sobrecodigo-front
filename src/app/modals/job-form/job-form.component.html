@@ -2,34 +2,58 @@
 
 <form action="">
     <mat-form-field class="formElement">
+        <mat-label>Puesto Solicitado</mat-label>
         <input matInput placeholder="Puesto solicitado" formControlName="puesto">
     </mat-form-field>
 
     <mat-form-field class="formElement">
-        <input matInput placeholder="Trainee Jr Ssr Sr" formControlName="posicion">
+        <mat-label>Posición</mat-label>
+        <mat-select>
+            <mat-option *ngFor="let posicion of posiciones" [value]="posicion.value">
+                {{posicion.viewValue}}
+            </mat-option>
+        </mat-select>
     </mat-form-field>
 
     <mat-form-field class="formElement">
+        <mat-label>Descripción</mat-label>
         <input matInput placeholder="Descripción" formControlName="descripcion">
     </mat-form-field>
 
     <mat-form-field class="formElement">
-        <input matInput placeholder="Tamaño Empresa" formControlName="tamanoEmpresa">
+        <mat-label>Cantidad de Empleados</mat-label>
+        <mat-select>
+            <mat-option *ngFor="let employee of employees" [value]="employee.value">
+                {{employee.viewValue}}
+            </mat-option>
+        </mat-select>
     </mat-form-field>
 
     <mat-form-field class="formElement">
-        <input matInput placeholder="Modalidad de Trabajo" formControlName="modalidad">
+        <mat-label>Modialidad de trabajo</mat-label>
+        <mat-select>
+            <mat-option *ngFor="let modality of modalities" [value]="modality.value">
+                {{modality.viewValue}}
+            </mat-option>
+        </mat-select>
     </mat-form-field>
 
     <mat-form-field class="formElement">
+        <mat-label>Salario</mat-label>
         <input matInput placeholder="Salario (opcional)" formControlName="salario">
     </mat-form-field>
 
     <mat-form-field class="formElement">
+        <mat-label>Ofrecen Reubicación</mat-label>
         <input matInput placeholder="Ofrece Reubicacion (opcional)" formControlName="reubicacion">
     </mat-form-field>
 
     <mat-form-field class="formElement">
+        <mat-label>Requisitos</mat-label>
         <input matInput placeholder="Requisitos" formControlName="requisitos">
     </mat-form-field>
+
+    <div class="submit">
+        <button class="btn-submit">Agregar</button>
+    </div>
 </form>
