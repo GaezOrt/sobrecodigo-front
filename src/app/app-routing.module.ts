@@ -8,9 +8,11 @@ import { ProjectPageComponent } from './components/project-page/project-page.com
 import { RankingUsersComponent } from './components/ranking-users/ranking-users.component';
 import { SignInComponent } from './components/sign-in/sign-in.component';
 import { SignUpComponent } from './components/sign-up/sign-up.component';
+import { SignUpCompanyComponent } from './components/sign-up-company/sign-up-company.component';
 
 const routes: Routes = [
   { path: 'sign-up', component: SignUpComponent },
+  { path: 'sign-up-company', component: SignUpCompanyComponent },
   { path: 'sign-in', component: SignInComponent },
   { path: 'ranking-users', component: RankingUsersComponent },
   { path: 'profile-page', component: ProfilePageComponent },
