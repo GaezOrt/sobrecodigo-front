@@ -27,6 +27,8 @@ import { RouterModule } from '@angular/router';
 import { ProjectCardComponent } from './components/project-card/project-card.component';
 import { CompanyProfileComponent } from './company-profile/company-profile.component';
 import { JobsCardComponent } from './jobs-card/jobs-card.component';
+import { JobDescriptionComponent } from './components/job-description/job-description.component';
+import { JobFullInfoComponent } from './components/job-full-info/job-full-info.component';
 
 @NgModule({
   declarations: [
@@ -44,7 +46,9 @@ import { JobsCardComponent } from './jobs-card/jobs-card.component';
     JobsComponent,
     ProjectCardComponent,
     CompanyProfileComponent,
-    JobsCardComponent
+    JobsCardComponent,
+    JobDescriptionComponent,
+    JobFullInfoComponent
   ],
   imports: [
     BrowserModule,

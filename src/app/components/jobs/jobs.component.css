@@ -7,3 +7,15 @@
   border : 1px solid #666666;
 }
 
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  padding: auto;
+  width: 1500px;
+  margin: 10px auto;
+}
+
+/*Queda agregar las vistas responsive*/

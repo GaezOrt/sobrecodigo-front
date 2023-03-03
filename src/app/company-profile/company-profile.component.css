@@ -116,6 +116,17 @@
   border: none;
 }
 
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  padding: auto;
+  width: 1500px;
+  margin: 10px auto;
+}
+
 
 /*----------- Medias Queries ------------------*/
 @media screen and (min-width: 481px) and (max-width: 780px) {
