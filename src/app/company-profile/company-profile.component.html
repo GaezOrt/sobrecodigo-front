@@ -39,9 +39,9 @@
   </div>
 </div>
 <div class="jobs-list">
-
-  <tr *ngFor= "let job of jobs">
-    <app-jobs-card [cardInfo]="job"></app-jobs-card>
+  <div class="cards">
+    <tr *ngFor="let job of jobs">
+      <app-jobs-card [cardInfo]="job"></app-jobs-card>
     </tr>
-
+  </div>
 </div>
