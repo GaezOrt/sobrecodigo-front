@@ -7,37 +7,30 @@
 
 .user-details {
   display: flex;
+  justify-content: center;
   flex-direction: column;
   align-items: center;
-  margin: 40px auto;
-  width: 929px;
-  height: 619px;
-
   background: #f3f3f3;
   box-shadow: 4px 4px 4px 2px rgba(0, 0, 0, 0.25);
   border-radius: 30px;
 }
 
 .img-profile {
-  width: 168px;
-  padding: 16px;
+  width: 100px;
+  padding: 10px;
 }
 
 .user-fullname {
-  height: 39px;
-
   font-family: "Inter";
   font-style: normal;
-  font-weight: 300;
-  font-size: 32px;
+  font-size: 24px;
   line-height: 39px;
-  /* identical to box height */
-
+  margin: 3px;
   color: #4472c3;
 }
 
 .user-title {
-  height: 24px;
+
 
   font-family: "Inter";
   font-style: normal;
@@ -49,56 +42,53 @@
 }
 
 .user-location {
-  height: 24px;
-
+  display: flex;
+  justify-content: center;
   font-family: "Inter";
   font-style: normal;
   font-weight: 300;
-  font-size: 20px;
+  font-size: 13px;
   line-height: 24px;
-
   color: #4e4e4e;
 }
 .user-counters{
-  display: flex;
-  flex-direction: column;
+  padding: 5px;
 }
 
 .icons-counter{
   display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
   list-style: none;
+  padding: 0;
+  margin: 5px;
 }
 
 .icon-counter {
-  padding: 0 65px;
-  margin-top: 25px;
+  padding: 5px;
   align-items: center;
   color: #4472c3;
-  font-size: 48px;
+  font-size: 30px;
 }
 
-.detail-counters {
+.icons-counter li{
   display: flex;
-  list-style: none;
-  color: #3d3d3d;
-  font-size: 18px;
-  
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  padding: 5px;
 }
 
-.detail {
-  padding: 0 30px;
-  text-align: center;
-}
 .user-social {
   display: flex;
-  justify-content: space-around;
-  align-items: center;
-  margin-top: 32px;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  width: 70%;
+  padding: 8px;
 }
 
 .user-social i {
-  font-size: 45px;
-  padding: 16px;
+  font-size: 20px;
   color: #3d3d3d;
 }
 
@@ -111,11 +101,9 @@
   margin-top: 10px;
 }
 
-@media screen and (min-width: 481px) and (max-width: 780px){
+/* @media screen and (min-width: 481px) and (max-width: 780px){
   .user-details {
-    
-     width: 700px;
-    height: 560px;
+     border-radius: 0;
   }
 
   .icon-counter {
@@ -123,7 +111,7 @@
     margin-top: 20px;
     font-size: 38px;
   }
-  
+
   .detail-counters{
     font-size: 14px;
   }
@@ -135,38 +123,37 @@
 
 @media screen and (max-width: 480px) {
   .user-details {
-    width: 380px;
-    height: 468px;
-  }
+    border-radius: 0;
+ }
 
   .img-profile {
     width: 138px;
   }
-  
+
   .user-fullname {
     height: 30px;
-  
+
     font-size: 24px;
   }
-  
+
   .user-title {
     height: 23px;
     font-size: 18px;
-    line-height: 20px;  
+    line-height: 20px;
   }
-  
+
   .user-location {
     height: 20px;
     font-size: 18px;
     line-height: 20px;
     }
-  
+
     .icon-counter {
       padding: 0 28px;
       margin-top: 20px;
       font-size: 18px;
     }
-    
+
     .detail-counters{
       font-size: 7px;
     }
@@ -178,8 +165,8 @@
     .user-social i {
       font-size: 30px;
         }
-    
+
         .user-social {
           margin-top: 24px;
         }
-}
+} */

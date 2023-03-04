@@ -36,6 +36,8 @@ import { SignUpCompanyComponent } from './components/sign-up-company/sign-up-com
 import { JobsPageComponent } from './jobs-page/jobs-page.component';
 import { FormsModule } from '@angular/forms';
 import { JobFilterPipe } from './jobs-page/job-filter.pipe';
+import {MatGridListModule} from '@angular/material/grid-list'
+
 
 @NgModule({
   declarations: [
@@ -66,6 +68,7 @@ import { JobFilterPipe } from './jobs-page/job-filter.pipe';
     AppRoutingModule,
     BrowserAnimationsModule,
     MatSlideToggleModule,
+    MatGridListModule,
     MatCardModule,
     MatMenuModule,
     MatButtonModule,
@@ -75,7 +78,8 @@ import { JobFilterPipe } from './jobs-page/job-filter.pipe';
     MatCommonModule,
     MatSelectModule,
     RouterModule,
-    FormsModule
+    FormsModule,
+
   ],
   providers: [],
   bootstrap: [AppComponent]
