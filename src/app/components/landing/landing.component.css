@@ -22,7 +22,7 @@ main{
  
 .header{
     width: 100%;
-    padding: 40px;
+    padding: 25px;
     box-sizing:border-box ;
 }
 .header h1 {
@@ -35,9 +35,39 @@ span{
     color: #1a98cf;
 }
 
+.row{
+    margin-left:40px;
+}
 hr{ 
-    width: calc(100vw - 8%);
+    width: calc(100vw - 5%);
     border-color: var(--blue-light);
     margin: 0 auto;
     margin-bottom: 10px;
 }
+
+.dropdowns{
+    width:200px;
+    border-width: 2px;
+    border-radius: 1%;
+    margin-right: 2%;
+    color: black;
+    border : 1px solid #666666;
+  }
+  
+  .cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:flex-start;
+    align-items: center;
+    gap: 20px;
+    padding: auto;
+    margin: 10px auto;
+    top:40px;
+    margin-left:40px;
+  }
+  .jobList{
+    margin-top:50px;
+  }
+  
+  /*Queda agregar las vistas responsive*/
+  

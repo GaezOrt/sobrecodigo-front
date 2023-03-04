@@ -5,15 +5,27 @@
     <h1>Proyectos <span>DESTACADOS</span></h1>
    </div>
 
-   <!-- <hr>   -->
+    <hr>   
+   <div class="row">
 <app-cards-list></app-cards-list>
-
+</div>
     <div class="second header">
         <h1>Usuarios <span>MÁS</span> activos</h1>
     </div>
 
-<!-- <hr> -->
-
+    <hr>
+<div class="row">
 <app-cards-active-users></app-cards-active-users>
-
+</div>
+<div class="second header">
+    <h1>Nuevos <span>empleos</span></h1>
+</div>
+<hr>
+<div class="jobList">
+    <div class="cards">
+      <tr *ngFor= "let job of jobs">
+        <app-job-description [cardInfo]="job"></app-job-description>
+        </tr>
+    </div>
+  </div>
 </main>

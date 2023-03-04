@@ -33,6 +33,9 @@ import { SignInComponent } from './components/sign-in/sign-in.component';
 import { JobDescriptionComponent } from './components/job-description/job-description.component';
 import { JobFullInfoComponent } from './components/job-full-info/job-full-info.component';
 import { SignUpCompanyComponent } from './components/sign-up-company/sign-up-company.component';
+import { JobsPageComponent } from './jobs-page/jobs-page.component';
+import { FormsModule } from '@angular/forms';
+import { JobFilterPipe } from './jobs-page/job-filter.pipe';
 
 @NgModule({
   declarations: [
@@ -56,7 +59,9 @@ import { SignUpCompanyComponent } from './components/sign-up-company/sign-up-com
     JobFullInfoComponent,
     JobFullInfoComponent,
     SignInComponent,
-    SignUpCompanyComponent
+    SignUpCompanyComponent,
+    JobsPageComponent,
+    JobFilterPipe
   ],
   imports: [
     BrowserModule,
@@ -71,7 +76,8 @@ import { SignUpCompanyComponent } from './components/sign-up-company/sign-up-com
     FontAwesomeModule,
     MatCommonModule,
     MatSelectModule,
-    RouterModule
+    RouterModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
