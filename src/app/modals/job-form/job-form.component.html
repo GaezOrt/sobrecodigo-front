@@ -1,3 +1,6 @@
+<div class="btn-close-icon">
+    <button class="btn-close-icon" (click)="closeModal()">X</button>
+</div>
 <h3>Alta de Oferta Laboral</h3>
 
 <form action="">
@@ -19,16 +22,7 @@
         <mat-label>Descripción</mat-label>
         <input matInput placeholder="Descripción" formControlName="descripcion">
     </mat-form-field>
-
-    <mat-form-field class="formElement">
-        <mat-label>Cantidad de Empleados</mat-label>
-        <mat-select>
-            <mat-option *ngFor="let employee of employees" [value]="employee.value">
-                {{employee.viewValue}}
-            </mat-option>
-        </mat-select>
-    </mat-form-field>
-
+    
     <mat-form-field class="formElement">
         <mat-label>Modialidad de trabajo</mat-label>
         <mat-select>
@@ -40,12 +34,17 @@
 
     <mat-form-field class="formElement">
         <mat-label>Salario</mat-label>
+        <mat-select>
+            <mat-option *ngFor="let currency of currencies" [value]="currency.value">
+                {{currency.viewValue}}
+            </mat-option>
+        </mat-select>
         <input matInput placeholder="Salario (opcional)" formControlName="salario">
     </mat-form-field>
 
     <mat-form-field class="formElement">
-        <mat-label>Ofrecen Reubicación</mat-label>
-        <input matInput placeholder="Ofrece Reubicacion (opcional)" formControlName="reubicacion">
+        <mat-label>Ofrecen Reubicación</mat-label>        
+        <input matInput placeholder="Reubicacion (opcional) radio-btn" formControlName="reubicacion">
     </mat-form-field>
 
     <mat-form-field class="formElement">
@@ -55,5 +54,6 @@
 
     <div class="submit">
         <button class="btn-submit">Agregar</button>
+        <button class="btn-close" (click)="closeModal()">Cerrar</button>
     </div>
 </form>

@@ -35,7 +35,7 @@
     </div>
   </div>
   <div class="buttons-cu">
-    <button class="btn-add"><i class="fa-solid fa-plus"></i></button>
+    <button class="btn-add" (click)="openModal()"><i class="fa-solid fa-plus"></i></button>
   </div>
 </div>
 <div class="jobs-list">
@@ -44,4 +44,8 @@
     <app-jobs-card [cardInfo]="job"></app-jobs-card>
     </tr>
 
+</div>
+
+<div class="modalJob" *ngIf="modalSwitch == true">
+  <app-job-form></app-job-form>
 </div>

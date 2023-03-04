@@ -1,17 +1,18 @@
 import { Component, OnInit } from '@angular/core';
 import { FormControl } from '@angular/forms';
+import { ModalSwitchService } from 'src/app/services/modal-switch.service';
 
 interface Posicion {
   value: string;
   viewValue: string;
 }
 
-interface Employee {
+interface Modality {
   value: string;
   viewValue: string;
 }
 
-interface Modality {
+interface Currency {
   value: string;
   viewValue: string;
 }
@@ -24,14 +25,8 @@ interface Modality {
 export class JobFormComponent implements OnInit {
 
   posicion = new FormControl("Trainee");
-  employee = new FormControl("1-10");
   modality = new FormControl("Presencial");
-
-  employees: Employee[] = [
-    {value: "1-10", viewValue: "1-10"},
-    {value: "11-50", viewValue: "11-50"},
-    {value: "50 o más", viewValue: "50 o más"}
-  ]
+  currency = new FormControl("USD");
 
   posiciones: Posicion[] = [
     { value: "Trainee", viewValue: "Trainee" },
@@ -44,14 +39,23 @@ export class JobFormComponent implements OnInit {
     {value: "Presencial", viewValue: "Presencial"},
     {value: "Hibrido", viewValue: "Hibrido"},
     {value: "Remoto", viewValue: "Remoto"}
+  ];
+
+  currencies: Currency[] = [
+    {value: "USD", viewValue: "USD"},
+    {value: "ARS", viewValue: "ARS"}
   ]
-  constructor() {
+  constructor(private modalSS: ModalSwitchService) {
     this.posicion.valueChanges.subscribe(s => {
       console.log(`The selected value is ${s}`);
     });
    }
 
   ngOnInit(): void {
+  }
+
+  closeModal(){
+    this.modalSS.$modal.emit(false)
   }
 
 }
