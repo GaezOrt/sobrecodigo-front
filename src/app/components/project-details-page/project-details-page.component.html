@@ -1,0 +1,60 @@
+<!-- <p>project-details-page works!</p> -->
+<app-navbar-landing></app-navbar-landing>
+
+<div class="container-fluid mt-4">
+<main class="main">
+  <div id="title">
+    <h1>{{project.name}}</h1>
+  </div>
+  <div class="card">
+
+    <div id="main-info">
+
+
+
+      <div id="developers">
+
+        <h2 class="header-secondary">Desarrolladores </h2>
+        <ul id="authors-list">
+          <li *ngFor="let author of project.author">{{author}}</li>
+        </ul>
+
+      </div>
+
+    </div>
+
+    <div id="text">
+      <p>{{project.description}}</p>
+    </div>
+
+    <div id="technologies">
+      <h2 class="header-secondary">Tecnologias</h2>
+      <ul>
+        <li *ngFor="let x of project.tags">{{x}}</li>
+      </ul>
+
+    </div>
+    <div>
+      <h2 class="header-secondary">Imágenes</h2>
+      <div id="carrusel">
+
+        <img *ngFor="let img of project.images" id="image-container" src="{{img}}">
+
+      </div>
+    </div>
+
+    <div id="repo-link">
+      <a href={{project.gitLink}}>
+        <span>REPOSITORIO</span>
+        <img src="../../../assets/imgs/github-color-svgrepo-com.svg" width="30px" alt="">
+
+      </a>
+
+    </div>
+
+  </div>
+
+
+
+</main>
+</div>

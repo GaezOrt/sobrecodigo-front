@@ -10,6 +10,7 @@ import { SignInComponent } from './components/sign-in/sign-in.component';
 import { SignUpComponent } from './components/sign-up/sign-up.component';
 import { SignUpCompanyComponent } from './components/sign-up-company/sign-up-company.component';
 import { JobsPageComponent } from './jobs-page/jobs-page.component';
+import { ProjectDetailsPageComponent } from './components/project-details-page/project-details-page.component';
 
 const routes: Routes = [
   { path: 'sign-up', component: SignUpComponent },
@@ -19,12 +20,14 @@ const routes: Routes = [
   { path: 'profile-page', component: ProfilePageComponent },
   { path: 'company-profile', component: CompanyProfileComponent },
   { path: 'project-page', component: ProjectPageComponent},
+  { path: 'project-details', component: ProjectDetailsPageComponent},
   { path: 'jobs', component: JobsComponent},
   {path: 'home', component: LandingComponent},
   { path: '**', redirectTo: '/home', pathMatch: 'full'},
   { path: 'jobs-page', component: JobsPageComponent},
   {path: 'home', component:LandingComponent},
   { path: '', redirectTo: '/home', pathMatch: 'full'},
+
 ];
 
 @NgModule({
