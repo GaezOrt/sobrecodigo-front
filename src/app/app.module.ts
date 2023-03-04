@@ -33,6 +33,7 @@ import { JobDescriptionComponent } from './components/job-description/job-descri
 import { JobFullInfoComponent } from './components/job-full-info/job-full-info.component';
 import { SignInComponent } from './components/sign-in/sign-in.component';
 import { SignUpCompanyComponent } from './components/sign-up-company/sign-up-company.component';
+import { AppFooter } from './components/footer/footer.component'
 
 @NgModule({
   declarations: [
@@ -54,7 +55,8 @@ import { SignUpCompanyComponent } from './components/sign-up-company/sign-up-com
     JobDescriptionComponent,
     JobFullInfoComponent,
     SignInComponent,
-    SignUpCompanyComponent
+    SignUpCompanyComponent,
+    AppFooter
   ],
   imports: [
     BrowserModule,
@@ -70,6 +72,7 @@ import { SignUpCompanyComponent } from './components/sign-up-company/sign-up-com
     MatCommonModule,
     MatSelectModule,
     RouterModule
+    
   ],
   providers: [],
   bootstrap: [AppComponent]
