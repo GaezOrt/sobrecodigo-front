@@ -49,6 +49,14 @@ export class JobFormComponent implements OnInit {
     this.posicion.valueChanges.subscribe(s => {
       console.log(`The selected value is ${s}`);
     });
+
+    this.modality.valueChanges.subscribe(s => {
+      console.log(`The selected value is ${s}`);
+    });
+
+    this.currency.valueChanges.subscribe(s => {
+      console.log(`The selected value is ${s}`);
+    });
    }
 
   ngOnInit(): void {
