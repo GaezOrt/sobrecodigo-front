@@ -7,12 +7,14 @@ import { ProfilePageComponent } from './components/profile-page/profile-page.com
 import { ProjectPageComponent } from './components/project-page/project-page.component';
 import { RankingUsersComponent } from './components/ranking-users/ranking-users.component';
 import { SignUpComponent } from './components/sign-up/sign-up.component';
+import { ProjectDetailsPageComponent } from "./components/project-details-page/project-details-page.component";
 
 const routes: Routes = [
   { path: 'sign-up', component: SignUpComponent },
   { path: 'ranking-users', component: RankingUsersComponent },
   { path: 'profile-page', component: ProfilePageComponent },
   { path: 'company-profile', component: CompanyProfileComponent },
+  { path: 'project-details', component: ProjectDetailsPageComponent},
   { path: 'project-page', component: ProjectPageComponent},
   { path: 'jobs', component: JobsComponent},
   {path: 'home', component: LandingComponent},
