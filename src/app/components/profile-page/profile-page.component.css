@@ -10,8 +10,8 @@
   flex-direction: column;
   align-items: center;
   margin: 40px auto;
-  width: 929px;
-  height: 619px;
+  width: 700px;
+  height: 500px;
 
   background: #f3f3f3;
   box-shadow: 4px 4px 4px 2px rgba(0, 0, 0, 0.25);
@@ -19,17 +19,17 @@
 }
 
 .img-profile {
-  width: 168px;
+  width: 120px;
   padding: 16px;
 }
 
 .user-fullname {
-  height: 39px;
+ 
 
   font-family: "Inter";
   font-style: normal;
-  font-weight: 300;
-  font-size: 32px;
+  font-weight: 130px;
+  font-size: 25px;
   line-height: 39px;
   /* identical to box height */
 
@@ -74,14 +74,14 @@
   margin-top: 25px;
   align-items: center;
   color: #4472c3;
-  font-size: 48px;
+  font-size: 30px;
 }
 
 .detail-counters {
   display: flex;
   list-style: none;
   color: #3d3d3d;
-  font-size: 18px;
+  font-size: 16px;
   
 }
 
@@ -93,11 +93,11 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
-  margin-top: 32px;
+  
 }
 
 .user-social i {
-  font-size: 45px;
+  font-size: 30px;
   padding: 16px;
   color: #3d3d3d;
 }
