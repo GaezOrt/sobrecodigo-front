@@ -36,6 +36,7 @@ import { SignUpCompanyComponent } from './components/sign-up-company/sign-up-com
 import { JobsPageComponent } from './jobs-page/jobs-page.component';
 import { FormsModule } from '@angular/forms';
 import { JobFilterPipe } from './jobs-page/job-filter.pipe';
+import { ProjectDetailsPageComponent } from './components/project-details-page/project-details-page.component';
 
 @NgModule({
   declarations: [
@@ -59,7 +60,8 @@ import { JobFilterPipe } from './jobs-page/job-filter.pipe';
     SignInComponent,
     SignUpCompanyComponent,
     JobsPageComponent,
-    JobFilterPipe
+    JobFilterPipe,
+    ProjectDetailsPageComponent
   ],
   imports: [
     BrowserModule,

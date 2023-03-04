@@ -1,23 +1,36 @@
 {
-    "projects": [{
-        "title": "Demo Title",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque cursus sed nulla vitae lacinia. Curabitur eget efficitur turpis. Fusce id lorem a est pulvinar tincidunt. Cras et ullamcorper justo. Integer consectetur suscipit neque ut consectetur.",
-        "tags": "html, css, java, js, python"
+  "projects": [
+    {
+      "title": "PlayGuess",
+      "author": "...",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque cursus sed nulla vitae lacinia. Curabitur eget efficitur turpis. Fusce id lorem a est pulvinar tincidunt. Cras et ullamcorper justo. Integer consectetur suscipit neque ut consectetur.",
+      "tags": "html, css, java, js, python",
+      "images": ["", "", ""],
+      "git-link": ""
     },
     {
-        "title": "Demo Title",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque cursus sed nulla vitae lacinia. Curabitur eget efficitur turpis. Fusce id lorem a est pulvinar tincidunt. Cras et ullamcorper justo. Integer consectetur suscipit neque ut consectetur.",
-        "tags": "html, css, java, js, python"
+      "title": "Demo Title",
+      "author": "...",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque cursus sed nulla vitae lacinia. Curabitur eget efficitur turpis. Fusce id lorem a est pulvinar tincidunt. Cras et ullamcorper justo. Integer consectetur suscipit neque ut consectetur.",
+      "images": ["", "", ""],
+      "git-link": "",
+      "tags": "html, css, java, js, python"
     },
     {
-        "title": "Demo Title",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque cursus sed nulla vitae lacinia. Curabitur eget efficitur turpis. Fusce id lorem a est pulvinar tincidunt. Cras et ullamcorper justo. Integer consectetur suscipit neque ut consectetur.",
-        "tags": "html, css, java, js, python"
+      "title": "Demo Title",
+      "author": "...",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque cursus sed nulla vitae lacinia. Curabitur eget efficitur turpis. Fusce id lorem a est pulvinar tincidunt. Cras et ullamcorper justo. Integer consectetur suscipit neque ut consectetur.",
+      "images": ["", "", ""],
+      "git-link": "",
+      "tags": "html, css, java, js, python"
     },
     {
-        "title": "Demo Title",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque cursus sed nulla vitae lacinia. Curabitur eget efficitur turpis. Fusce id lorem a est pulvinar tincidunt. Cras et ullamcorper justo. Integer consectetur suscipit neque ut consectetur.",
-        "tags": "html, css, java, js, python"
+      "title": "Demo Title",
+      "author": "...",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque cursus sed nulla vitae lacinia. Curabitur eget efficitur turpis. Fusce id lorem a est pulvinar tincidunt. Cras et ullamcorper justo. Integer consectetur suscipit neque ut consectetur.",
+      "images": ["", "", ""],
+      "git-link": "",
+      "tags": "html, css, java, js, python" 
     }
-]
+  ]
 }
