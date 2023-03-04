@@ -1,16 +1,16 @@
+<mat-card class="mat-elevation-z4 projectCard" routerLink="/project-details">
+  <img mat-card-image src="../../assets/imgs/img-project.png" class="img-replace">
+  <mat-card-header class="title-project">
+    <mat-card-title>{{cardInfo.title}}</mat-card-title>
+  </mat-card-header>
 
-<mat-card class="container-fluid projectCard p-3" routerLink="/project-details">
-    <mat-card-header class="flex-column align-items-center">
-      <img mat-card-image src="../../assets/imgs/img-project.png" class="img-replace">
-      <p class="title-project">{{cardInfo.title}}</p>
-    </mat-card-header>
+  <mat-card-content>
+    <div class="description-project">
+        <p>{{cardInfo.description}}</p>
+    </div>
+    <div class="tags-project">
+        <p>{{cardInfo.tags}}</p>
+    </div>
+  </mat-card-content>
 
-    <mat-card-content class="flex-column align-items-center">
-      <div class="description-project">
-          <p>{{cardInfo.description}}</p>
-      </div>
-      <div class="tags-project">
-          <p>{{cardInfo.tags}}</p>
-      </div>
-    </mat-card-content>
 </mat-card>
