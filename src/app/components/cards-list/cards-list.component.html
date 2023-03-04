@@ -1,9 +1,9 @@
 <div class="cards-list">
 
-  <div class="card 1" *ngFor="let project of projects ">
+  <div class="card 1" *ngFor="let project of projects " routerLink="/project-details">
 
     <div class="card_image"> <img src={{project.image}} /> </div>
-    
+
     <div class="card_title title-white">
       <p>{{project.title}}</p>
     </div>
