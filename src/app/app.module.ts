@@ -38,6 +38,7 @@ import { FormsModule } from '@angular/forms';
 import { JobFilterPipe } from './jobs-page/job-filter.pipe';
 import {MatGridListModule} from '@angular/material/grid-list'
 
+import { AppFooter } from './components/footer/footer.component'
 
 @NgModule({
   declarations: [
@@ -63,7 +64,8 @@ import {MatGridListModule} from '@angular/material/grid-list'
     SignInComponent,
     SignUpCompanyComponent,
     JobsPageComponent,
-    JobFilterPipe
+    JobFilterPipe,
+    AppFooter
   ],
   imports: [
     BrowserModule,
@@ -81,6 +83,8 @@ import {MatGridListModule} from '@angular/material/grid-list'
     MatSelectModule,
     RouterModule,
     FormsModule,
+
+    RouterModule
 
   ],
   providers: [],
