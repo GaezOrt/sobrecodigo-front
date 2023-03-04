@@ -1,29 +1,24 @@
 .title-page {
   display: flex;
   justify-content: center;
-  margin-top: 150px;
+  margin-top: 50px;
+  margin-bottom: 60px;
   font-family: "Roboto";
   font-style: normal;
   font-weight: 700;
   font-size: 60px;
   /* identical to box height */
-  color: #4472c3;
+  /* color: #4472c3; */
+  color: var(--blue);
 }
 
 .cards {
+  box-sizing: border-box;
+  padding: 15px;
   display: flex;
-  cursor:pointer;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-evenly;
   align-items: center;
-  gap: 8px;
-
-  transition: 0.4s;
+  gap: 10px;
 }
-.cards:hover {
-  transform: scale(0.9, 0.9);
-  /* box-shadow: 5px 5px 30px 15px rgba(0,0,0,0.25),
-    -5px -5px 30px 15px rgba(0,0,0,0.22); */
-  /* box-shadow: 0px 4px 20px 3px rgba(0, 0, 0, 0.25); */
 
-}
