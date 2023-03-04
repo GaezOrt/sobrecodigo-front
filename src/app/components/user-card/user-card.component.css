@@ -1,4 +1,5 @@
 .card {
+  cursor:pointer;
   width: 14em;
   aspect-ratio: 2/3;
   padding: 1.2em;

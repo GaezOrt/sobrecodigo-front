@@ -19,9 +19,11 @@
     </mat-card-content>
     <mat-card-footer>
       <mat-card-actions>
- 
+        <div class="row">
         <button class="btn-apply" (click)="showDetails()" *ngIf="showFull">Aplicar</button>
+        <button class="btn-apply" (click)="showLess()" *ngIf="showLessBool">Mostrar menos</button>
         <button class="btn-apply" (click)="showDetails()" *ngIf="!showFull">Leer más</button>
+      </div>
       </mat-card-actions>
     </mat-card-footer>
   

@@ -8,13 +8,16 @@ import { Component, Input, OnInit } from '@angular/core';
 export class JobDescriptionComponent implements OnInit {
   showFull = false;
   @Input() cardInfo:any;
+  showLessBool=false;
   constructor() { }
 
   ngOnInit(): void {
 
     
   }
-
+  showLess(){
+    this.showLessBool=true;
+  }
   showDetails() {
     this.showFull = true;
   }
