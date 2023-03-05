@@ -2,18 +2,30 @@
 .jobCard {
     display: flex;
     flex-direction: column;
-    width: 650px;
-    height: auto;
-    top: 130px;
-    left: 10px;
-  
+    width: 90%;
+    align-items: center;
     background: #ffffff;
-    box-shadow: 0px 4px 20px 3px rgba(0, 0, 0, 0.25);
+    box-shadow: var(--card-shadow);
     border-radius: 30px;
+    margin: 0 auto;
+  }
+
+  #header-container{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 15px;
+    box-sizing: border-box;
+    padding-inline: 10px;
+    gap: 14px;
   }
   
   .buttons-jobCard {
-    margin-left: 420px;
+    visibility: hidden;
+    position: absolute;
+    top: 15px;
+    right: 15px;
   }
   
   .btn-edit, .btn-delete {
@@ -32,9 +44,9 @@
   
   .img-company {
     display: flex;
-    width: 96px;
-    height: 96px;
-    padding: 16px;
+    width: 80px;
+    height: 80px;
+    /* padding: 16px; */
     align-self: flex-start;  
   }
   
@@ -43,27 +55,32 @@
     font-family: "Roboto";
     font-style: normal;
     font-weight: 600;
-    font-size: 30px;
-    line-height: 44px;
+    font-size: 20px;
+    line-height: 40px;
     /* or 138% */
-  
-    letter-spacing: -0.02em;
+    
+    /* letter-spacing: -0.02em; */
   
     color: #212121;
-    margin-top: 23px;
+    /* margin-top: 23px; */
   }
   
   .subtitle-job {
     font-family: "Roboto";
     font-style: italic;
     font-weight: 400;
-    font-size: 18px;
+    font-size: 14px;
     color: #3d3d3d;
+    margin: 0 0;
   }
   
+  
+  
   .content-job {
-    padding: 35px;
-    margin-top: 18px;  
+    padding: 25px;
+    margin: 0;
+    text-align: justify;
+    word-wrap: normal;
   }
   
   .description-job {
@@ -86,5 +103,11 @@
     border: 1px solid #4472c3;
     border-radius: 11px 11px 18.5px 18.5px;
     color: #ffffff;
-    margin-left: 250px;
   }
+@media (min-width: 390px) and (max-width:1500px) {
+  .jobCard{
+    width: 390px;
+    margin: 0 0;
+  }
+  
+}
