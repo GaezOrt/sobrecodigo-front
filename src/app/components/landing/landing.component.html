@@ -1,11 +1,11 @@
 <app-navbar-landing></app-navbar-landing>
 <main>
-    
+
    <div class="first header">
     <h1>Proyectos <span>DESTACADOS</span></h1>
    </div>
 
-    <hr>   
+    <hr>
    <div class="row">
 <app-cards-list></app-cards-list>
 </div>
@@ -21,11 +21,9 @@
     <h1>Nuevos <span>empleos</span></h1>
 </div>
 <hr>
-<div class="jobList">
-    <div class="cards">
-      <tr *ngFor= "let job of jobs">
+<div class="container-fluid d-flex flex-wrap justify-content-center">
+      <div class="p-2" *ngFor= "let job of jobs">
         <app-job-description [cardInfo]="job"></app-job-description>
-        </tr>
-    </div>
+        </div>
   </div>
 </main>
