@@ -104,7 +104,7 @@
     border-radius: 11px 11px 18.5px 18.5px;
     color: #ffffff;
   }
-@media (min-width: 390px) and (max-width:1500px) {
+@media (min-width: 450px) {
   .jobCard{
     width: 390px;
     margin: 0 0;
