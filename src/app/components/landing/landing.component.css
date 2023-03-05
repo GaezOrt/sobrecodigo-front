@@ -19,7 +19,7 @@ main{
 .main-card:hover{
     transform: scale(1.2);
 }
- 
+
 .header{
     width: 100%;
     padding: 25px;
@@ -38,7 +38,7 @@ span{
 .row{
     margin-left:40px;
 }
-hr{ 
+hr{
     width: calc(100vw - 5%);
     border-color: var(--blue-light);
     margin: 0 auto;
@@ -53,7 +53,7 @@ hr{
     color: black;
     border : 1px solid #666666;
   }
-  
+
   .cards {
     display: flex;
     flex-wrap: wrap;
@@ -61,13 +61,11 @@ hr{
     align-items: center;
     gap: 20px;
     padding: auto;
-    margin: 10px auto;
-    top:40px;
-    margin-left:40px;
+
   }
   .jobList{
     margin-top:50px;
   }
-  
+
   /*Queda agregar las vistas responsive*/
-  
+
