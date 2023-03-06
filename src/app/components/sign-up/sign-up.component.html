@@ -8,14 +8,14 @@
     <form action="" method="post">
 
       <label>Usuario</label>
-      <input type="text" name="name" required>
+      <input type="text" name="name" required  [(ngModel)]="username" #ctrl="ngModel" required [ngModelOptions]="{standalone: true}">
       <label>Email</label>
-      <input type="email" name="email" required>
+      <input type="email" name="email" required [(ngModel)]="email" #ctrl="ngModel" required [ngModelOptions]="{standalone: true}">
       <label>Contraseña</label>
-      <input type="password" name="password" required minlength="8">
+      <input type="password" name="password" required minlength="8" [(ngModel)]="password" #ctrl="ngModel" required [ngModelOptions]="{standalone: true}">
       <label>Confirmar Contraseña</label>
-      <input type="password" name="confirm-password" required minlength="8">
-      <input type="submit" value="Registrarme">
+      <input type="password" name="confirm-password" required minlength="8"[(ngModel)]="confirmPassword" #ctrl="ngModel" required [ngModelOptions]="{standalone: true}">
+      <input type="submit" (click)="submitRegister()" value="Registrarme">
 
     </form>
     

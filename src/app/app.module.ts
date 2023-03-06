@@ -38,8 +38,10 @@ import { FormsModule } from '@angular/forms';
 import { JobFilterPipe } from './jobs-page/job-filter.pipe';
 import {MatGridListModule} from '@angular/material/grid-list'
 
+import { MatSnackBar, MatSnackBarModule } from '@angular/material/snack-bar';
 import { AppFooter } from './components/footer/footer.component';
 import { ProjectDetailsPageComponent } from './components/project-details-page/project-details-page.component'
+import { CommonModule } from '@angular/common';
 
 @NgModule({
   declarations: [
@@ -85,8 +87,9 @@ import { ProjectDetailsPageComponent } from './components/project-details-page/p
     MatSelectModule,
     RouterModule,
     FormsModule,
-
-    RouterModule
+    CommonModule,
+    RouterModule,
+    MatSnackBarModule
 
   ],
   providers: [],
