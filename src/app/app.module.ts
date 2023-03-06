@@ -29,6 +29,7 @@ import { CompanyProfileComponent } from './company-profile/company-profile.compo
 import { JobsCardComponent } from './jobs-card/jobs-card.component';
 import { SignInComponent } from './components/sign-in/sign-in.component';
 import { JobFormComponent } from './modals/job-form/job-form.component';
+import { MatDialogModule } from '@angular/material/dialog';
 
 @NgModule({
   declarations: [
@@ -61,7 +62,8 @@ import { JobFormComponent } from './modals/job-form/job-form.component';
     FontAwesomeModule,
     MatCommonModule,
     MatSelectModule,
-    RouterModule
+    RouterModule,
+    MatDialogModule
   ],
   providers: [],
   bootstrap: [AppComponent]

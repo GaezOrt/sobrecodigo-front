@@ -1,24 +1,26 @@
-.fill-remaining-space {
-    /* This fills the remaining space, by using flexbox. 
-       Every toolbar row uses a flexbox row layout. */
-    flex: 1 1 auto;
-  }
+.container{ 
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 300px;
+
+}
+
+.btn {
+  align-self: end;
+ 
+}
+
+.btn-close-icon {
+  border: none;
+  background: none;
+  color: #f00d0d;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+h3 {
+  text-align: center;
+  background-color: #1fc0e9;
   
-  .container {
-    padding: 10px;
-  }
-  
-  .form {
-    min-width: 150px;
-    max-width: 500px;
-    width: 100%;
-  }
-  
-  .form-element {
-    padding: 5px 0px 25px 2px;
-    width: 100%;
-  }
-  
-  .button {
-    width: 100%;
-  }
+}

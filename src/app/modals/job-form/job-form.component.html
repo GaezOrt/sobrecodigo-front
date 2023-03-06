@@ -1,5 +1,6 @@
-<div class="btn-close-icon">
-    <button class="btn-close-icon" (click)="closeModal()">X</button>
+<div class="container">
+<div class="btn">
+    <button class="btn-close-icon" mat-button mat-dialog-close>X</button>
 </div>
 <h3>Alta de Oferta Laboral</h3>
 
@@ -12,7 +13,7 @@
     <mat-form-field class="formElement">
         <mat-label>Posición</mat-label>
         <mat-select>
-            <mat-option *ngFor="let posicion of posiciones" [value]="posicion.value">
+            <mat-option *ngFor="let posicion of posiciones" [value]="posicion.value" formControlName="posicion">
                 {{posicion.viewValue}}
             </mat-option>
         </mat-select>
@@ -26,7 +27,7 @@
     <mat-form-field class="formElement">
         <mat-label>Modialidad de trabajo</mat-label>
         <mat-select>
-            <mat-option *ngFor="let modality of modalities" [value]="modality.value">
+            <mat-option *ngFor="let modality of modalities" [value]="modality.value" formControl="modality">
                 {{modality.viewValue}}
             </mat-option>
         </mat-select>
@@ -54,6 +55,8 @@
 
     <div class="submit">
         <button class="btn-submit">Agregar</button>
-        <button class="btn-close" (click)="closeModal()">Cerrar</button>
+        <button class="btn-close" mat-button mat-dialog-close>Cerrar</button>
     </div>
 </form>
+
+</div>

@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { FormControl } from '@angular/forms';
 import { ModalSwitchService } from 'src/app/services/modal-switch.service';
-
+import { FormBuilder, FormGroup, FormControl, Validators } from '@angular/forms';
+import { Observable } from 'rxjs';
 interface Posicion {
   value: string;
   viewValue: string;
@@ -23,7 +23,6 @@ interface Currency {
   styleUrls: ['./job-form.component.css']
 })
 export class JobFormComponent implements OnInit {
-
   posicion = new FormControl("Trainee");
   modality = new FormControl("Presencial");
   currency = new FormControl("USD");
@@ -61,6 +60,7 @@ export class JobFormComponent implements OnInit {
 
   ngOnInit(): void {
   }
+
 
   closeModal(){
     this.modalSS.$modal.emit(false)
