@@ -21,7 +21,9 @@
 
 h3 {
   text-align: center;
-  background-color: #1fc0e9;
+  background-color: #4472c3;
+  border-radius: 20px 50px;
+  font-size: 18px;
   
 }
 
@@ -30,4 +32,30 @@ h3 {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+}
+
+.submit {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.btn-submit {
+  width: 150px;
+    height: 37px;
+    background-color: #4472c3;
+    border: 1px solid #4472c3;
+    border-radius: 11px 11px 18.5px 18.5px;
+    color: #ffffff;
+    margin-left: 250px;
+}
+
+.btn-close {
+  width: 150px;
+    height: 37px;
+    background-color: #4472c3;
+    border: 1px solid #4472c3;
+    border-radius: 11px 11px 18.5px 18.5px;
+    color: #ffffff;
+    margin-left: 250px;
 }
