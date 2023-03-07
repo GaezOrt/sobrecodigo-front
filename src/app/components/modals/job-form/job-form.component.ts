@@ -1,5 +1,18 @@
 import { Component, OnInit } from '@angular/core';
+interface Posicion {
+  value: string;
+  viewValue: string;
+}
 
+interface Modality {
+  value: string;
+  viewValue: string;
+}
+
+interface Currency {
+  value: string;
+  viewValue: string;
+}
 
 @Component({
   selector: 'app-job-form',
@@ -8,13 +21,23 @@ import { Component, OnInit } from '@angular/core';
 })
 
 export class JobFormComponent implements OnInit {
-  // jobs:any[]=['Argentina', 'USA', 'Uruguay', 'Chile', 'Perú'];
-  // positions:any[]=['Backend', 'Frontend', 'Data Analytics', 'Database'];
-  // experiences:any[]=['Trainee', 'Junior', 'Semi-senior', 'Senior'];
-  // jobControl:any;
-  // experience:any;
-  // position:any;
-  // selected="Ubicación";
+  posiciones: Posicion[] = [
+    { value: "Trainee", viewValue: "Trainee" },
+    { value: "Jr", viewValue: "Jr" },
+    { value: "Ssr", viewValue: "Ssr" },
+    { value: "Sr", viewValue: "Sr"}
+  ];
+
+  modalities: Modality[] = [
+    {value: "Presencial", viewValue: "Presencial"},
+    {value: "Hibrido", viewValue: "Hibrido"},
+    {value: "Remoto", viewValue: "Remoto"}
+  ];
+
+  currencies: Currency[] = [
+    {value: "USD", viewValue: "USD"},
+    {value: "ARS", viewValue: "ARS"}
+  ]
 
 
   constructor() { }

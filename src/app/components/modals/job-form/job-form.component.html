@@ -15,9 +15,7 @@
           <label for="job-position" class="form-label">Posición</label>
           <select id="job-position" class="form-select form-select-sm" aria-label="Default select example">
             <option selected>Seleccionar</option>
-            <option value="1">One</option>
-            <option value="2">Two</option>
-            <option value="3">Three</option>
+            <option *ngFor="let position of posiciones;" [value]="position.value">{{position.value}}</option>
           </select>
         </div>
         <div class="mb-3">
@@ -28,18 +26,14 @@
           <label for="job-modality" class="form-label">Modalidad de Trabajo</label>
           <select id="job-modality" class="form-select form-select-sm" aria-label="Default select example">
             <option selected>Seleccionar</option>
-            <option value="1">One</option>
-            <option value="2">Two</option>
-            <option value="3">Three</option>
+            <option *ngFor="let modality of modalities;" [value]="modality.value">{{modality.value}}</option>
           </select>
         </div>
         <div class="mb-3">
           <label for="job-salary" class="form-label">Salario</label>
           <select id="job-salary" class="form-select form-select-sm" aria-label="Default select example">
             <option selected>Seleccionar</option>
-            <option value="1">One</option>
-            <option value="2">Two</option>
-            <option value="3">Three</option>
+            <option *ngFor="let currency of currencies;" [value]="currency.value">{{currency.value}}</option>
           </select>
         </div>
         <div class="mb-3">
