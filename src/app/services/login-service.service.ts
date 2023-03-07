@@ -51,7 +51,7 @@ async login( email:string, password:string):Promise<boolean>{
           console.log('')
           this.tokenStorage.saveToken(data.token);
           this.tokenStorage.saveUser(data.token);
-
+          console.log(this.tokenStorage);
           this.isLoginFailed = false;
           this.isLoggedIn = true;
           return true;

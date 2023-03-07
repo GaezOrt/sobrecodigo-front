@@ -24,8 +24,8 @@ export class SignUpComponent implements OnInit {
       panelClass: 'my-custom-snackbar-loading'
     })
     this.registerService.registerNewUser(this.username,this.email, this.password).then(async val=>{
-
-      if(val.resultado===("Si")){
+    
+      if(val===true){
 
         this.snackBar.open("Signed up correctly.", undefined, {
           duration: 3000,
