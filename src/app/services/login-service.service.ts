@@ -48,7 +48,7 @@ async login( email:string, password:string):Promise<boolean>{
 
    return this.authService.login(email, password).toPromise().then(
         (data:any) => {
-          console.log('')
+          console.log()
           this.tokenStorage.saveToken(data.token);
           this.tokenStorage.saveUser(data.token);
           console.log(this.tokenStorage);
