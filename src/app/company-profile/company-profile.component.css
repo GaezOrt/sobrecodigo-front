@@ -120,11 +120,11 @@
 .cards {
   display: flex;
   flex-wrap: wrap;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center;
   gap: 20px;
   /* padding: auto; */
-  width: 90%;
+  width: 95%;
   /* width: 100%; */
   margin: 20px auto;
   box-sizing: border-box;
@@ -151,7 +151,7 @@
     padding: 0 19px;
     text-align: center;
   }
-  .buttons-cu {  
+  .buttons-cu {
     width: 700px;
   }
 

@@ -2,15 +2,54 @@
   <div class="modal-dialog  modal-dialog-centered">
     <div class="modal-content">
       <div class="modal-header">
-        <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+        <h1 class="modal-title fs-6 m-0" id="exampleModalLabel">Nuevo empleo</h1>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
-        ...
+      <form>
+        <div class="mb-3">
+          <label for="puesto_solicitado" class="form-label">Puesto Solicitado</label>
+          <input placeholder="e.j Desarrollador FullStack" type="text" class="form-control form-control-sm" id="puesto_solicitado" aria-describedby="puesto_solicitado">
+        </div>
+        <div class="mb-3">
+          <label for="job-position" class="form-label">Posición</label>
+          <select id="job-position" class="form-select form-select-sm" aria-label="Default select example">
+            <option selected>Seleccionar</option>
+            <option value="1">One</option>
+            <option value="2">Two</option>
+            <option value="3">Three</option>
+          </select>
+        </div>
+        <div class="mb-3">
+          <label class="form-label" for="job-description">Descripción</label>
+          <input placeholder="Breve descripción del puesto" type="text" class="form-control form-control-sm" id="exampleCheck1">
+        </div>
+        <div class="mb-3">
+          <label for="job-modality" class="form-label">Modalidad de Trabajo</label>
+          <select id="job-modality" class="form-select form-select-sm" aria-label="Default select example">
+            <option selected>Seleccionar</option>
+            <option value="1">One</option>
+            <option value="2">Two</option>
+            <option value="3">Three</option>
+          </select>
+        </div>
+        <div class="mb-3">
+          <label for="job-salary" class="form-label">Salario</label>
+          <select id="job-salary" class="form-select form-select-sm" aria-label="Default select example">
+            <option selected>Seleccionar</option>
+            <option value="1">One</option>
+            <option value="2">Two</option>
+            <option value="3">Three</option>
+          </select>
+        </div>
+        <div class="mb-3">
+          <input type="checkbox" class="form-check-input mx-1" id="job_reubication" aria-describedby="job_reubication">
+          <label for="job_reubication" class="form-check-label">¿Reubicación?</label>
+        </div>
+      </form>
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
+        <button data-bs-dismiss="modal" type="submit" class="btn btn-primary rounded-pill">Enviar</button>
       </div>
     </div>
   </div>

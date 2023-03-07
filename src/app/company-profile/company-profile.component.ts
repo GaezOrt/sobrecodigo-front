@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { JobService } from '../services/job.service';
+declare var $: any;
+
 
 @Component({
   selector: 'app-company-profile',
@@ -11,6 +13,9 @@ export class CompanyProfileComponent implements OnInit {
   constructor(private dataJob:JobService) { }
 
   ngOnInit(): void {
+    $(document).ready(function() {
+      $('[data-bs-toggle="tooltip"]').tooltip();
+    })
 
     this.dataJob.obtenerJobs().subscribe((data:any) => {
       console.log(data);
