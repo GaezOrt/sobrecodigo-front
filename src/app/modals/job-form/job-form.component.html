@@ -7,10 +7,12 @@
 <form action="">
     <mat-form-field class="formElement">
         <mat-label>Puesto Solicitado</mat-label>
+        <label>Puesto Solicitado</label>
         <input matInput placeholder="Puesto solicitado" formControlName="puesto">
     </mat-form-field>
 
     <mat-form-field class="formElement">
+        <label>Posición</label>
         <mat-label>Posición</mat-label>
         <mat-select>
             <mat-option *ngFor="let posicion of posiciones" [value]="posicion.value" formControlName="posicion">
@@ -20,11 +22,13 @@
     </mat-form-field>
 
     <mat-form-field class="formElement">
+        <label>Descripción</label>
         <mat-label>Descripción</mat-label>
         <input matInput placeholder="Descripción" formControlName="descripcion">
     </mat-form-field>
     
     <mat-form-field class="formElement">
+        <label for="">Modalidad de trabajo</label>
         <mat-label>Modialidad de trabajo</mat-label>
         <mat-select>
             <mat-option *ngFor="let modality of modalities" [value]="modality.value" formControl="modality">
@@ -34,6 +38,7 @@
     </mat-form-field>
 
     <mat-form-field class="formElement">
+        <label for="">Salario</label>
         <mat-label>Salario</mat-label>
         <mat-select>
             <mat-option *ngFor="let currency of currencies" [value]="currency.value">
@@ -44,11 +49,13 @@
     </mat-form-field>
 
     <mat-form-field class="formElement">
+        <label for="">Reubicacion</label>
         <mat-label>Ofrecen Reubicación</mat-label>        
         <input matInput placeholder="Reubicacion (opcional) radio-btn" formControlName="reubicacion">
     </mat-form-field>
 
     <mat-form-field class="formElement">
+        <label for="">Requisitos</label>
         <mat-label>Requisitos</mat-label>
         <input matInput placeholder="Requisitos" formControlName="requisitos">
     </mat-form-field>

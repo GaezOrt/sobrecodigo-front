@@ -2,7 +2,7 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  width: 300px;
+  width: 500px;
 
 }
 
@@ -23,4 +23,11 @@ h3 {
   text-align: center;
   background-color: #1fc0e9;
   
+}
+
+.formElement {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
 }
