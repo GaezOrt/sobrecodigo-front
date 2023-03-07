@@ -34,6 +34,7 @@ import { JobDescriptionComponent } from './components/job-description/job-descri
 import { JobFullInfoComponent } from './components/job-full-info/job-full-info.component';
 import { SignUpCompanyComponent } from './components/sign-up-company/sign-up-company.component';
 import { JobsPageComponent } from './jobs-page/jobs-page.component';
+import {JobFormComponent } from './components/modals/job-form/job-form.component'
 import { FormsModule } from '@angular/forms';
 import { JobFilterPipe } from './jobs-page/job-filter.pipe';
 import {MatGridListModule} from '@angular/material/grid-list'
@@ -68,6 +69,7 @@ import { AuthInterceptor } from './helpers/auth.interceptor';
     SignInComponent,
     SignUpCompanyComponent,
     JobsPageComponent,
+    JobFormComponent,
     JobFilterPipe,
     AppFooter,
     ProjectDetailsPageComponent,
