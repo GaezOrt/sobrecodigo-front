@@ -20,7 +20,7 @@ import { ProfilePageComponent } from './components/profile-page/profile-page.com
 import { LandingComponent } from './components/landing/landing.component';
 import { MatIconModule } from '@angular/material/icon';
 import { ProjectPageComponent } from './components/project-page/project-page.component';
-import { HttpClientModule } from '@angular/common/http';
+import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { JobsComponent } from './components/jobs/jobs.component';
 import { MatCommonModule } from '@angular/material/core';
@@ -38,8 +38,11 @@ import { FormsModule } from '@angular/forms';
 import { JobFilterPipe } from './jobs-page/job-filter.pipe';
 import {MatGridListModule} from '@angular/material/grid-list'
 
+import { MatSnackBar, MatSnackBarModule } from '@angular/material/snack-bar';
 import { AppFooter } from './components/footer/footer.component';
 import { ProjectDetailsPageComponent } from './components/project-details-page/project-details-page.component'
+import { CommonModule } from '@angular/common';
+import { AuthInterceptor } from './helpers/auth.interceptor';
 
 @NgModule({
   declarations: [
@@ -85,11 +88,12 @@ import { ProjectDetailsPageComponent } from './components/project-details-page/p
     MatSelectModule,
     RouterModule,
     FormsModule,
-
-    RouterModule
+    CommonModule,
+    RouterModule,
+    MatSnackBarModule
 
   ],
-  providers: [],
+  providers: [{ provide: HTTP_INTERCEPTORS, useClass: AuthInterceptor, multi: true }],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

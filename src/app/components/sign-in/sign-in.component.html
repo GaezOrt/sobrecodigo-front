@@ -7,14 +7,12 @@
     <h1 id="header">Entrar</h1>
     <form action="" method="post">
 
-     
-      
       <label>Email</label>
-      <input type="email" name="email" required>
+      <input type="email" name="email" required [(ngModel)]="email" #ctrl="ngModel" required [ngModelOptions]="{standalone: true}">
       <label>Contraseña</label>
-      <input type="password" name="password" required minlength="8">
-    
-      <input type="submit" value="Entrar">
+      <input type="password" name="password" required minlength="8"[(ngModel)]="password" #ctrl="ngModel" required [ngModelOptions]="{standalone: true}">
+      
+      <input type="submit" (click)="submitLogin()" value="Entrar">
 
     </form>
     

@@ -25,6 +25,7 @@
     "@fortawesome/angular-fontawesome": "^0.7.0",
     "@fortawesome/fontawesome-svg-core": "^6.2.1",
     "@fortawesome/free-solid-svg-icons": "^6.2.1",
+    "@material/snackbar": "^14.0.0",
     "@popperjs/core": "^2.11.6",
     "ajv": "^6.12.6",
     "bootstrap": "^5.2.3",
