@@ -1,56 +1,51 @@
 <app-navbar-landing></app-navbar-landing>
 
-<div class="profile">
-  <div class="user-details">
-    <img
-      src="../../assets/imgs/img-profile.png"
-      alt="Foto Perfil"
-      class="img-profile"
-    />
-    <h2 class="user-fullname">
-      Company <i class="fa-solid fa-registered"></i>
-    </h2>
-    <h3 class="user-title">Nombre Responsable RRHH o Recruiter</h3>
-    <p class="user-location"><mat-icon>location_on</mat-icon> Argentina</p>
-    <div class="company-counters">
-      <ul class="icons-counter">
-        <li class="icon-counter"><i class="fa-solid fa-briefcase"></i></li>
-        <li class="icon-counter"><i class="fa-solid fa-users"></i></li>
-      </ul>
-      <ul class="detail-counters">
-        <li class="detail">
-          23 <br />
-          Postulaciones
-        </li>
-        <li class="detail">
-          23 <br />
-          Seguidores
-        </li>
-      </ul>
+<!-- Profile company -->
+<div class="container-fluid mt-2">
+  <div class="row justify-content-center">
+    <div class="user-details col-12 col-sm-6 col-md-4">
+      <img
+        src="../../assets/imgs/img-profile.png"
+        alt="Foto Perfil"
+        class="img-profile"
+      />
+      <h2 class="user-fullname">
+        Company <i class="fa-solid fa-registered"></i>
+      </h2>
+      <h3 class="user-title">Nombre Responsable RRHH o Recruiter</h3>
+      <p class="user-location"><mat-icon>location_on</mat-icon> Argentina</p>
+      <div class="company-counters">
+        <ul class="icons-counter">
+          <li ><i class="icon-counter fa-solid fa-briefcase"></i>23 Postulaciones</li>
+          <li ><i class="icon-counter fa-solid fa-users"></i>23 Seguidores</li>
+        </ul>
+      </div>
+      <div class="user-social">
+        <a href="https://linkedin.com"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="mailto:correo@correo"><i class="fa-solid fa-envelope"></i></a>
+        <a href="https://dominioempresa.com"><i class="fa-solid fa-globe"></i></a>
+      </div>
+      <!-- Button new empleo -->
+      <div class="buttons-cu">
+        <button
+        type="button"
+        class="btn btn-success rounded-circle"
+        data-bs-toggle="modal"
+        data-bs-target="#job-form">
+          <i data-bs-toggle="tooltip"
+          data-bs-placement="bottom"
+          data-bs-title="Crear nueva vacante" class="fa-solid fa-plus"></i>
+        </button>
+        <app-job-form></app-job-form>
+      </div>
     </div>
-    <div class="user-social">
-      <a href="https://linkedin.com"><i class="fa-brands fa-linkedin"></i></a>
-      <a href="mailto:correo@correo"><i class="fa-solid fa-envelope"></i></a>
-      <a href="https://dominioempresa.com"><i class="fa-solid fa-globe"></i></a>
-    </div>
-  </div>
-  <div class="buttons-cu">
-    <button
-    type="button"
-    class="btn btn-success rounded-circle"
-    data-bs-toggle="modal"
-    data-bs-target="#job-form">
-      <i data-bs-toggle="tooltip"
-      data-bs-placement="bottom"
-      data-bs-title="Crear nueva vacante" class="fa-solid fa-plus"></i>
-    </button>
-    <app-job-form></app-job-form>
+    <!-- Jobs List -->
   </div>
 </div>
 <div class="jobs-list">
   <div class="cards">
     <tr *ngFor="let job of jobs">
-      <app-jobs-card [cardInfo]="job"></app-jobs-card>
+      <app-job-description [cardInfo]="job"></app-job-description>
     </tr>
   </div>
 </div>

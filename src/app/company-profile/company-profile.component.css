@@ -9,57 +9,41 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 40px auto;
-  margin-bottom: 15px;
-  width: 929px;
-  height: 619px;
-
   background: #f3f3f3;
-  /* box-shadow: 4px 4px 4px 2px rgba(0, 0, 0, 0.25); */
   box-shadow: var(--card-shadow);
   border-radius: 30px;
 }
 
 .img-profile {
-  width: 168px;
-  padding: 16px;
+  width: 120px;
+  padding: 5px;
 }
 
 .user-fullname {
-  height: 39px;
-
-  font-family: "Inter";
-  font-style: normal;
-  font-weight: 300;
-  font-size: 32px;
-  line-height: 39px;
-  /* identical to box height */
-
-  color: #4472c3;
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 24px;
+    color: #4472c3;
 }
 
 .user-title {
-  height: 24px;
-
   font-family: "Inter";
-  font-style: normal;
-  font-weight: 300;
-  font-size: 20px;
-  line-height: 24px;
-
-  color: #3d3d3d;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 10px;
+    color: #3d3d3d;
+    text-align: center;
 }
 
 .user-location {
-  height: 24px;
-
-  font-family: "Inter";
-  font-style: normal;
-  font-weight: 300;
-  font-size: 20px;
-  line-height: 24px;
-
-  color: #4e4e4e;
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 300;
+    display: flex;
+    color: #4e4e4e;
+    align-items: center;
 }
 .company-counters {
   display: flex;
@@ -68,15 +52,24 @@
 
 .icons-counter {
   display: flex;
-  list-style: none;
+    list-style: none;
+    padding: 0;
+    flex-wrap: wrap;
+    margin: 0;
+}
+
+.icons-counter > li {
+  display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 10px;
 }
 
 .icon-counter {
-  padding: 0 65px;
-  margin-top: 25px;
-  align-items: center;
-  color: #4472c3;
-  font-size: 48px;
+
+    color: #4472c3;
+    font-size: 25px;
 }
 
 .detail-counters {
@@ -94,21 +87,18 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
-  margin-top: 32px;
+
 }
 
 .user-social i {
-  font-size: 45px;
-  padding: 16px;
+  font-size: 30px;
+  padding: 5px;
   color: #3d3d3d;
 }
 
 .buttons-cu {
-  display: flex;
-  align-items: flex-end;
-  float: right;
-  width: 929px;
-  justify-content: flex-end;
+  align-self: end;
+  margin: 10px;
 }
 .btn-add {
   color: #30c961;
@@ -132,7 +122,7 @@
 
 
 /*----------- Medias Queries ------------------*/
-@media screen and (min-width: 481px) and (max-width: 780px) {
+/* @media screen and (min-width: 481px) and (max-width: 780px) {
   .user-details {
     width: 85%;
     height: 560px;
@@ -213,4 +203,4 @@
   .cards{
     width: 100%;
   }
-}
+} */
