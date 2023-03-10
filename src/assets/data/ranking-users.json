@@ -1,6 +1,7 @@
 {
   "rankings": [{
       "username": "@Ana",
+      "position": "Trainee",
       "desafiosCompletados":"20",
       "proyectosFinalizados": "20",
       "commitsRealizados": "20",
@@ -8,6 +9,7 @@
   },
   {
     "username": "@Ana",
+    "position": "Junior",
     "desafiosCompletados":"20",
     "proyectosFinalizados": "20",
     "commitsRealizados": "20",
@@ -15,6 +17,7 @@
 },
 {
   "username": "@Federico",
+  "position": "Srr",
   "desafiosCompletados":"20",
   "proyectosFinalizados": "20",
   "commitsRealizados": "20",
@@ -22,6 +25,7 @@
 },
 {
   "username": "@Potter",
+  "position": "Sr",
   "desafiosCompletados":"20",
   "proyectosFinalizados": "20",
   "commitsRealizados": "20",
