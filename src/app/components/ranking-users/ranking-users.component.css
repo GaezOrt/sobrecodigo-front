@@ -1,3 +1,8 @@
+main{
+  height: 100%;
+  overflow: scroll;
+}
+
 table {
   width: 100%;
   border-collapse: collapse;
