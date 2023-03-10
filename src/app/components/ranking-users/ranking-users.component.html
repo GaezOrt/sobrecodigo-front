@@ -1,11 +1,12 @@
 <app-navbar-landing></app-navbar-landing>
 
 
-
+<main>
 <table>
     <thead>
       <tr>
         <th>Username</th>
+        <th>Posición</th>
         <th>Desafíos completados</th>
         <th>Proyectos finalizados</th>
         <th>Commits realizados</th>
@@ -16,6 +17,7 @@
       <tr  *ngFor="let ranking of rankings">
 
           <td>{{ranking.username}}</td>
+          <td>{{ranking.position}}</td>
           <td>{{ranking.desafiosCompletados}}</td>
           <td>{{ranking.proyectosFinalizados}}</td>
           <td>{{ranking.commitsRealizados}}</td>
@@ -26,4 +28,5 @@
 
     </tbody>
   </table>
+</main>
 <app-footer></app-footer>
