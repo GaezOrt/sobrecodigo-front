@@ -1,14 +1,16 @@
 {
   "rankings": [{
-      "username": "@Ana",
+    "image": "../../../assets/imgs/random-onesvg.svg",
+    "username": "Ana",
       "position": "Trainee",
-      "desafiosCompletados":"20",
+      "desafiosCompletados":"40",
       "proyectosFinalizados": "20",
-      "commitsRealizados": "20",
+      "commitsRealizados": "40",
       "contacto":["Discord","LinkedIn","GitHub"]
   },
   {
-    "username": "@Ana",
+    "image": "../../../assets/imgs/random-onesvg.svg",
+    "username": "Ana",
     "position": "Junior",
     "desafiosCompletados":"20",
     "proyectosFinalizados": "20",
@@ -16,19 +18,21 @@
     "contacto":["Discord","LinkedIn","GitHub"]
 },
 {
-  "username": "@Federico",
+  "image": "../../../assets/imgs/random-onesvg.svg",
+  "username": "Federico",
   "position": "Srr",
-  "desafiosCompletados":"20",
+  "desafiosCompletados":"10",
   "proyectosFinalizados": "20",
-  "commitsRealizados": "20",
+  "commitsRealizados": "10",
   "contacto":["Discord","LinkedIn","GitHub"]
 },
 {
-  "username": "@Potter",
+  "image": "../../../assets/imgs/random-onesvg.svg",
+  "username": "Potter",
   "position": "Sr",
-  "desafiosCompletados":"20",
+  "desafiosCompletados":"50",
   "proyectosFinalizados": "20",
-  "commitsRealizados": "20",
+  "commitsRealizados": "50",
   "contacto":["Discord","LinkedIn","GitHub"]
 }
 ]
