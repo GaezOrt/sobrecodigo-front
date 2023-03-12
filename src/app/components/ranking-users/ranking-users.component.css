@@ -1,35 +1,12 @@
 main{
-  height: 100%;
-  overflow: scroll;
+  height: 100%; 
 }
 
-table {
-  width: 100%;
-  border-collapse: collapse;
-}
-
-table td, table th {
-  border: 1px solid #ddd;
-  padding: 8px;
-}
-
-table tr:nth-child(even) {
-  background-color: #f2f2f2;
-}
-
-table tr:hover {
-  background-color: #ddd;
-}
-
-table th {
-  padding-top: 12px;
-  padding-bottom: 12px;
-  text-align: left;
-  background-color: #4472c3;
-  color: white;
-}
-
-.icon{
-color:#4472c3;
-font-size:1.7rem
+#card-container{
+  width: 95%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  margin: 20px auto;
+  box-sizing: border-box;
 }
