@@ -1,12 +1,34 @@
 <div class="card" routerLink="/profile-page">
 
-  <div class="img-container" [ngStyle]="{'border':'3px solid #1a98cf' }">
-    <img src={{image}} width="100%" height="100%" alt="user-image">
-    <mat-icon id="cup" [ngStyle]="{'color':'gold' }">emoji_events</mat-icon>
+  <div>
+    <div class="img-container" [ngStyle]="{'border':'3px solid #1a98cf' }">
+      <img src={{image}} width="100%" height="100%" alt="user-image">
+      <mat-icon id="cup" [ngStyle]="{'color':'gold' }">emoji_events</mat-icon>
+    </div>
+    <div id="name-container">
+      <p id="user-name">{{username}}</p>
+      <p>{{position}}</p>
+    </div>
   </div>
 
-    <p> Usuario: {{username}}</p>
-    <p> Contribuciones GIT: {{amountContributions}}</p>
-    <p> Desafíos completos: {{challengesCompleted}}</p>
+  <div id="stats-container">
+    <div class="stats">
+      <h4>Desafíos Completados</h4>
+      <p>{{challengesCompleted}}</p>
+    </div>
+    <div class="stats" *ngIf="projectsDone">
+      <h4>Proyectos Completados</h4>
+      <p>{{projectsDone}}</p>
+    </div>
+    <div class="stats">
+      <h4>Contribuciones Git</h4>
+      <p>{{amountContributions}}</p>
+    </div>
+  </div>
 
+  <div class="contact">
+    <span class="fa-brands fa-linkedin icon"></span>
+    <span class="fa-brands fa-discord icon"></span>
+    <span class="fa-brands fa-github icon"></span>
+  </div>
 </div>
