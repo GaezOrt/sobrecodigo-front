@@ -11,6 +11,8 @@ export class UserCardComponent implements OnInit {
   @Input() challengesCompleted: string;
   @Input() amountContributions: string;
   @Input() image:string;
+  @Input() projectsDone:string;
+  @Input() position:string;
 
   constructor() { }
 
