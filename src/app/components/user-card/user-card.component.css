@@ -1,19 +1,18 @@
 .card {
   cursor:pointer;
-  width: 14em;
-  aspect-ratio: 2/3;
+  width: 18em;
+  aspect-ratio: 1/1.2;
+  /* aspect-ratio: 2/3; */
   padding: 1.2em;
   background-color: white;
   border-radius: 30px;
   /* box-shadow: 1px 1px 2px grey; */
   box-shadow: 0px 4px 20px 3px rgba(0, 0, 0, 0.25);
   margin: 1em;
-
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-evenly;
-
+  justify-content: center;  
   transition: 0.4s;
 
 }
@@ -22,7 +21,7 @@
 }
 .img-container {
   width: 40%;
-  margin: 1em;
+  margin: var(--margin-center-horizontal);
   background-color: #f0f0f0;
   aspect-ratio: 1/1;
   border-radius: 100%;
@@ -51,19 +50,54 @@
 }
 
 .card p {
-  font-size: 14px;
-  line-height: 1.5;
-  align-self: flex-start;
-  
-
+  margin: 0;
+  font-size: 15px;
+  text-align: center;
+  font-weight: 500;
+  align-self: center;
+  color: var(--blue);
+}
+.card h4{
+  margin: 0;
+  font-weight: 400;
+  font-size: 15px;
 }
 
-#user {
-  font-size: 40px;
-  width: auto;
-  height: auto;
-  color: white;
+#name-container{
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+  margin-top: 20px;
+
+}
+#name-container p:not(#user-name){
+  color: grey;
+}
+#user-name{
+  font-size: 16px;
+  font-weight: 600;
+  /* color: var(--blue); */
+}
+#user-name::before{
+  content: "@";
 }
 
+#stats-container{
+  width: 100%;
+  padding: 5%;
+}
+.stats{
+  display: flex;
+  justify-content: space-between;
+}
+.contact{
+  width: inherit;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
 
-
+.icon{
+  color: var(--blue-light);
+  font-size:1.5rem
+}
