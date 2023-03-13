@@ -1,12 +1,12 @@
-<div class="card" routerLink="/profile-page">
+<div class="card">
 
   <div>
-    <div class="img-container" [ngStyle]="{'border':'3px solid #1a98cf' }">
+    <div class="img-container" routerLink="/profile-page">
       <img src={{image}} width="100%" height="100%" alt="user-image">
       <mat-icon id="cup" [ngStyle]="{'color':'gold' }">emoji_events</mat-icon>
     </div>
     <div id="name-container">
-      <p id="user-name">{{username}}</p>
+      <p id="user-name" routerLink="/profile-page">{{username}}</p>
       <p>{{position}}</p>
     </div>
   </div>
@@ -27,8 +27,14 @@
   </div>
 
   <div class="contact">
-    <span class="fa-brands fa-linkedin icon"></span>
-    <span class="fa-brands fa-discord icon"></span>
-    <span class="fa-brands fa-github icon"></span>
+    <a href="https://www.linkedin.com">
+      <span class="fa-brands fa-linkedin icon"></span>
+    </a>
+    <a href="https://www.discord.com">
+      <span class="fa-brands fa-discord icon"></span>
+    </a>
+    <a href="https://www.github.com">
+      <span class="fa-brands fa-github icon"></span>
+    </a>
   </div>
 </div>
