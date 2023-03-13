@@ -8,14 +8,14 @@ import { ProjectService } from '../../services/project.service';
 })
 export class ProfilePageComponent implements OnInit {
 
-  projects:any;
+  projects:any[];
   
   constructor(private dataProject:ProjectService) { }
 
   ngOnInit(): void {
-    this.dataProject.obtenerProjects().subscribe(data => {
-      console.log(data.projects);
-      this.projects = data.projects;
+    this.dataProject.obtenerPersonalProjects().subscribe(data => {
+      console.log(data);
+      this.projects = data;
     });
   }
 }
