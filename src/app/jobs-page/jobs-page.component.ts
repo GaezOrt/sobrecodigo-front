@@ -1,86 +1,35 @@
-import {  Component, OnInit } from '@angular/core';
-import { Observable, of } from 'rxjs';
-
-export class Trabajo  {
-      posicion: string
-      experiencia: string
-      empresa: string
-      ubicacion: string
-      contacto: string
-      comentario: string
-}
-
-
+import { Component, OnInit } from '@angular/core';
+import { Trabajo } from '../interfaces/jobs-interface';
+import { JobService } from 'src/app/services/job.service';
 @Component({
   selector: 'app-jobs-page',
   templateUrl: './jobs-page.component.html',
-  styleUrls: ['./jobs-page.component.css']
+  styleUrls: ['./jobs-page.component.css'],
 })
-export class JobsPageComponent implements OnInit{
-
-  constructor() {}
-
-  empleos? : Trabajo[];
+export class JobsPageComponent implements OnInit {
+  constructor(private jobServices: JobService) {}
+  empleos?: Trabajo[];
 
   ngOnInit(): void {
-    this.empleos = this.trabajos;
+    //simulando que esto me trae la API
+    this.jobServices.obtenerJobs().subscribe((data: any) => {
+      console.log(data);
+      this.empleos = data.jobs;
+    });
   }
 
-
-  posicion : string = '';
-  ubicacion : string = '';
-  experiencia : string = '';
+  position: string = '';
+  location: string = '';
+  experience: string = '';
+  mail: string;
+  company: string;
+  description: string;
 
   limpiar() {
-    this.posicion = '';
-    this.ubicacion = '';
-    this.experiencia = '';
+    this.position = '';
+    this.location = '';
+    this.experience = '';
+    this.mail = '';
+    this.description = '';
   }
-
-
-
-  //simulando que esto me trae la API
-  trabajos = [
-    {
-      posicion: 'full Stack',
-      experiencia: 'junior',
-      empresa: 'google',
-      ubicacion: 'remoto',
-      contacto: 'linkedin@gmail.com',
-      comentario: 'necesitas 10 años de experiencia',
-    },
-    {
-      posicion: 'full Stack',
-      experiencia: 'trainee',
-      empresa: 'google',
-      ubicacion: 'remoto',
-      contacto: 'linkedin@gmail.com',
-      comentario: 'necesitas 10 años de experiencia',
-    },
-    {
-      posicion: 'backend',
-      experiencia: 'junior',
-      empresa: 'google',
-      ubicacion: 'remoto',
-      contacto: 'linkedin@gmail.com',
-      comentario: 'necesitas 10 años de experiencia',
-    },
-    {
-      posicion: 'frontend',
-      experiencia: 'junior',
-      empresa: 'google',
-      ubicacion: 'remoto',
-      contacto: 'linkedin@gmail.com',
-      comentario: 'necesitas 10 años de experiencia',
-    },
-    {
-      posicion: 'full Stack',
-      experiencia: 'senior',
-      empresa: 'google',
-      ubicacion: 'remoto',
-      contacto: 'linkedin@gmail.com',
-      comentario: 'necesitas 10 años de experiencia',
-    },
-  ];
-
 }

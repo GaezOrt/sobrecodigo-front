@@ -19,19 +19,17 @@ const routes: Routes = [
   { path: 'ranking-users', component: RankingUsersComponent },
   { path: 'profile-page', component: ProfilePageComponent },
   { path: 'company-profile', component: CompanyProfileComponent },
-  { path: 'project-page', component: ProjectPageComponent},
-  { path: 'project-details', component: ProjectDetailsPageComponent},
-  { path: 'jobs', component: JobsComponent},
-  {path: 'home', component: LandingComponent},
-  { path: '**', redirectTo: '/home', pathMatch: 'full'},
-  { path: 'jobs-page', component: JobsPageComponent},
-  {path: 'home', component:LandingComponent},
-  { path: '', redirectTo: '/home', pathMatch: 'full'},
-
+  { path: 'project-page', component: ProjectPageComponent },
+  { path: 'project-details', component: ProjectDetailsPageComponent },
+  { path: 'jobs-page', component: JobsPageComponent },
+  { path: 'home', component: LandingComponent },
+  { path: '**', redirectTo: '/home', pathMatch: 'full' },
+  { path: 'home', component: LandingComponent },
+  { path: '', redirectTo: '/home', pathMatch: 'full' },
 ];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+  exports: [RouterModule],
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {}

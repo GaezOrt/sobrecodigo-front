@@ -1,69 +1,43 @@
 <app-navbar-landing></app-navbar-landing>
+<main>
+    <div id="header-container">
+        <h1>Empleos</h1>
+    </div>
 
-<h1>Empleos</h1>
+    <!-- filters -->
+    <form #myForm="ngForm">
+        <label for="location">Ubicación</label>
+        <select id="location" name="location" [(ngModel)]="location">
+            <option value="" disabled selected>ubicacion</option>
+            <option value="remoto">Remoto</option>
+            <option value="buenos Aires">Buenos Aires</option>
+            <option value="cordoba">Cordoba</option>
+        </select>
+        <label for="position">Puesto</label>
+        <select name="position" id="position" [(ngModel)]="position">
+            <option class="default" value="" disabled selected>posicion</option>
+            <option value="full Stack">Full Stack</option>
+            <option value="frontend">Frontend</option>
+            <option value="backend">Backend</option>
+        </select>
+        <label for="experience">Experiencia</label>
+        <select name="experience" id="experience" [(ngModel)]="experience">
+            <option value="" disabled selected>experiencia</option>
+            <option value="trainee">Trainee</option>
+            <option value="junior">Junior</option>
+            <option value="semi Senior">Semi Senior</option>
+            <option value="senior">Senior</option>
+        </select>
+    </form>
 
-<!-- filtros -->
-<form #myForm="ngForm">
-
-    <select name="ubicacion" [(ngModel)]="ubicacion">
-        <option value="" disabled selected>ubicacion</option>
-        <option value="remoto">Remoto</option>
-        <option value="buenos Aires">Buenos Aires</option>
-        <option value="cordoba">Cordoba</option>
-    </select>
-
-
-    <select name="posicion" [(ngModel)]="posicion">
-        <option value="" disabled selected>posicion</option>
-        <option value="full Stack">Full Stack</option>
-        <option value="frontend">Frontend</option>
-        <option value="backend">Backend</option>
-    </select>
-
-
-
-    <select name="experiencia" [(ngModel)]="experiencia">
-        <option value="" disabled selected>experiencia</option>
-        <option value="trainee">Trainee</option>
-        <option value="junior">Junior</option>
-        <option value="semi Senior">Semi Senior</option>
-        <option value="senior">Senior</option>
-    </select>
-
-</form>
-
-
-
-<br>
-<br>
-
-
-<button (click)="limpiar()">
-    limpiar filtros
-</button>
-
-
-
-
-<br>
-<br>
-
-
-<!-- lista de filtros -->
-<div>
-{{posicion}}
-{{ubicacion}}
-{{experiencia}}
-</div>
-
-
-<br>
-<br>
-
-
-<!-- items -->
-<div *ngFor="let empleo of empleos | jobFilter: myForm.value  " style="border: 1px solid black;">
-    <h1>{{empleo.posicion}}</h1>
-    <p>{{empleo.ubicacion}}</p>
-    <p>{{empleo.experiencia}}</p>
-</div>
+    <div id="button-container">
+        <button class="btn btn-primary btn-sm" (click)="limpiar()">
+            Limpiar Filtro
+        </button>
+    </div>
+    <!-- items -->
+    <div id="jobs-container">
+        <app-job-description *ngFor="let empleo of empleos | jobFilter: myForm.value"
+            [cardInfo]="empleo"></app-job-description>
+    </div>
+</main>

@@ -1,0 +1,68 @@
+* {
+  box-sizing: border-box;
+}
+main {
+  padding: 10px;
+  min-height: 90vh;
+}
+form {
+  padding: 5px;
+  display: flex;
+  justify-content: space-evenly;
+}
+form select {
+  text-align: center;
+  font-size: 14px;
+  font-family: "Roboto";
+  border-radius: 0.25em;
+  padding-inline: 8px;
+  padding-block: 5px;
+  text-transform: capitalize;
+}
+select:active {
+  outline-color: var(--blue);
+}
+select:enabled {
+  outline-color: var(--blue-light);
+}
+option {
+  color: rgb(158, 158, 158);
+  border-radius: 14px;
+}
+label {
+  display: none;
+}
+
+#jobs-container {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+#header-container h1 {
+  margin: 0 0;
+  font-size: 60px;
+  margin-top: 50px;
+  margin-bottom: 60px;
+  color: var(--blue);
+  text-align: center;
+  font-weight: 700;
+}
+#button-container {
+  padding: 15px 25px;
+  margin: 0 auto;
+}
+@media (min-width: 400px) {
+  form {
+    margin: 0 auto;
+    justify-content: flex-start;
+    width: 90%;
+    padding-left: 25px;
+    gap: 15px;
+  }
+  #button-container {
+    width: 90%;
+  }
+}
