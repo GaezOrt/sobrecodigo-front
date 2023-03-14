@@ -5,22 +5,22 @@ import { Pipe, PipeTransform } from '@angular/core';
 })
 export class JobFilterPipe implements PipeTransform {
   transform(values: any, form: any): any {
-    if (form.experiencia == '' && form.ubicacion == '' && form.posicion == '') {
+    if (form.experience == '' && form.location == '' && form.position == '') {
       return values;
     } 
     else {
       let result = values;
 
-      if (form.experiencia != '') {
-        result = result.filter( (job : any) => job.experiencia.toLowerCase() == form.experiencia.toLowerCase())
+      if (form.experience != '') {
+        result = result.filter( (job : any) => job.experience.toLowerCase() == form.experience.toLowerCase())
       }
-      if (form.ubicacion != '') {
-        result = result.filter( (job : any  ) => job.ubicacion.toLowerCase() == form.ubicacion.toLowerCase())
+      if (form.location != '') {
+        result = result.filter( (job : any  ) => job.location.toLowerCase() == form.location.toLowerCase())
       }
-      if (form.posicion != '') {
-        result = result.filter( (job : any) => job.posicion.toLowerCase() == form.posicion.toLowerCase())
+      if (form.position != '') {
+        result = result.filter( (job : any) => job.position.toLowerCase() == form.position.toLowerCase())
       }
- 
+      console.log(result);
       return result;
     }
   }
