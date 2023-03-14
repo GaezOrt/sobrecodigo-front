@@ -14,6 +14,8 @@ export class SignUpComponent implements OnInit {
   email: string = '';
   password: string = '';
   confirmPassword: string = '';
+  rubro:string;
+
   constructor(private registerService:RegisterService, private router:Router, private snackBar:MatSnackBar, private loginService:LoginService) { }
 
   ngOnInit(): void {
@@ -22,8 +24,9 @@ export class SignUpComponent implements OnInit {
     this.snackBar.open("Signing Up", undefined, {
       duration: 3000,
       panelClass: 'my-custom-snackbar-loading'
-    })
-    this.registerService.registerNewUser(this.username,this.email, this.password).then(async val=>{
+    });
+
+    this.registerService.registerNewUser(this.username,this.email, this.password, this.rubro).then(async val=>{
     
       if(val===true){
 

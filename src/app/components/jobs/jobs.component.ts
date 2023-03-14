@@ -8,7 +8,7 @@ import { JobService } from 'src/app/services/job.service';
   styleUrls: ['./jobs.component.css']
 })
 export class JobsComponent implements OnInit {
-jobs:any[]=['Argentina', 'USA', 'Uruguay', 'Chile', 'Perú'];
+jobs:any[];
 positions:any[]=['Backend', 'Frontend', 'Data Analytics', 'Database'];
 experiences:any[]=['Trainee', 'Junior', 'Semi-senior', 'Senior'];
 jobControl:any;
@@ -21,9 +21,9 @@ selected="Ubicación";
 
   ngOnInit(): void {
 
-    this.dataJob.obtenerJobs().subscribe((data:any) => {
+    this.dataJob.obtenerJobs().subscribe((data:any[]) => {
       console.log(data);
-      this.jobs = data.jobs;
+      this.jobs = data;
     });
   }
 

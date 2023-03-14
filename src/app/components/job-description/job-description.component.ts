@@ -12,7 +12,7 @@ export class JobDescriptionComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
-
+    console.log(this.cardInfo)
     
   }
   showLess(){

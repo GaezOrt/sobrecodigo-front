@@ -8,7 +8,7 @@ import { AuthService } from './auth.service';
 export class RegisterService{
 
 constructor (private authService: AuthService) {}
-registerNewUser(username:string, email:string, password:string):Promise<any>{
+registerNewUser(username:string, email:string, password:string, rubro:any):Promise<any>{
 
     return this.authService.register(username,email,password).toPromise().then(val=>
       {

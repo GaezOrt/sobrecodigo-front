@@ -12,9 +12,9 @@ export class JobsPageComponent implements OnInit {
 
   ngOnInit(): void {
     //simulando que esto me trae la API
-    this.jobServices.obtenerJobs().subscribe((data: any) => {
+    this.jobServices.obtenerJobs().subscribe((data: any[]) => {
       console.log(data);
-      this.empleos = data.jobs;
+      this.empleos = data;
     });
   }
 
