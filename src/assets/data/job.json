@@ -1,34 +1,88 @@
 {
-    "jobs": [{
-        "title": "Desarrollador Full Stack",
-        "subtitle": "Trainee",
-        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate voluptates amet ratione ex aliquid quaerat doloribus ipsum incidunt fugiat corporis fugit delectus quod, laudantium accusamus facilis tempore autem suscipit ipsa",
-        "workday": "Fulltime",
-        "employees": "5-10",
-        "requirements": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate voluptates amet ratione ex aliquid quaerat doloribus ipsum incidunt fugiat corporis fugit delectus quod, laudantium accusamus facilis tempore autem suscipit ipsa Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate voluptates amet ratione ex aliquid quaerat doloribus ipsum incidunt fugiat corporis fugit delectus quod, laudantium accusamus facilis tempore autem suscipit ipsa Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate voluptates amet ratione ex aliquid quaerat doloribus ipsum incidunt fugiat corporis fugit delectus quod, laudantium accusamus facilis tempore autem suscipit ipsa"
+  "jobs": [
+    {
+      "position": "Desarrollador Full Stack",
+      "experience": "Trainee",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate voluptates amet ratione ex aliquid quaerat doloribus ipsum incidunt fugiat corporis fugit delectus quod, laudantium accusamus facilis tempore autem suscipit ipsa",
+      "workday": "Fulltime",
+      "employees": "5-10",
+      "requirements": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate voluptates amet ratione ex aliquid quaerat doloribus ipsum incidunt fugiat corporis fugit delectus quod, laudantium accusamus facilis tempore autem suscipit ipsa Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate voluptates amet ratione ex aliquid quaerat doloribus ipsum incidunt fugiat corporis fugit delectus quod, laudantium accusamus facilis tempore autem suscipit ipsa Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate voluptates amet ratione ex aliquid quaerat doloribus ipsum incidunt fugiat corporis fugit delectus quod, laudantium accusamus facilis tempore autem suscipit ipsa",
+      "location": "remoto",
+      "company": "company",
+      "mail": "@examplemail.com"
     },
-{
-    "title": "Desarrollador Frontend",
-        "subtitle": "Junior",
-        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate voluptates amet ratione ex aliquid quaerat doloribus ipsum incidunt fugiat corporis fugit delectus quod, laudantium accusamus facilis tempore autem suscipit ipsa",
-        "workday": "Part-time",
-        "employees": "50-100",
-        "requirements": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate voluptates amet ratione ex aliquid quaerat doloribus ipsum incidunt fugiat corporis fugit delectus quod, laudantium accusamus facilis tempore autem suscipit ipsa Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate voluptates amet ratione ex aliquid quaerat doloribus ipsum incidunt fugiat corporis fugit delectus quod, laudantium accusamus facilis tempore autem suscipit ipsa Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate voluptates amet ratione ex aliquid quaerat doloribus ipsum incidunt fugiat corporis fugit delectus quod, laudantium accusamus facilis tempore autem suscipit ipsa"
-},
-{
-    "title": "Desarrollador Backend",
-        "subtitle": "Ssr",
-        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate voluptates amet ratione ex aliquid quaerat doloribus ipsum incidunt fugiat corporis fugit delectus quod, laudantium accusamus facilis tempore autem suscipit ipsa",
-        "workday": "Fulltime",
-        "employees": "5-10",
-        "requirements": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate voluptates amet ratione ex aliquid quaerat doloribus ipsum incidunt fugiat corporis fugit delectus quod, laudantium accusamus facilis tempore autem suscipit ipsa Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate voluptates amet ratione ex aliquid quaerat doloribus ipsum incidunt fugiat corporis fugit delectus quod, laudantium accusamus facilis tempore autem suscipit ipsa Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate voluptates amet ratione ex aliquid quaerat doloribus ipsum incidunt fugiat corporis fugit delectus quod, laudantium accusamus facilis tempore autem suscipit ipsa"
-},
-{
-    "title": "Desarrollador Backend",
-        "subtitle": "Ssr",
-        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate voluptates amet ratione ex aliquid quaerat doloribus ipsum incidunt fugiat corporis fugit delectus quod, laudantium accusamus facilis tempore autem suscipit ipsa",
-        "workday": "Fulltime",
-        "employees": "5-10",
-        "requirements": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate voluptates amet ratione ex aliquid quaerat doloribus ipsum incidunt fugiat corporis fugit delectus quod, laudantium accusamus facilis tempore autem suscipit ipsa Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate voluptates amet ratione ex aliquid quaerat doloribus ipsum incidunt fugiat corporis fugit delectus quod, laudantium accusamus facilis tempore autem suscipit ipsa Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate voluptates amet ratione ex aliquid quaerat doloribus ipsum incidunt fugiat corporis fugit delectus quod, laudantium accusamus facilis tempore autem suscipit ipsa"
-}]
+    {
+      "position": "Desarrollador Frontend",
+      "experience": "Junior",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate voluptates amet ratione ex aliquid quaerat doloribus ipsum incidunt fugiat corporis fugit delectus quod, laudantium accusamus facilis tempore autem suscipit ipsa",
+      "workday": "Part-time",
+      "employees": "50-100",
+      "requirements": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate voluptates amet ratione ex aliquid quaerat doloribus ipsum incidunt fugiat corporis fugit delectus quod, laudantium accusamus facilis tempore autem suscipit ipsa Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate voluptates amet ratione ex aliquid quaerat doloribus ipsum incidunt fugiat corporis fugit delectus quod, laudantium accusamus facilis tempore autem suscipit ipsa Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate voluptates amet ratione ex aliquid quaerat doloribus ipsum incidunt fugiat corporis fugit delectus quod, laudantium accusamus facilis tempore autem suscipit ipsa",
+      "location": "remoto",
+      "company": "company",
+      "mail": "@examplemail.com"
+    },
+    {
+      "position": "Desarrollador Backend",
+      "experience": "Ssr",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate voluptates amet ratione ex aliquid quaerat doloribus ipsum incidunt fugiat corporis fugit delectus quod, laudantium accusamus facilis tempore autem suscipit ipsa",
+      "workday": "Fulltime",
+      "employees": "5-10",
+      "requirements": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate voluptates amet ratione ex aliquid quaerat doloribus ipsum incidunt fugiat corporis fugit delectus quod, laudantium accusamus facilis tempore autem suscipit ipsa Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate voluptates amet ratione ex aliquid quaerat doloribus ipsum incidunt fugiat corporis fugit delectus quod, laudantium accusamus facilis tempore autem suscipit ipsa Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate voluptates amet ratione ex aliquid quaerat doloribus ipsum incidunt fugiat corporis fugit delectus quod, laudantium accusamus facilis tempore autem suscipit ipsa",
+      "location": "remoto",
+      "company": "company",
+      "mail": "@examplemail.com"
+    },
+    {
+      "position": "Desarrollador Backend",
+      "experience": "Ssr",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate voluptates amet ratione ex aliquid quaerat doloribus ipsum incidunt fugiat corporis fugit delectus quod, laudantium accusamus facilis tempore autem suscipit ipsa",
+      "workday": "Fulltime",
+      "employees": "5-10",
+      "requirements": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate voluptates amet ratione ex aliquid quaerat doloribus ipsum incidunt fugiat corporis fugit delectus quod, laudantium accusamus facilis tempore autem suscipit ipsa Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate voluptates amet ratione ex aliquid quaerat doloribus ipsum incidunt fugiat corporis fugit delectus quod, laudantium accusamus facilis tempore autem suscipit ipsa Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate voluptates amet ratione ex aliquid quaerat doloribus ipsum incidunt fugiat corporis fugit delectus quod, laudantium accusamus facilis tempore autem suscipit ipsa",
+      "location": "remoto",
+      "company": "company",
+      "mail": "@examplemail.com"
+    },
+    {
+      "position": "full Stack",
+      "experience": "junior",
+      "company": "google",
+      "location": "remoto",
+      "mail": "linkedin@gmail.com",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam tempora id recusandae dolorem perspiciatis, vero earum repudiandae commodi rerum magnam laudantium consequuntur dicta mollitia nam aperiam voluptate eius a? Atque!"
+    },
+    {
+      "position": "full Stack",
+      "experience": "traine",
+      "company": "google",
+      "location": "remoto",
+      "mail": "linkedin@gmail.com",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam tempora id recusandae dolorem perspiciatis, vero earum repudiandae commodi rerum magnam laudantium consequuntur dicta mollitia nam aperiam voluptate eius a? Atque!"
+    },
+    {
+      "position": "'backend",
+      "experience": "junor",
+      "company": "google",
+      "location": "remoto",
+      "mail": "linkedin@gmail.com",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam tempora id recusandae dolorem perspiciatis, vero earum repudiandae commodi rerum magnam laudantium consequuntur dicta mollitia nam aperiam voluptate eius a? Atque!"
+    },
+    {
+      "position": "'frontend",
+      "experience": "junir",
+      "company": "google",
+      "location": "remoto",
+      "mail": "linkedin@gmail.com",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam tempora id recusandae dolorem perspiciatis, vero earum repudiandae commodi rerum magnam laudantium consequuntur dicta mollitia nam aperiam voluptate eius a? Atque!"
+    },
+    {
+      "position": "full Stack",
+      "experience": "senior",
+      "copany": "google",
+      "location": "remoto",
+      "mail": "linkedin@gmail.com",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam tempora id recusandae dolorem perspiciatis, vero earum repudiandae commodi rerum magnam laudantium consequuntur dicta mollitia nam aperiam voluptate eius a? Atqu"
+    }
+  ]
 }
