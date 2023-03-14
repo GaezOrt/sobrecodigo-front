@@ -12,7 +12,7 @@ export class JobService {
   constructor(private http:HttpClient) { }
 
     obtenerJobs():Observable<any> {
-      return this.http.get(ApiLink.Api+'/1.0/jobs/recent-jobs');
+      return this.http.get(ApiLink.Api+'/1.0/jobs/new-jobs');
     }
   
 }
