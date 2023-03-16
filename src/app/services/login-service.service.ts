@@ -64,7 +64,11 @@ async login( email:string, password:string):Promise<boolean>{
       );
 
     }
-    reloadPage(): void {
-        window.location.reload();
-      }
+  logout():void{
+    this.tokenStorage.signOut()
+    this.reloadPage()
+  }
+  reloadPage(): void {
+     window.location.reload();
+  }
 }
