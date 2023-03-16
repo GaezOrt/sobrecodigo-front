@@ -10,7 +10,7 @@
 
 
   <div class="list">
-    <li *ngIf="isLoggedIn">{{email}}</li>
+
     <li><a routerLink="/home" [ngClass]="{'selected' : route === '/home'}">Inicio</a></li>
     <hr>
     <li><a routerLink="/project-page" [ngClass]="{'selected' : route === '/project-page'}">Proyectos</a></li>
@@ -26,14 +26,26 @@
     <li><a routerLink="/jobs-page" [ngClass]="{'selected' : route === '/jobs-page'}">Empleos</a></li>
     <hr>
     <li><img src="../../../assets/imgs/moon-1.svg" alt="dark-mode" style=" height: 30px; margin: auto 0; aspect-ratio: 1/1;"></li>
-    <li>
+    <li *ngIf="!isLoggedIn">
       <button id="login" mat-button [matMenuTriggerFor]="menu"><a>Registrarse</a></button>
         <mat-menu #menu="matMenu">
           <a routerLink="/sign-up" mat-menu-item>Usuarios</a>
           <a routerLink="/sign-up-company" mat-menu-item>Empresas</a>
         </mat-menu>
-    </li> 
-    <li routerLink="/sign-in" id="login"><a mat-button>Entrar</a></li>
+    </li>
+    <li *ngIf="!isLoggedIn" routerLink="/sign-in" id="login"><a mat-button>Entrar</a></li>
+    <li *ngIf="isLoggedIn">
+      <button id="userLogged" mat-mini-fab color="primary" [matMenuTriggerFor]="menu"><i class="fa-solid fa-user"></i></button>
+        <mat-menu class="mt-1" #menu="matMenu">
+          <div mat-menu-item class="d-flex align-content-center">
+            <p class="m-0">{{email}}</p>
+          </div>
+          <div class="d-flex justify-content-center">
+            <!-- Logout button -->
+            <button (click)="userLogout()" class="btn btn-danger btn-sm">Salir</button>
+          </div>
+        </mat-menu>
+    </li>
   </div>
 
 </nav>
