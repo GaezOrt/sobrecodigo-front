@@ -16,7 +16,8 @@ export class JobService {
     }
  
     createJob(jobDto:any):Observable<any> {
-      return this.http.post(ApiLink.Api+'/1.0/jobs/create-job', jobDto);
+      
+      return this.http.post(ApiLink.Api+'/1.0/jobs/new-job', jobDto);
     }
 }
 

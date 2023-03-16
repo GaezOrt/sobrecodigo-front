@@ -9,7 +9,7 @@ declare var $: any;
   styleUrls: ['./company-profile.component.css']
 })
 export class CompanyProfileComponent implements OnInit {
-  jobs:any;
+  jobs:any[];
   constructor(private dataJob:JobService) { }
 
   ngOnInit(): void {
@@ -19,7 +19,7 @@ export class CompanyProfileComponent implements OnInit {
 
     this.dataJob.obtenerJobs().subscribe((data:any) => {
       console.log(data);
-      this.jobs = data.jobs;
+      this.jobs = data;
     });
   }
 
