@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { JobService } from 'src/app/services/job.service';
 interface Posicion {
   value: string;
   viewValue: string;
@@ -21,6 +22,14 @@ interface Currency {
 })
 
 export class JobFormComponent implements OnInit {
+
+    newJob:any;
+    title:string;
+    description:string;
+    position:string;
+    modality:string;
+
+
   posiciones: Posicion[] = [
     { value: "Trainee", viewValue: "Trainee" },
     { value: "Jr", viewValue: "Jr" },
@@ -40,14 +49,19 @@ export class JobFormComponent implements OnInit {
   ]
 
 
-  constructor() { }
+  constructor(private jobService:JobService) { }
 
   ngOnInit(): void {
-
-    // this.dataJob.obtenerJobs().subscribe((data:any) => {
-    //   console.log(data);
-    //   this.jobs = data.jobs;
-    // });
+    this.newJob.title=this.title;
+    this.newJob.position = this.position;
+    this.newJob.description = this.description;
+    this.newJob.modality = this.modality;
+  
+   this.jobService.createJob(this.newJob);
   }
+  
+  submitInfo(){
+    console.log(this.newJob);
 
+  }
 }

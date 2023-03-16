@@ -7,10 +7,13 @@
       </div>
       <div class="modal-body">
       <form>
+
+
         <div class="mb-3">
           <label for="puesto_solicitado" class="form-label">Puesto Solicitado</label>
-          <input placeholder="e.j Desarrollador FullStack" type="text" class="form-control form-control-sm" id="puesto_solicitado" aria-describedby="puesto_solicitado">
+          <input type="title" name="title" class="form-control form-control-sm" required placeholder="Breve descripción del puesto" [(ngModel)]="title" #ctrl="ngModel" required [ngModelOptions]="{standalone: true}">
         </div>
+
         <div class="mb-3">
           <label for="job-position" class="form-label">Posición</label>
           <select id="job-position" class="form-select form-select-sm" aria-label="Default select example">
@@ -18,10 +21,14 @@
             <option *ngFor="let position of posiciones;" [value]="position.value">{{position.value}}</option>
           </select>
         </div>
+
+
         <div class="mb-3">
           <label class="form-label" for="job-description">Descripción</label>
-          <input placeholder="Breve descripción del puesto" type="text" class="form-control form-control-sm" id="exampleCheck1">
+          <input type="description" name="description" class="form-control form-control-sm" required placeholder="Breve descripción del puesto" [(ngModel)]="description" #ctrl="ngModel" required [ngModelOptions]="{standalone: true}">
         </div>
+
+
         <div class="mb-3">
           <label for="job-modality" class="form-label">Modalidad de Trabajo</label>
           <select id="job-modality" class="form-select form-select-sm" aria-label="Default select example">
@@ -29,6 +36,8 @@
             <option *ngFor="let modality of modalities;" [value]="modality.value">{{modality.value}}</option>
           </select>
         </div>
+
+
         <div class="mb-3">
           <label for="job-salary" class="form-label">Salario</label>
           <select id="job-salary" class="form-select form-select-sm" aria-label="Default select example">
@@ -36,14 +45,18 @@
             <option *ngFor="let currency of currencies;" [value]="currency.value">{{currency.value}}</option>
           </select>
         </div>
+
+
         <div class="mb-3">
           <input type="checkbox" class="form-check-input mx-1" id="job_reubication" aria-describedby="job_reubication">
           <label for="job_reubication" class="form-check-label">¿Reubicación?</label>
         </div>
       </form>
       </div>
+
+
       <div class="modal-footer">
-        <button data-bs-dismiss="modal" type="submit" class="btn btn-primary rounded-pill">Enviar</button>
+        <button data-bs-dismiss="modal" type="submit" (click)="submitInfo()" class="btn btn-primary rounded-pill">Enviar</button>
       </div>
     </div>
   </div>
