@@ -9,7 +9,7 @@ import { TokenStorageService } from 'src/app/services/token-storage.service';
   styleUrls: ['./landing.component.css']
 })
 export class LandingComponent implements OnInit {
-  jobs:any[]=['Argentina', 'USA', 'Uruguay', 'Chile', 'Perú'];
+  jobs:any[];
   constructor(private dataJob:JobService, private tokenStorageService:TokenStorageService, private editProfileService:EditProfileService) { }
   isLoggedIn:boolean;
   username:string;
@@ -24,7 +24,7 @@ export class LandingComponent implements OnInit {
   }
     this.dataJob.obtenerJobs().subscribe((data:any) => {
       console.log(data);
-      this.jobs = data.jobs;
+      this.jobs = data;
     });
   }
 }
