@@ -16,9 +16,35 @@
       </div>
     </mat-card-content>
     <mat-card-footer class="p-3 d-flex justify-content-end">
-      <button class="btn btn-primary btn-sm" (click)="showDetails()" *ngIf="showFull">Aplicar</button>
+      <div class="apply">
+        <button 
+        type="button"
+        class="btn btn-primary btn-sm" 
+        data-bs-toggle="modal"
+        data-bs-target="#application-form"
+        (click)="showDetails()" 
+        *ngIf="showFull">Aplicar</button>
+        <app-application-form></app-application-form>
+      </div>
+      <!-- <button class="btn btn-primary btn-sm" (click)="showDetails()" *ngIf="showFull">Aplicar</button> -->
+
       <button class="btn btn-primary btn-sm" (click)="showLess()" *ngIf="showLessBool">Mostrar menos</button>
       <button class="btn btn-primary btn-sm" (click)="showDetails()" *ngIf="!showFull">Leer más</button>
+      
+
+      <!-- <div class="buttons-cu">
+        <button
+        type="button"
+        class="btn btn-success rounded-circle"
+        data-bs-toggle="modal"
+        data-bs-target="#job-form">
+          <i data-bs-toggle="tooltip"
+          data-bs-placement="bottom"
+          data-bs-title="Crear nueva vacante" class="fa-solid fa-plus"></i>
+        </button>
+        <app-job-form></app-job-form>
+      </div> -->
+
       <!-- <mat-card-actions>
       </mat-card-actions> -->
     </mat-card-footer>
