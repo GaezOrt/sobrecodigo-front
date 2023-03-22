@@ -12,7 +12,7 @@ export class RankingUsersComponent implements OnInit {
   ngOnInit(): void {
     this.rankingService.obtenerUsers().subscribe(data => {
       console.log(data);
-      this.rankings = data.rankings;
+      this.rankings = data;
     });
   }
 

@@ -16,6 +16,11 @@
 .card:hover {
   transform: scale(0.98);
 }
+.code{
+  border-radius: 50%;
+  width:50px;
+  background-color: red;
+}
 .img-container {
   width: 40%;
   margin: var(--margin-center-horizontal);
