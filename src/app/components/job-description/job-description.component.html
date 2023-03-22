@@ -16,11 +16,21 @@
       </div>
     </mat-card-content>
     <mat-card-footer class="p-3 d-flex justify-content-end">
-      <button class="btn btn-primary btn-sm" (click)="showDetails()" *ngIf="showFull">Aplicar</button>
+      
+      <div class="apply">
+        <button 
+        type="button"
+        class="btn btn-primary btn-sm" 
+        data-bs-toggle="modal"
+        data-bs-target="#application-form"
+        (click)="showDetails()" 
+        *ngIf="showFull">Aplicar</button>
+        <app-application-form></app-application-form>
+      </div>
+
       <button class="btn btn-primary btn-sm" (click)="showLess()" *ngIf="showLessBool">Mostrar menos</button>
       <button class="btn btn-primary btn-sm" (click)="showDetails()" *ngIf="!showFull">Leer más</button>
-      <!-- <mat-card-actions>
-      </mat-card-actions> -->
+      
     </mat-card-footer>
 
   </mat-card>

@@ -1,0 +1,41 @@
+<div class="modal fade" id="application-form" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog  modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-6 m-0" id="exampleModalLabel">Postulación</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+        <form>
+  
+          <div class="mb-3">
+            <label for="expected_remuneration" class="form-label">Remuneración pretendida</label>
+            <div class="input-group mb-3">
+              <div class="input-group-prepend">
+                <span class="input-group-text">$</span>
+              </div>
+              <input type="text" class="form-control" id="expected_remuneration">
+            </div>
+          </div>
+  
+          <div class="mb-3">
+            <label for="upload_cv" class="form-label">Cargar CV</label>
+            <input class="form-control" type="file" id="upload_cv">
+          </div>
+  
+  
+          <div class="mb-3">
+            <label class="form-label" for="contact_number">Numero de contacto</label>
+            <input type="text" class="form-control" id="contact_number">
+          </div>
+
+        </form>
+        </div>
+  
+        <div class="modal-footer">
+          <button data-bs-dismiss="modal" type="submit" (click)="submitInfo()" class="btn btn-primary rounded-pill">Enviar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  
