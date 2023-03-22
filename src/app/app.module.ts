@@ -46,6 +46,7 @@ import { CommonModule } from '@angular/common';
 import { AuthInterceptor } from './helpers/auth.interceptor';
 import { JobCardSimpleComponent } from './components/job-card-simple/job-card-simple.component';
 import { ApplicationFormComponent } from './components/modals/application-form/application-form.component';
+import { ChallengesPageComponent } from './challenges-page/challenges-page.component';
 
 @NgModule({
   declarations: [
@@ -77,6 +78,7 @@ import { ApplicationFormComponent } from './components/modals/application-form/a
     ProjectDetailsPageComponent,
     JobCardSimpleComponent,
     ApplicationFormComponent,
+    ChallengesPageComponent,
   ],
   imports: [
     BrowserModule,

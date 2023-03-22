@@ -1,0 +1,22 @@
+img {
+    width: 80%;
+}
+
+.container {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 5rem auto;
+}
+
+.answers{
+    width: inherit;
+    align-items: start;
+    margin-top: 2rem;
+}
+
+.cont{
+    margin: 2rem;
+    font-size: 4rem;
+}
