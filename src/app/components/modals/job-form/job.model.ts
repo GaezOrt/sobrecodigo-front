@@ -5,4 +5,7 @@ export class Job{
     modalidad:any;
     salary:any;
     currency:any;
+    enterprise:string;
+    tecnologies:string;
+    
 }

@@ -44,6 +44,7 @@ import { AppFooter } from './components/footer/footer.component';
 import { ProjectDetailsPageComponent } from './components/project-details-page/project-details-page.component'
 import { CommonModule } from '@angular/common';
 import { AuthInterceptor } from './helpers/auth.interceptor';
+import { JobCardSimpleComponent } from './components/job-card-simple/job-card-simple.component';
 
 @NgModule({
   declarations: [
@@ -73,6 +74,7 @@ import { AuthInterceptor } from './helpers/auth.interceptor';
     JobFilterPipe,
     AppFooter,
     ProjectDetailsPageComponent,
+    JobCardSimpleComponent,
   ],
   imports: [
     BrowserModule,

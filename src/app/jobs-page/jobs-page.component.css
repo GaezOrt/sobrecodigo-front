@@ -35,6 +35,7 @@ label {
 
 #jobs-container {
   width: 90%;
+  flex-direction: column;
   margin: 0 auto;
   display: flex;
   flex-wrap: wrap;

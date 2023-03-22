@@ -20,4 +20,3 @@ export class JobService {
       return this.http.post(ApiLink.Api+'/1.0/jobs/new-job', jobDto);
     }
 }
-

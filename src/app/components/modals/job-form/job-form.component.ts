@@ -30,13 +30,16 @@ export class JobFormComponent implements OnInit {
       description: '',
       modalidad: '',
       salary: '',
-      currency:''
+      currency:'',
+      enterprise:'',
+      tecnologies:''
     };
     title:string;
     description:string;
     position:any;
     modality:any;
-
+    enterprise:any;
+    tecnologies:string;
 
   posiciones: Posicion[] = [
     { value: "Trainee", viewValue: "Trainee" },
@@ -65,13 +68,17 @@ export class JobFormComponent implements OnInit {
   }
   
   submitInfo(){
+
     this.newJob.title=this.title;
     this.newJob.position = {id:1};
     this.newJob.description = this.description;
     this.newJob.modalidad = {id:1}
     this.newJob.currency = {id:1}
     this.newJob.salary=2.00
+    this.newJob.enterprise= this.enterprise;
+    this.newJob.tecnologies= this.tecnologies;
     console.log(this.newJob);
    this.jobService.createJob(this.newJob).subscribe(val=>console.log(val));
+
   }
 }

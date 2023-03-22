@@ -37,7 +37,7 @@
     </div>
     <!-- items -->
     <div id="jobs-container">
-        <app-job-description *ngFor="let empleo of empleos | jobFilter: myForm.value"
-            [cardInfo]="empleo"></app-job-description>
+        <app-job-card-simple *ngFor="let empleo of empleos | jobFilter: myForm.value"
+            [cardInfo]="empleo"></app-job-card-simple>
     </div>
 </main>
