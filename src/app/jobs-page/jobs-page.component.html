@@ -36,7 +36,7 @@
         </button>
     </div>
     <!-- items -->
-    <div id="jobs-container">
+    <div id="jobs-container" class="list-jobs">
         <app-job-card-simple *ngFor="let empleo of empleos | jobFilter: myForm.value"
             [cardInfo]="empleo"></app-job-card-simple>
     </div>

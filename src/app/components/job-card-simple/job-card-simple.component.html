@@ -3,17 +3,19 @@
     <mat-card-header >
       <mat-card-title class="title-job">{{cardInfo.title}}
       </mat-card-title>
-      <mat-card-subtitle class="subtitle-job">{{cardInfo.position.position}}</mat-card-subtitle>
+      <mat-card-subtitle class="subtitle-job position">{{cardInfo.position.position}}</mat-card-subtitle>
   
             <mat-card-subtitle class="subtitle-job">
-               
+               <div class="content-tech">
                 <div class="col tech">{{cardInfo.tecnologies}}
 
                 </div>
-               
+              </div>
+               <div class="content-salary">
                 <div class="col salary">
                     {{cardInfo.salary}} {{cardInfo.currency.currency}}
                 </div>
+              </div>
          
             </mat-card-subtitle>
   
