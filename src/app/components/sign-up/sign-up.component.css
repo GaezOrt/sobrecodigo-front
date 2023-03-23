@@ -14,11 +14,29 @@ body {
   flex-direction: column;
   justify-content: center;
 }
-
+.answers{
+  align-items: start;
+  margin-top: 2rem;
+  margin-top:8px;
+}
 form {
   padding: 20px;
 }
-
+select:active {
+  outline-color: var(--blue);
+}
+select:enabled {
+  outline-color: var(--blue-light);
+}
+form select {
+  text-align: center;
+  font-size: 14px;
+  font-family: "Roboto";
+  border-radius: 0.25em;
+  padding-inline: 8px;
+  padding-block: 5px;
+  text-transform: capitalize;
+}
 input[type="text"],
 input[type="password"],
 input[type="email"],

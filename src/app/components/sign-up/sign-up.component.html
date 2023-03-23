@@ -13,7 +13,52 @@
       <input type="email" name="email" required [(ngModel)]="email" #ctrl="ngModel" required [ngModelOptions]="{standalone: true}">
       <label>Rubro</label>
       <input type="rubro" name="rubro" required minlength="8" [(ngModel)]="rubro" #ctrl="ngModel" required [ngModelOptions]="{standalone: true}">
-      
+      <label>Tecnologías</label>
+      <div class="answers">
+        <div class="form-check">
+          <input type="checkbox" (change)="toggleAngular($event)"/>
+           <label class="form-check-label" for="flexRadioDefault1">
+                Angular
+            </label>
+        </div>
+        <div class="form-check">
+          <input type="checkbox" ng-model="myCheckboxModel" (change)="toggleReactNative($event)" />
+           <label class="form-check-label" for="flexRadioDefault2">
+                React Native 
+            </label>
+        </div>
+        <div class="form-check">
+          <input type="checkbox" ng-model="myCheckboxModel" (change)="toggleReact($event)" />
+            <label class="form-check-label" for="flexRadioDefault3">
+                React
+            </label>
+        </div>
+        <div class="form-check">
+          <input type="checkbox" ng-model="myCheckboxModel" (change)="toggleVue($event)"/>
+            <label class="form-check-label" for="flexRadioDefault4">
+                Vue
+            </label>
+        </div>
+        <div class="form-check">
+          <input type="checkbox" ng-model="myCheckboxModel" (change)="toggleSpringBoot($event)" />
+            <label class="form-check-label" for="flexRadioDefault5">
+                Spring Boot
+            </label>
+        </div>
+        <div class="form-check">
+          <input type="checkbox" ng-model="myCheckboxModel" (change)="toggleNodeJs($event)"/>
+          <label class="form-check-label" for="flexRadioDefault5">
+              Node JS
+          </label>
+      </div>
+      <div class="form-check">
+        <input type="checkbox" ng-model="myCheckboxModel" (change)="toggleNext($event)"/>
+        <label class="form-check-label" for="flexRadioDefault5">
+            Next
+        </label>
+    </div>
+
+    </div>
       <label>Contraseña</label>
       <input type="password" name="password" required minlength="8" [(ngModel)]="password" #ctrl="ngModel" required [ngModelOptions]="{standalone: true}">
      
