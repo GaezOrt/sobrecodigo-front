@@ -51,6 +51,16 @@
   line-height: 24px;
   color: #4e4e4e;
 }
+
+.technologies{
+  display: flex;
+  justify-content: center;
+  font-weight: 300;
+  font-size: 13px;
+  line-height: 24px;
+  color: #4e4e4e;
+}
+
 .user-counters{
   padding: 5px;
 }

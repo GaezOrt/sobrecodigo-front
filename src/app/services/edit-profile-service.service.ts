@@ -20,7 +20,7 @@ export class EditProfileService {
   }
 
   editInfo(profile:any): Observable<any> {
-    console.log('')
+    
     return this.http.post(ApiLink.Api+'/1.0/users/edit-profile', profile);
   }
 

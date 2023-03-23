@@ -11,11 +11,19 @@
           alt="Foto Perfil"
           class="img-profile"
         />
-        <h2 class="user-fullname">NOMBRE APELLIDO</h2>
+        <h2 class="user-fullname">@{{usuarioDto.username}}</h2>
         <div class="d-flex">
           <h3 class="user-title mx-2">Full Stack Developer</h3>
           <p class="user-location"><mat-icon>location_on</mat-icon> Argentina</p>
         </div>
+
+        <div class="d-flex">
+          <div class="p-2" *ngFor= "let tecnologias of usuarioDto.tecnologias">
+            <p class="technologies"> {{tecnologias.technology.technology}}</p>
+            </div>
+          
+        </div>
+
         <div class="user-counters">
           <ul class="icons-counter">
             <li>
