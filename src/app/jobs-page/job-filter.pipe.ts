@@ -5,7 +5,7 @@ import { Pipe, PipeTransform } from '@angular/core';
 })
 export class JobFilterPipe implements PipeTransform {
   transform(values: any, form: any): any {
-    if (form.experience == '' && form.location == '' && form.position == '') {
+    if (form.experience == '' && form.location == '' && form.position == '' && form.technology == '') {
       return values;
     } 
     else {
@@ -14,6 +14,9 @@ export class JobFilterPipe implements PipeTransform {
       if (form.experience != '') {
         result = result.filter( (job : any) => job.experience.toLowerCase() == form.experience.toLowerCase())
       }
+      //if (form.technology != '') {
+      //  result = result.filter( (job : any) => job.experience.toLowerCase() == form.experience.toLowerCase())
+      //}
       if (form.location != '') {
         result = result.filter( (job : any  ) => job.location.toLowerCase() == form.location.toLowerCase())
       }

@@ -1,7 +1,15 @@
 <mat-card class="jobCard row" >
 
     <mat-card-header >
-      <mat-card-title class="title-job">{{cardInfo.title}}
+      <mat-card-title>
+        <div class="header-card-job">
+          <div class="title-job">{{cardInfo.title}}</div>
+          <div class="content-salary">
+            <div class="col salary">
+                {{cardInfo.salary}} {{cardInfo.currency.currency}}
+            </div>
+          </div>
+      </div>
       </mat-card-title>
       <mat-card-subtitle class="subtitle-job position">{{cardInfo.position.position}}</mat-card-subtitle>
   
@@ -11,10 +19,10 @@
 
                 </div>
               </div>
-               <div class="content-salary">
-                <div class="col salary">
-                    {{cardInfo.salary}} {{cardInfo.currency.currency}}
-                </div>
+               
+
+              <div class="apply-job">
+                <p><i class="fa-solid fa-tick"></i></p>
               </div>
          
             </mat-card-subtitle>
