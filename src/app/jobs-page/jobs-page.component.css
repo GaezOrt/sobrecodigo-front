@@ -55,6 +55,12 @@ label {
   padding: 15px 25px;
   margin: 0 auto;
 }
+
+.list-jobs {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 @media (min-width: 400px) {
   form {
     margin: 0 auto;

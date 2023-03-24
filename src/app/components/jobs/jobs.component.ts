@@ -11,9 +11,11 @@ export class JobsComponent implements OnInit {
 jobs:any[];
 positions:any[]=['Backend', 'Frontend', 'Data Analytics', 'Database'];
 experiences:any[]=['Trainee', 'Junior', 'Semi-senior', 'Senior'];
+//technologies:any[]=['Java', 'React', 'Angular', 'Python'];
 jobControl:any;
 experience:any;
 position:any;
+technology:any;
 selected="Ubicación";
 
 

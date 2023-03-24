@@ -1,11 +1,17 @@
 /* @import url('../../jobs-card/jobs-card.component.css'); */
 .jobCard {
-    width: 1200px;
-    height:120px;
+    width: 960px;
+    height:130px;
     box-shadow: 0px 0px 10px 1px rgb(0 0 0 / 25%);
     border-radius: 15px;
     }
   
+    .header-card-job {
+      width: 768px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
     .title-job {
       font-family: "Roboto";
       font-style: normal;
@@ -16,16 +22,32 @@
       color: #212121;
   
     }
-    .tech{
-        border-radius: 5px;
-        background-color: orange;
+
+    .position {
+      width: 30%;
+      border-radius: 5px;
+    }
+    .content-tech {
+      width: 30%;
+      background-color: #fdbb6e;
+      border-radius: 50px;
+    }
+    .tech, .salary{
+      text-align: center;
     }
 
-    .salary{
-        width:35%;
-        border-radius: 5px;
-        background-color: green;
+    .content-salary {
+      width: 15%;
+      color: rgb(106, 155, 66);
+      font-weight: 600;
+      gap: 3px;
     }
+   .apply-job{
+      display: flex;
+      align-self: flex-end;
+      color: #adf175ff;
+    }
+
     .subtitle-job {
       font-family: "Roboto";
       font-style: italic;
