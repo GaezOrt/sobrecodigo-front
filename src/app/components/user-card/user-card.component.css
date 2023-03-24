@@ -1,7 +1,7 @@
 .card {
-  width: 18em;
+  width: 20em;
   aspect-ratio: 1/1.2;
-  padding: 1.2em;
+  padding: 1.5em;
   background-color: white;
   border-radius: 15px;
   box-shadow: 0px 4px 20px 3px rgba(0, 0, 0, 0.25);
@@ -9,53 +9,31 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;  
+  justify-content: space-between;  
   transition: 0.4s;
-
-}
-.card:hover {
-  transform: scale(0.98);
-}
-.code{
-  border-radius: 50%;
-  width:50px;
-  background-color: red;
-}
-.img-container {
-  width: 40%;
-  margin: var(--margin-center-horizontal);
-  background-color: #f0f0f0;
-  aspect-ratio: 1/1;
-  border-radius: 100%;
-  border:2px solid #1a98cf;
-  cursor:pointer;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   position: relative;
 }
 
-.img-container img {
+.card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
-  overflow: hidden;
-  border-radius: 100%;
-  padding: 1px;
-  aspect-ratio: 1/1
+  height: 100%;
+  border-radius: 15px;
+  background-color: #5975bc;
+  clip-path: circle(16em at 50% 110%);
 }
 
-#cup {
-  position: absolute;
-  bottom: -3px;
-  right: 6px;
-  font-size: 35px;
+.card:hover {
+  transform: scale(0.98);
 }
 
 .card p {
   margin: 0;
   font-size: 15px;
-  text-align: center;
   font-weight: 500;
-  align-self: center;
   color: var(--blue);
 }
 .card h4{
@@ -64,48 +42,87 @@
   font-size: 15px;
 }
 
-#name-container{
+#card-head {
   display: flex;
   justify-content: center;
-  gap: 5px;
-  margin-top: 20px;
-
 }
+
+#card-body {
+  width: 100%;
+  align-content: end;
+  position: inherit;
+}
+
+#img-container {
+  width: 40%;
+  background-color: #f0f0f0;
+  border-radius: 100%;
+  cursor:pointer;
+}
+
+#img-container img {
+  width: 100%;
+  overflow: hidden;
+  border-radius: 100%;
+  padding: 1px;
+  aspect-ratio: 1/1
+}
+
+#name-container{
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 3px;
+  margin: 20px;
+}
+
 #name-container p:not(#user-name){
   color: grey;
 }
+
 #user-name{
   font-size: 16px;
   font-weight: 600;
   cursor:pointer;
-  /* color: var(--blue); */
 }
 
 #user-name::before{
   content: "@";
 }
 
-#stats-container{
-  width: 100%;
-  padding: 5%;
-}
-.stats{
-  display: flex;
-  justify-content: space-between;
-}
-.contact{
-  width: inherit;
-  display: flex;
-  justify-content: center;
-  gap: 15px;
-}
-
-.icon{
-  color: var(--blue-light);
-  font-size:1.5rem
-}
 #user-name:hover, .icon:hover, .img-container:hover{
   border-color: rgb(158, 158, 158);
   color: rgb(158, 158, 158) ;
   transition: 100ms ;
+}
+
+#seniority {
+  opacity: 0.8;
+  font-weight: 200;
+}
+
+#stats-container{
+  width: 100%;
+  padding: 5%;
+}
+
+#stats-container, #stats-container p {
+  color: #f0f0f0;
+}
+
+.stats{
+  display: flex;
+  justify-content: space-between;
+}
+
+.contact{
+  width: inherit;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 5%;
+}
+
+.icon{
+  color: #f0f0f0;
+  font-size:1.5rem
 }
