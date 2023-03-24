@@ -37,7 +37,10 @@ form select {
   padding-block: 5px;
   text-transform: capitalize;
 }
+
+input[type="github"],
 input[type="text"],
+input[type="linkedIn"],
 input[type="password"],
 input[type="email"],
 input[type="rubro"] {

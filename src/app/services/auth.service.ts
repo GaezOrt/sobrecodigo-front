@@ -24,12 +24,14 @@ export class AuthService {
 
   }
 
-  register(username: string, email: string, password: string, technologiesDto:SelectedTechnologies): Observable<any> {
+  register(username: string, email: string, password: string, technologiesDto:SelectedTechnologies, linkedIn:string, github:string): Observable<any> {
     return this.http.post(ApiLink.Api+'/1.0/users/register-first-step', {
       username,
       email,
       password,
-      technologiesDto
+      technologiesDto,
+      linkedIn,
+      github
     }, httpOptions);
   }
 }

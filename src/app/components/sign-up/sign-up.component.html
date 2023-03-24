@@ -11,8 +11,11 @@
       <input type="text" name="name" required  [(ngModel)]="username" #ctrl="ngModel" required [ngModelOptions]="{standalone: true}">
       <label>Email</label>
       <input type="email" name="email" required [(ngModel)]="email" #ctrl="ngModel" required [ngModelOptions]="{standalone: true}">
-      <label>Rubro</label>
-      <input type="rubro" name="rubro" required minlength="8" [(ngModel)]="rubro" #ctrl="ngModel" required [ngModelOptions]="{standalone: true}">
+      <label>LinkedIn link</label>
+      <input type="linkedIn" name="linkedIn" required minlength="8" [(ngModel)]="linkedIn" #ctrl="ngModel" required [ngModelOptions]="{standalone: true}">
+      <label>GitHub link</label>
+      <input type="github" name="github" required minlength="8" [(ngModel)]="github" #ctrl="ngModel" required [ngModelOptions]="{standalone: true}">
+     
       <label>Tecnologías</label>
       <div class="answers">
         <div class="form-check">

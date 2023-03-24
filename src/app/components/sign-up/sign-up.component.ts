@@ -16,8 +16,9 @@ export class SignUpComponent implements OnInit {
   email: string = '';
   password: string = '';
   confirmPassword: string = '';
-  rubro:string;
+  linkedIn:string;
   technologies:any;
+  github:string;
   selectedTechnologies:SelectedTechnologies={
     angular: false,
     springBoot: false,
@@ -42,7 +43,7 @@ export class SignUpComponent implements OnInit {
       panelClass: 'my-custom-snackbar-loading'
     });
    
-    this.registerService.registerNewUser(this.username,this.email, this.password, this.rubro, this.selectedTechnologies).then(async val=>{
+    this.registerService.registerNewUser(this.username,this.email, this.password, this.linkedIn, this.selectedTechnologies, this.github).then(async val=>{
       if(val===true){
         this.snackBar.open("Signed up correctly.", undefined, {
           duration: 3000,

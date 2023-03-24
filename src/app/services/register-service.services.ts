@@ -9,9 +9,9 @@ import { AuthService } from './auth.service';
 export class RegisterService{
 
 constructor (private authService: AuthService) {}
-registerNewUser(username:string, email:string, password:string, rubro:any, technologies:SelectedTechnologies):Promise<any>{
+registerNewUser(username:string, email:string, password:string, linkedIn:any, technologies:SelectedTechnologies, github:string):Promise<any>{
 
-    return this.authService.register(username,email,password, technologies).toPromise().then(val=>
+    return this.authService.register(username,email,password, technologies, linkedIn, github).toPromise().then(val=>
       {
         return val;
       }, err => {
