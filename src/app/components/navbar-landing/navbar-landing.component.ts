@@ -14,15 +14,17 @@ export class NavbarLandingComponent implements OnInit {
   route : string;
   isLoggedIn:boolean;
   email:string;
+  userName: string;
   constructor(private router : Router, private profileInfo:EditProfileService, private tokenStorageService:TokenStorageService, private loginService:LoginService) { }
 
   ngOnInit(): void {
     this.route = this.router.url;
     this.profileInfo.getInfoUser().subscribe(val=>{
       this.email=val.email;
-    console.log(val)
+      this.userName = val.username;
   });
     this.isLoggedIn = !!this.tokenStorageService.getToken();
+
   }
 
   userLogout():void{

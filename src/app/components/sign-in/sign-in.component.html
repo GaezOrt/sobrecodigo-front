@@ -11,11 +11,16 @@
       <input type="email" name="email" required [(ngModel)]="email" #ctrl="ngModel" required [ngModelOptions]="{standalone: true}">
       <label>Contraseña</label>
       <input type="password" name="password" required minlength="8"[(ngModel)]="password" #ctrl="ngModel" required [ngModelOptions]="{standalone: true}">
-      
-      <input type="submit" (click)="submitLogin()" value="Entrar">
+
+      <div class="d-grid gap-2">
+        <button class="btn btn-primary" type="submit" [disabled]="isLoading" (click)="submitLogin()">Entrar</button>
+      </div>
+
+
 
     </form>
-    
+
   </div>
 
+  <loading *ngIf="isLoading"></loading>
 </body>

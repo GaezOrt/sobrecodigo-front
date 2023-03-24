@@ -19,7 +19,6 @@
     <hr>
     <li><a routerLink="/challenges" [ngClass]="{'selected' : route === '/challenges'}">Desafíos</a></li>
     <hr>
-    <li><a routerLink="/profile-page" [ngClass]="{'selected' : route === '/profile-page'}">Mi Perfil</a></li>
     <hr>
     <li><a routerLink="/company-profile" [ngClass]="{'selected' : route === '/company-profile'}">Perfil Empresas</a></li>
     <hr>
@@ -37,10 +36,16 @@
     <li *ngIf="isLoggedIn">
       <button id="userLogged" mat-mini-fab color="primary" [matMenuTriggerFor]="menu"><i class="fa-solid fa-user"></i></button>
         <mat-menu class="mt-1" #menu="matMenu">
-          <div mat-menu-item class="d-flex align-content-center">
-            <p class="m-0">{{email}}</p>
+          <div mat-menu-item class="d-flex flex-column align-content-center">
+            <p class="m-0 text-center">¡Hola, {{userName}}!</p>
           </div>
-          <div class="d-flex justify-content-center">
+          <div mat-menu-item class="d-flex flex-column align-content-center">
+            <a routerLink="/profile-page" class="text-center" [ngClass]="{'selected' : route === '/profile-page'}">Mi Perfil</a>
+          </div>
+          <div mat-menu-item class="d-flex flex-column align-content-center">
+            <a class="text-center" [ngClass]="{'selected' : route === '/profile-page'}">Editar Perfil</a>
+          </div>
+          <div class="d-flex justify-content-center m-1">
             <!-- Logout button -->
             <button (click)="userLogout()" class="btn btn-danger btn-sm">Salir</button>
           </div>

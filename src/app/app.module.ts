@@ -38,6 +38,7 @@ import {JobFormComponent } from './components/modals/job-form/job-form.component
 import { FormsModule } from '@angular/forms';
 import { JobFilterPipe } from './jobs-page/job-filter.pipe';
 import {MatGridListModule} from '@angular/material/grid-list'
+import { Loading } from './components/loading/loading.component'
 
 import { MatSnackBar, MatSnackBarModule } from '@angular/material/snack-bar';
 import { AppFooter } from './components/footer/footer.component';
@@ -72,6 +73,7 @@ import { AuthInterceptor } from './helpers/auth.interceptor';
     JobFormComponent,
     JobFilterPipe,
     AppFooter,
+    Loading,
     ProjectDetailsPageComponent,
   ],
   imports: [
