@@ -47,6 +47,7 @@ import { AuthInterceptor } from './helpers/auth.interceptor';
 import { JobCardSimpleComponent } from './components/job-card-simple/job-card-simple.component';
 import { ApplicationFormComponent } from './components/modals/application-form/application-form.component';
 import { ChallengesPageComponent } from './challenges-page/challenges-page.component';
+import { JobDetailsComponent } from './job-details/job-details.component';
 
 @NgModule({
   declarations: [
@@ -79,6 +80,7 @@ import { ChallengesPageComponent } from './challenges-page/challenges-page.compo
     JobCardSimpleComponent,
     ApplicationFormComponent,
     ChallengesPageComponent,
+    JobDetailsComponent,
   ],
   imports: [
     BrowserModule,

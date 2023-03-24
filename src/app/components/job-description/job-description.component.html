@@ -29,7 +29,12 @@
       </div>
 
       <button class="btn btn-primary btn-sm" (click)="showLess()" *ngIf="showLessBool">Mostrar menos</button>
-      <button class="btn btn-primary btn-sm" (click)="showDetails()" *ngIf="!showFull">Leer más</button>
+      
+      <button 
+      class="btn btn-primary btn-sm" 
+      (click)="showDetails()" 
+      *ngIf="!showFull">
+      <a routerLink="/job-details">Leer más</a></button>
       
     </mat-card-footer>
 

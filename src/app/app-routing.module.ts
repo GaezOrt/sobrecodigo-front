@@ -12,6 +12,7 @@ import { SignUpCompanyComponent } from './components/sign-up-company/sign-up-com
 import { JobsPageComponent } from './jobs-page/jobs-page.component';
 import { ProjectDetailsPageComponent } from './components/project-details-page/project-details-page.component';
 import { ChallengesPageComponent } from './challenges-page/challenges-page.component';
+import { JobDetailsComponent } from './job-details/job-details.component';
 
 const routes: Routes = [
   { path: 'sign-up', component: SignUpComponent },
@@ -23,6 +24,7 @@ const routes: Routes = [
   { path: 'project-page', component: ProjectPageComponent },
   { path: 'project-details', component: ProjectDetailsPageComponent },
   { path: 'jobs-page', component: JobsPageComponent },
+  { path: 'job-details', component: JobDetailsComponent },
   { path: 'challenges', component: ChallengesPageComponent },
   { path: 'home', component: LandingComponent },
   { path: '**', redirectTo: '/home', pathMatch: 'full' },
