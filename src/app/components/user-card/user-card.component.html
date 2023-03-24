@@ -1,42 +1,42 @@
 <div class="card">
 
-  <div>
-    <div class="img-container" routerLink="/profile-page">
+  <div id="card-head">
+    <div id="img-container" routerLink="/profile-page">
       <img src={{image}} width="100%" height="100%" alt="user-image">
-     
-      <mat-icon id="cup" [ngStyle]="{'color':'gold' }">code</mat-icon>
-   
-  </div>
+    </div>
     <div id="name-container">
       <p id="user-name" routerLink="/profile-page">{{username}}</p>
-      <p>{{position}}</p>
+      <p id="seniority">{{position}}</p>
     </div>
   </div>
 
-  <div id="stats-container">
-    <div class="stats">
-      <h4>Desafíos Completados</h4>
-      <p>{{challengesCompleted}}</p>
-    </div>
-    <div class="stats" *ngIf="projectsDone">
-      <h4>Proyectos Completados</h4>
-      <p>{{projectsDone}}</p>
-    </div>
-    <div class="stats">
-      <h4>Contribuciones Git</h4>
-      <p>{{amountContributions}}</p>
-    </div>
-  </div>
+  <div id="card-body">
 
-  <div class="contact">
-    <a href="https://www.linkedin.com">
-      <span class="fa-brands fa-linkedin icon"></span>
-    </a>
-    <a href="mailto:sobrecodigo@gmailcom">
-      <span class="fa-solid fa-envelope icon"></span>
-    </a>
-    <a href="https://www.github.com">
-      <span class="fa-brands fa-github icon"></span>
-    </a>
+    <div id="stats-container">
+      <div class="stats">
+        <h4>Desafíos Completados</h4>
+        <p>{{challengesCompleted}}</p>
+      </div>
+      <div class="stats">
+        <h4>Proyectos Completados</h4>
+        <p>{{projectsDone}}</p>
+      </div>
+      <div class="stats">
+        <h4>Contribuciones Git</h4>
+        <p>{{amountContributions}}</p>
+      </div>
+    </div>
+
+    <div class="contact">
+      <a href="https://www.linkedin.com">
+        <span class="fa-brands fa-linkedin icon"></span>
+      </a>
+      <a href="mailto:sobrecodigo@gmailcom">
+        <span class="fa-solid fa-envelope icon"></span>
+      </a>
+      <a href="https://www.github.com">
+        <span class="fa-brands fa-github icon"></span>
+      </a>
+    </div>
   </div>
 </div>

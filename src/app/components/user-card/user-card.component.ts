@@ -17,6 +17,8 @@ export class UserCardComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+    this.projectsDone = "25";
+    this.position = "Trainee"
   }
 
 }
