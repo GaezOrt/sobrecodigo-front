@@ -21,7 +21,7 @@ form {
 
 input[type="text"],
 input[type="password"],
-input[type="email"] {
+input[type="email"], select {
   width: 100%;
   box-sizing: border-box;
   margin-top: 8px;

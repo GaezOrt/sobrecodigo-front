@@ -8,27 +8,30 @@ import { LoginService } from 'src/app/services/login-service.service';
   styleUrls: ['./sign-in.component.css']
 })
 export class SignInComponent implements OnInit {
-  
+
   email: string = '';
   password: string = '';
+  isLoading: boolean = false;
   constructor(private loginService:LoginService,  private snackBar:MatSnackBar) { }
 
   ngOnInit(): void {
   }
 
-  submitLogin(){
-    this.loginService.login(this.email, this.password).then(val=>{
-        if(val){
-          this.snackBar.open("Entrado correctamente.", undefined, {
-            duration: 3000,
-            panelClass: 'my-custom-snackbar-success'
-          })
-        }else{
-          this.snackBar.open("Error al entrar.", undefined, {
-            duration: 3000,
-            panelClass: 'my-custom-snackbar-success'
-          })
-        }
-    })
+  async submitLogin(){
+    this.isLoading = true
+    const resp = await this.loginService.login(this.email, this.password)
+    this.isLoading = false
+    if(resp){
+      this.snackBar.open("¡Bienvenido!", undefined, {
+        duration: 3000,
+        panelClass: 'my-custom-snackbar-success'
+      })
+      window.location.reload()
+    }else{
+      this.snackBar.open("No pudimos procesar la solicitud", undefined, {
+        duration: 3000,
+        panelClass: 'my-custom-snackbar-success'
+      })
+    }
   }
 }
