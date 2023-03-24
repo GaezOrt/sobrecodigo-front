@@ -13,5 +13,7 @@ export class RankingService {
   obtenerUsers():Observable<any> {
     return this.http.get(ApiLink.Api+'/1.0/users/active');
   }
-
+  mostActiveUsers():Observable<any> {
+    return this.http.get(ApiLink.Api+'/1.0/users/most-active');
+  }
 }
