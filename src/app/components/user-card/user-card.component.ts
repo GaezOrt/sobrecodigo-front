@@ -1,4 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-user-card',
@@ -7,6 +8,7 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class UserCardComponent implements OnInit {
 
+  @Input() id:string;
   @Input() username: string;
   @Input() challengesCompleted: string;
   @Input() amountContributions: string;
@@ -14,11 +16,17 @@ export class UserCardComponent implements OnInit {
   @Input() projectsDone:string;
   @Input() position:string;
 
-  constructor() { }
+  constructor(private router:Router) { }
 
   ngOnInit(): void {
     this.projectsDone = "25";
     this.position = "Trainee"
+  }
+
+
+  navigateToProfile(){
+    console.log(this.id);
+    this.router.navigate(['profile-page/'+this.id]);
   }
 
 }

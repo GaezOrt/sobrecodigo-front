@@ -19,8 +19,15 @@ export class EditProfileService {
     return this.http.get(ApiLink.Api+'/1.0/users/info');
   }
 
+
+
+  getUserInfo(userId:number): Observable<any> {
+
+    return this.http.get(ApiLink.Api+'/1.0/users/info-by-id/'+userId);
+  }
+
   editInfo(profile:any): Observable<any> {
-    
+
     return this.http.post(ApiLink.Api+'/1.0/users/edit-profile', profile);
   }
 

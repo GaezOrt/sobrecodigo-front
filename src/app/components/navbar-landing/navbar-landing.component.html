@@ -40,7 +40,7 @@
             <p class="m-0 text-center">¡Hola, {{userName}}!</p>
           </div>
           <div mat-menu-item class="d-flex flex-column align-content-center">
-            <a routerLink="/profile-page" class="text-center" [ngClass]="{'selected' : route === '/profile-page'}">Mi Perfil</a>
+            <a routerLink="/profile-page/{{userId}}" class="text-center" [ngClass]="{'selected' : route === '/profile-page'}">Mi Perfil</a>
           </div>
           <div mat-menu-item class="d-flex flex-column align-content-center">
             <a class="text-center" [ngClass]="{'selected' : route === '/profile-page'}">Editar Perfil</a>

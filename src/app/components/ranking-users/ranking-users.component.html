@@ -3,7 +3,7 @@
 <main>
 
   <div id="card-container">
-    <app-user-card *ngFor=" let ranking of rankings"  image= {{ranking.profileImageUrl}} position={{ranking.position}} projectsDone={{ranking.proyectosCompletados}} username={{ranking.username}} challengesCompleted={{ranking.desafiosCompletados}} amountContributions={{ranking.contribucionesGit}}></app-user-card>
+    <app-user-card *ngFor=" let ranking of rankings"   id= {{ranking.id}} image= {{ranking.profileImageUrl}} position={{ranking.position}} projectsDone={{ranking.proyectosCompletados}} username={{ranking.username}} challengesCompleted={{ranking.desafiosCompletados}} amountContributions={{ranking.contribucionesGit}}></app-user-card>
   </div>
 
 </main>

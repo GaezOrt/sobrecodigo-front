@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { RankingService } from '../../services/ranking-service.service';
 @Component({
   selector: 'app-ranking-users',
@@ -7,7 +8,7 @@ import { RankingService } from '../../services/ranking-service.service';
 })
 export class RankingUsersComponent implements OnInit {
   rankings:any[];
-  constructor(private rankingService:RankingService) { }
+  constructor(private rankingService:RankingService, private router:Router) { }
 
   ngOnInit(): void {
     this.rankingService.obtenerUsers().subscribe(data => {

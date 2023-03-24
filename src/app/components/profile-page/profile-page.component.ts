@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
 import { EditProfileService } from 'src/app/services/edit-profile-service.service';
 import { ProjectService } from '../../services/project.service';
 
@@ -14,21 +15,30 @@ export class ProfilePageComponent implements OnInit {
   linkedIn:string;
   github:string;
 
-  constructor(private dataProject:ProjectService, private editProfile:EditProfileService) { }
+  constructor(private dataProject:ProjectService, private editProfile:EditProfileService, private route: ActivatedRoute) { }
 
   ngOnInit(): void {
-    this.editProfile.getInfoUser().subscribe(val=>{
-      console.log(val);
-      this.usuarioDto= val;
-      this.linkedIn= val.linkedIn;
-      console.log(this.linkedIn);
-      this.github= val.github;
-    })
+
+    this.route.queryParams
+      .subscribe(params => { // { orderby: "price" }
+
+        this.editProfile.getUserInfo(Number(this.route.snapshot.paramMap.get('id'))).subscribe(val=>{
+          console.log(val);
+          this.usuarioDto= val;
+          this.linkedIn= val.linkedIn;
+          console.log(this.linkedIn);
+          this.github= val.github;
+        })
+
+      }
+    );
+
+
     this.dataProject.obtenerPersonalProjects().subscribe(data => {
       console.log(data);
       this.projects = data;
     });
   }
 
-  
+
 }
