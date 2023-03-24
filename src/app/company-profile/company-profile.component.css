@@ -10,8 +10,7 @@
   flex-direction: column;
   align-items: center;
   background: #f3f3f3;
-  box-shadow: var(--card-shadow);
-  border-radius: 30px;
+  border-radius: 15px;
 }
 
 .img-profile {

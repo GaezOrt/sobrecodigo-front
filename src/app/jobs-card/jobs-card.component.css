@@ -5,8 +5,7 @@
     width: 90%;
     align-items: center;
     background: #ffffff;
-    box-shadow: var(--card-shadow);
-    border-radius: 30px;
+    border-radius: 15px;
     margin: 0 auto;
   }
 
@@ -20,51 +19,51 @@
     padding-inline: 10px;
     gap: 14px;
   }
-  
+
   .buttons-jobCard {
     visibility: hidden;
     position: absolute;
     top: 15px;
     right: 15px;
   }
-  
+
   .btn-edit, .btn-delete {
     background: none;
     border: none;
     font-size: 16px;
   }
-  
+
   .btn-edit {
     color: #30c961;
   }
-  
+
   .btn-delete {
     color: #ff0000;
   }
-  
+
   .img-company {
     display: flex;
     width: 80px;
     height: 80px;
     /* padding: 16px; */
-    align-self: flex-start;  
+    align-self: flex-start;
   }
-  
+
   .title-job {
-  
+
     font-family: "Roboto";
     font-style: normal;
     font-weight: 600;
     font-size: 20px;
     line-height: 40px;
     /* or 138% */
-    
+
     /* letter-spacing: -0.02em; */
-  
+
     color: #212121;
     /* margin-top: 23px; */
   }
-  
+
   .subtitle-job {
     font-family: "Roboto";
     font-style: italic;
@@ -73,29 +72,29 @@
     color: #3d3d3d;
     margin: 0 0;
   }
-  
-  
-  
+
+
+
   .content-job {
     padding: 25px;
     margin: 0;
     text-align: justify;
     word-wrap: normal;
   }
-  
+
   .description-job {
     font-size: 18px;
     color: #4e4e4e;
   }
-  
+
   .icons-company {
-    list-style: none;  
+    list-style: none;
   }
-  
+
   .icons-company li {
     padding: 8px;
   }
-  
+
   .btn-apply {
     width: 150px;
     height: 37px;
@@ -109,5 +108,5 @@
     width: 390px;
     margin: 0 0;
   }
-  
+
 }
