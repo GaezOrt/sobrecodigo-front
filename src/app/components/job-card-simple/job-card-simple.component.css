@@ -72,4 +72,58 @@
       margin-top:40px;
     }
   
+  @media (max-width:576px) {
+
+    .jobCard {
+      width: 400px;
+
+      }
+    
+      .header-card-job {
+        width: 255px;
+
+      }
+      .title-job {
+
+        font-size: 0.9rem;
   
+      }
+  
+      .content-tech {
+        width: 60%;
+        font-size: 0.6rem;
+      }
+      .content-salary {
+      
+        font-size: 0.8rem;
+      }
+ 
+     
+  }
+
+  @media screen and (min-width: 577px) and (max-width: 768px) {
+    
+    .jobCard {
+      width: 690px;
+
+      }
+    
+      .header-card-job {
+        width: 580px;
+
+      }
+      .title-job {
+
+        font-size: 0.9rem;
+  
+      }
+  
+      .content-tech {
+        width: 60%;
+        font-size: 0.6rem;
+      }
+      .content-salary {
+      
+        font-size: 0.8rem;
+      }
+  }
