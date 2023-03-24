@@ -1,0 +1,17 @@
+h1 {
+    text-align: center;
+    margin: 3rem auto;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 3rem;
+    color: var(--blue);
+}
+
+h4 {
+    font-size: 1.5rem;
+}
+
+.container {
+    width: 50%;
+    margin: 2rem auto;
+}
