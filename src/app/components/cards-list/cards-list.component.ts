@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ProjectService } from 'src/app/services/project.service';
 
 @Component({
   selector: 'app-cards-list',
@@ -7,7 +8,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CardsListComponent implements OnInit {
 
-  constructor() { }
+  projectsList: any[];
+  constructor(private projectService:ProjectService) { }
+  
+  ngOnInit(): void {
+    this.projectService.obtenerProjects().subscribe (val=>{
+      console.log(val);
+      this.projectsList = val;
+    });
+  }
+
+
   projects  = [
     {
       "title":"Mountain",
@@ -31,7 +42,4 @@ export class CardsListComponent implements OnInit {
     }
 
   ]
-  ngOnInit(): void {
-  }
-
 }
