@@ -28,7 +28,7 @@ export class UserCardComponent implements OnInit {
 
   navigateToProfile(){
     console.log(this.id);
-    this.router.navigate(['profile-page/'+this.id]);
+    this.router.navigate(['profile-page/'+Number(this.id)]);
   }
 
 }
