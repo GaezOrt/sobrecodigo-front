@@ -8,6 +8,12 @@
       <p id="user-name" (click)="navigateToProfile()">{{username}}</p>
       <p id="seniority">{{position}}</p>
     </div>
+
+    <div *ngFor="let x of technology">
+      <img src="{{x.icon}}" alt="">
+      <p id="seniority">{{position}}</p>
+    </div>
+
   </div>
 
   <div id="card-body">

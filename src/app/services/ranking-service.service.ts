@@ -16,4 +16,8 @@ export class RankingService {
   mostActiveUsers():Observable<any> {
     return this.http.get(ApiLink.Api+'/1.0/users/most-active');
   }
+
+  getIconsTechUser(userId:number):Observable<any> {
+    return this.http.get(ApiLink.Api+'/1.0/technologies/by-user/'+userId);
+  }
 }

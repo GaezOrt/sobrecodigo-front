@@ -15,10 +15,11 @@ export class UserCardComponent implements OnInit {
   @Input() image:string;
   @Input() projectsDone:string;
   @Input() position:string;
-
+  @Input() technology:any;
   constructor(private router:Router) { }
 
   ngOnInit(): void {
+    console.log(this.technology);
     console.log(this.id);
     this.projectsDone = "25";
     this.position = "Trainee"
