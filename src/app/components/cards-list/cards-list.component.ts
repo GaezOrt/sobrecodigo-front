@@ -13,7 +13,7 @@ export class CardsListComponent implements OnInit {
 
   ngOnInit(): void {
     this.projectService.obtenerProjects().subscribe (val=>{
-
+      console.log(val);
       this.projectsList = val;
     });
   }
