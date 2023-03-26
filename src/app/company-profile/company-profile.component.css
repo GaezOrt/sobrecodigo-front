@@ -19,7 +19,6 @@
 }
 
 .user-fullname {
-    font-family: "Inter";
     font-style: normal;
     font-weight: 300;
     font-size: 24px;
@@ -27,7 +26,6 @@
 }
 
 .user-title {
-  font-family: "Inter";
     font-style: normal;
     font-weight: 300;
     font-size: 16px;
@@ -37,7 +35,6 @@
 }
 
 .user-location {
-    font-family: "Inter";
     font-style: normal;
     font-weight: 300;
     display: flex;
