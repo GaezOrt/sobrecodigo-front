@@ -1,6 +1,6 @@
 <div class="cards-list">
 
-  <div class="card 1" *ngFor="let project of projectsList " routerLink="/project-details">
+  <div class="card 1" *ngFor="let project of projectsList " routerLink="/project-details/{{project.id}}">
 
     <div class="card_image"> <img src={{project.image}} /> </div>
 

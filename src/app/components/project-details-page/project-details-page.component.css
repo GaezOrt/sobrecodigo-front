@@ -24,7 +24,6 @@ main {
   margin: 0 0;
   text-align: center;
   color: var(--blue-light);
-  font-family: "Roboto";
   font-style: normal;
   font-weight: 600;
   font-size: 23px;
@@ -70,7 +69,6 @@ main {
 #text {
   margin: var(--margin-center-horizontal);
   text-align: justify;
-  font-family: "Inter";
   font-style: normal;
   font-weight: 400;
   font-size: 20px;

@@ -22,7 +22,7 @@ const routes: Routes = [
   { path: 'profile-page/:id', component: ProfilePageComponent },
   { path: 'company-profile', component: CompanyProfileComponent },
   { path: 'project-page', component: ProjectPageComponent },
-  { path: 'project-details', component: ProjectDetailsPageComponent },
+  { path: 'project-details/:id', component: ProjectDetailsPageComponent },
   { path: 'jobs-page', component: JobsPageComponent },
   { path: 'job-details', component: JobDetailsComponent },
   { path: 'challenges', component: ChallengesPageComponent },
