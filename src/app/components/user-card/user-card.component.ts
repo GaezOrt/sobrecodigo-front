@@ -19,6 +19,7 @@ export class UserCardComponent implements OnInit {
   constructor(private router:Router) { }
 
   ngOnInit(): void {
+    console.log(this.id);
     this.projectsDone = "25";
     this.position = "Trainee"
   }
