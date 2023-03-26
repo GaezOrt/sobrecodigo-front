@@ -10,10 +10,10 @@ export class CardsListComponent implements OnInit {
 
   projectsList: any[];
   constructor(private projectService:ProjectService) { }
-  
+
   ngOnInit(): void {
     this.projectService.obtenerProjects().subscribe (val=>{
-      console.log(val);
+
       this.projectsList = val;
     });
   }
