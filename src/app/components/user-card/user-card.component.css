@@ -114,6 +114,17 @@
   display: flex;
   justify-content: space-between;
 }
+.group__icon__tech {
+  display: flex;
+  width: inherit;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5% 0;
+}
+.icon__tech {
+  color: #f0f0f0;
+  font-size: 1.2rem;
+}
 
 .contact{
   width: inherit;
