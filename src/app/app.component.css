@@ -1,0 +1,9 @@
+/* The article fills all the space between header & footer */
+body{ 
+    display:flex; 
+    flex-direction:column; 
+    justify-content: space-between;
+}
+
+
+

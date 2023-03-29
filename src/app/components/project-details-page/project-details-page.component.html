@@ -1,58 +1,53 @@
-<!-- <p>project-details-page works!</p> -->
-<app-navbar-landing></app-navbar-landing>
-
 <div class="container-fluid mt-4">
-<main class="main">
-  <div id="title">
-    <h1>{{project.title}}</h1>
-  </div>
-  <div class="card">
+  <main class="main">
+    <div id="title">
+      <h1>{{project.title}}</h1>
+    </div>
+    <div class="card">
 
-    <div id="main-info">
+      <div id="main-info">
 
-      <div id="developers">
+        <div id="developers">
 
-        <h2 class="header-secondary">Desarrolladores </h2>
-        <ul id="authors-list">
-          <li *ngFor="let author of project.projectParticipationDtos">@{{author.userInfoDto.username}}</li>
+          <h2 class="header-secondary">Desarrolladores </h2>
+          <ul id="authors-list">
+            <li *ngFor="let author of project.projectParticipationDtos">@{{author.userInfoDto.username}}</li>
+          </ul>
+
+        </div>
+
+      </div>
+
+      <div id="text">
+        <p>{{project.description}}</p>
+      </div>
+
+      <div id="technologies">
+        <h2 class="header-secondary">Tecnologias</h2>
+        <ul>
+          <li *ngFor="let x of project.projectTechnologiesDtos">{{x.technology}}</li>
         </ul>
 
       </div>
+      <div>
+        <h2 class="header-secondary">Imágenes</h2>
+        <div id="carrusel">
 
-    </div>
+          <img id="image-container" src="{{project.image}}">
 
-    <div id="text">
-      <p>{{project.description}}</p>
-    </div>
+        </div>
+      </div>
 
-    <div id="technologies">
-      <h2 class="header-secondary">Tecnologias</h2>
-      <ul>
-        <li *ngFor="let x of project.projectTechnologiesDtos">{{x.technology}}</li>
-      </ul>
+      <div id="repo-link">
+        <a href={{project.gitLink}}>
+          <span>REPOSITORIO</span>
+          <img src="../../../assets/imgs/github-color-svgrepo-com.svg" width="30px" alt="">
 
-    </div>
-    <div>
-      <h2 class="header-secondary">Imágenes</h2>
-      <div id="carrusel">
-
-        <img  id="image-container" src="{{project.image}}">
+        </a>
 
       </div>
-    </div>
-
-    <div id="repo-link">
-      <a href={{project.gitLink}}>
-        <span>REPOSITORIO</span>
-        <img src="../../../assets/imgs/github-color-svgrepo-com.svg" width="30px" alt="">
-
-      </a>
 
     </div>
 
-  </div>
-
-
-
-</main>
+  </main>
 </div>
