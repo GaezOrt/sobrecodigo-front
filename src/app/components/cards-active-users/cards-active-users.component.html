@@ -1,6 +1,6 @@
 <div class="cards-list" >
 
-    <app-user-card *ngFor="let user of users"  id ={{user.id}} image={{user.profileImageUrl}} username={{user.username}} challengesCompleted={{user.desafiosCompletados}} amountContributions={{user.contribucionesGit}} technology ={{user.technologyDtos.technology}} >
+    <app-user-card *ngFor="let user of users; let i = index"  id ={{user.id}} i={{i}} image={{user.profileImageUrl}} username={{user.username}} challengesCompleted={{user.desafiosCompletados}} amountContributions={{user.contribucionesGit}} technology ={{user.technologyDtos.technology}} >
     </app-user-card>
 
 </div>

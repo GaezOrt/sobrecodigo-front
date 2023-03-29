@@ -9,6 +9,7 @@ import { Router } from '@angular/router';
 export class UserCardComponent implements OnInit {
 
   @Input() id:string;
+  @Input() i:number;
   @Input() username: string;
   @Input() challengesCompleted: string;
   @Input() amountContributions: string;
