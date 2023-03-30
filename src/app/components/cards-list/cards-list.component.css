@@ -21,6 +21,9 @@
     cursor: pointer;
     transition: 0.4s;
     /* margin-right:25px; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
   }
 
   .card .card_image {
@@ -42,10 +45,10 @@
     transition: 1s;
   }
 
-  .card:hover .card_image img {
+  /* .card:hover .card_image img {
     object-fit: cover;
     object-position: bottom;
-  }
+  } */
 
   .card .card_title {
     text-align: center;
@@ -66,12 +69,12 @@
   .description_short{
     width: 100%;
     margin: 0 auto;
-    padding: 0.5em 1em;
+    padding: 0.5em 3em;
   }
 
   .description_short p {
     margin: 0;
-    text-align: left;
+    text-align: justify;
     color: rgba(0, 0, 0, 0.664);
   }
 
@@ -117,8 +120,12 @@
 
   .card .tecnologies {
     width: 100%;
-    padding: 0.2em 1em;
+    padding: 0 3em;
+    padding-bottom: 1em;
     display: flex;
     flex-wrap: wrap;
-    gap: 0.5em;
+    justify-content: space-between;
+  }
+  .card .tecnologies img {
+    margin: 0 5px;
   }
