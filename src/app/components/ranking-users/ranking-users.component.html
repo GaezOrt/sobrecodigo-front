@@ -1,11 +1,6 @@
-<app-navbar-landing></app-navbar-landing>
-
-<main>
-
-  <div id="card-container">
-    <app-user-card *ngFor=" let ranking of rankings"   id= {{ranking.id}} image= {{ranking.profileImageUrl}} position={{ranking.position}} projectsDone={{ranking.proyectosCompletados}} username={{ranking.username}} challengesCompleted={{ranking.desafiosCompletados}} amountContributions={{ranking.contribucionesGit}}></app-user-card>
-  </div>
-
-</main>
-
-<app-footer></app-footer>
+<div id="card-container">
+  <app-user-card *ngFor=" let ranking of rankings" id={{ranking.id}} image={{ranking.profileImageUrl}}
+    position={{ranking.position}} projectsDone={{ranking.proyectosCompletados}} username={{ranking.username}}
+    challengesCompleted={{ranking.desafiosCompletados}}
+    amountContributions={{ranking.contribucionesGit}}></app-user-card>
+</div> 
