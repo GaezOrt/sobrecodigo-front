@@ -17,7 +17,7 @@ export class ChallengesPageComponent implements OnInit {
 
   updateClock() {
     if (this.totalTime == 0) {
-      alert('Final');
+      // alert('Final');
     } else {
       this.totalTime -= 1;
       setTimeout(() => this.updateClock(), 1000);
