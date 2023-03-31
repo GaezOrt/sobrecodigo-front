@@ -19,6 +19,10 @@ form {
   padding: 20px;
 }
 
+#rubro{
+  color: rgb(100, 100, 100);
+}
+
 input[type="text"],
 input[type="password"],
 input[type="email"], select {
@@ -49,6 +53,14 @@ input[type="submit"]:hover {
 form label {
   color: #ccc;
   margin-left: 13px;
+}
+form > label {
+  color: rgb(100, 100, 100);
+}
+
+form label span{
+  color: rgba(255, 0, 0, 0.575);
+  font-weight: 800;
 }
 
 #header {
