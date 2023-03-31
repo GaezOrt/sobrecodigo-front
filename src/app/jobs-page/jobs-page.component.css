@@ -9,6 +9,7 @@ form {
   padding: 5px;
   display: flex;
   justify-content: space-evenly;
+  flex-wrap: wrap;
 }
 form select {
   text-align: center;
