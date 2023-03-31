@@ -74,6 +74,14 @@ form label {
   color: #ccc;
   margin-left: 13px;
 }
+form > label {
+  color: rgb(100, 100, 100);
+}
+
+form label span{
+  color: rgba(255, 0, 0, 0.575);
+  font-weight: 800;
+}
 
 #header {
   text-align: center;
