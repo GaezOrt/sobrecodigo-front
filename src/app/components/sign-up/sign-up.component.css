@@ -14,10 +14,12 @@ body {
   flex-direction: column;
   justify-content: center;
 }
+
 .answers{
-  align-items: start;
-  margin-top: 2rem;
-  margin-top:8px;
+  width: 100%;
+  margin:8px 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
 form {
   padding: 20px;
