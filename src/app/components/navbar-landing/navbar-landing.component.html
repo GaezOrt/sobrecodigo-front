@@ -1,3 +1,4 @@
+
 <nav>
   <div class="logo">
     <img src="../../assets/imgs/Sobrec_logo.png" alt="" routerLink="/home">
@@ -24,7 +25,7 @@
     <hr>
     <li><a routerLink="/jobs-page" [ngClass]="{'selected' : route === '/jobs-page'}">Empleos</a></li>
     <hr>
-    <li><img src="../../../assets/imgs/moon-1.svg" alt="dark-mode" style=" height: 30px; margin: auto 0; aspect-ratio: 1/1;"></li>
+    <li><img src="../../../assets/imgs/moon-1.svg" alt="dark-mode" id="theme-button"></li>
     <li *ngIf="!isLoggedIn">
       <button id="login" mat-button [matMenuTriggerFor]="menu"><a>Registrarse</a></button>
         <mat-menu #menu="matMenu">
@@ -32,7 +33,7 @@
           <a routerLink="/sign-up-company" mat-menu-item>Empresas</a>
         </mat-menu>
     </li>
-    <li *ngIf="!isLoggedIn" routerLink="/sign-in" id="login"><a mat-button>Entrar</a></li>
+    <li *ngIf="!isLoggedIn"><button id="login"  routerLink="sign-in" mat-button><a>Ingresar</a></button></li>
     <li *ngIf="isLoggedIn">
       <button id="userLogged" mat-mini-fab color="primary" [matMenuTriggerFor]="menu"><i class="fa-solid fa-user"></i></button>
         <mat-menu class="mt-1" #menu="matMenu">
