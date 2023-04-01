@@ -1,3 +1,5 @@
+@import url('../../jobs-page/jobs-page.component.css');
+
 .title-page {
   display: flex;
   justify-content: center;
