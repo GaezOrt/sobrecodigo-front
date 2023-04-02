@@ -10,6 +10,7 @@ form {
   display: flex;
   justify-content: flex-start;
   gap: 15px;
+  margin-left: 18px;
 }
 form select {
   text-align: center;
