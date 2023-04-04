@@ -8,7 +8,9 @@ main {
 form {
   padding: 5px;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: flex-start;
+  gap: 15px;
+  margin-left: 18px;
 }
 form select {
   text-align: center;
@@ -61,6 +63,7 @@ label {
   align-items: center;
   justify-content: center;
 }
+/*
 @media (min-width: 400px) {
   form {
     margin: 0 auto;
@@ -73,3 +76,15 @@ label {
     width: 90%;
   }
 }
+*/
+
+@media (max-width: 768px) {
+  form {
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 0 auto;
+    gap: 15px;
+  }
+}
+

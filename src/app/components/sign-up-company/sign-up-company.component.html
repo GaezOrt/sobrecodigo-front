@@ -1,24 +1,23 @@
-<app-navbar-landing></app-navbar-landing>
 
 <body>
   <div class="form-container mb-5">
     <h1 id="header">Registro para empresas</h1>
     <form action="" method="post">
 
-      <label>Usuario</label>
+      <label>Usuario<span>*</span></label>
       <input type="text" name="name" required>
-      <label>Email</label>
+      <label>Email<span>*</span></label>
       <input type="email" name="email" required>
-      <label for="rubro" class="form-label">Rubro</label>
+      <label for="rubro" class="form-label">Rubro<span>*</span></label>
       <select id="rubro" class="form-select mb-3 mt-0" aria-label="Rubro">
-        <option selected>Seleccionar</option>
+        <option selected disabled>Seleccionar</option>
         <option value="Rubro 1">Rubro 1</option>
         <option value="Rubro 2">Rubro 2</option>
         <option value="Rubro 3">Rubro 3</option>
       </select>
-      <label>Contraseña</label>
+      <label>Contraseña<span>*</span></label>
       <input type="password" name="password" required minlength="8">
-      <label>Confirmar Contraseña</label>
+      <label>Confirmar Contraseña<span>*</span></label>
       <input type="password" name="confirm-password" required minlength="8">
       <input type="submit" value="Registrarme">
 

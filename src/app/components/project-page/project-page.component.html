@@ -1,6 +1,31 @@
 <div>
   <h1 class="title-page">Proyectos</h1>
 </div>
+
+ <!-- filters -->
+ <form #myForm="ngForm">
+  <label for="tecnologia">Tecnologia</label>
+  <select name="tecnologia" id="tecnologia" >
+      <option value="" disabled selected>tecnologia</option>
+      <option value="trainee">Java</option>
+      <option value="junior">React</option>
+      <option value="semi Senior">Angular</option>
+      <option value="senior">Python</option>
+  </select>
+  <label for="level">Nivel de Dificultad</label>
+  <select id="level" name="level" >
+      <option value="" disabled selected>nivel</option>
+      <option value="facil">Fácil</option>
+      <option value="intermedio">Intermedio</option>
+      <option value="dificil">Difícil</option>
+  </select>
+</form>
+
+<div id="button-container">
+  <button class="btn btn-primary btn-sm" (click)="limpiar()">
+      Limpiar Filtro
+  </button>
+</div>
 <div class="content">
   <div class="cards">
     <tr *ngFor="let project of projects">

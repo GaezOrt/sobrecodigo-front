@@ -19,4 +19,7 @@ export class ProjectPageComponent implements OnInit {
     });
   }
 
+  limpiar() {
+   
+  }
 }

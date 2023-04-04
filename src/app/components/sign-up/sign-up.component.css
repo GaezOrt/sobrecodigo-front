@@ -14,10 +14,12 @@ body {
   flex-direction: column;
   justify-content: center;
 }
+
 .answers{
-  align-items: start;
-  margin-top: 2rem;
-  margin-top:8px;
+  width: 100%;
+  margin:8px 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
 form {
   padding: 20px;
@@ -71,6 +73,14 @@ input[type="submit"]:hover {
 form label {
   color: #ccc;
   margin-left: 13px;
+}
+form > label {
+  color: rgb(100, 100, 100);
+}
+
+form label span{
+  color: rgba(255, 0, 0, 0.575);
+  font-weight: 800;
 }
 
 #header {

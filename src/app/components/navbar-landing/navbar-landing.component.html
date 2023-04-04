@@ -1,6 +1,7 @@
+
 <nav>
-  <div class="logo">
-    <img src="../../assets/imgs/Sobrec_logo.png" alt="" routerLink="/home">
+  <div class="logo" routerLink="/home">
+    <img src="../../assets/imgs/Sobrec_logo.png" alt="">
   </div>
 
   <label for="checkbox">
@@ -11,28 +12,28 @@
 
   <div class="list">
 
-    <li><a routerLink="/home" [ngClass]="{'selected' : route === '/home'}">Inicio</a></li>
+    <li><a routerLink="/home" routerLinkActive="selected">Inicio</a></li>
     <hr>
-    <li><a routerLink="/project-page" [ngClass]="{'selected' : route === '/project-page'}">Proyectos</a></li>
+    <li><a routerLink="/project-page" routerLinkActive="selected">Proyectos</a></li>
     <hr>
-    <li><a routerLink="/ranking-users" [ngClass]="{'selected' : route === '/ranking-users'}">Ranking usuarios</a></li>
+    <li><a routerLink="/ranking-users" routerLinkActive="selected">Ranking usuarios</a></li>
     <hr>
-    <li><a routerLink="/challenges" [ngClass]="{'selected' : route === '/challenges'}">Desafíos</a></li>
+    <li><a routerLink="/challenges" routerLinkActive="selected">Desafíos</a></li>
     <hr>
     <hr>
-    <li><a routerLink="/company-profile" [ngClass]="{'selected' : route === '/company-profile'}">Perfil Empresas</a></li>
+    <li><a routerLink="/company-profile" routerLinkActive="selected">Perfil Empresas</a></li>
     <hr>
-    <li><a routerLink="/jobs-page" [ngClass]="{'selected' : route === '/jobs-page'}">Empleos</a></li>
+    <li><a routerLink="/jobs-page" routerLinkActive="selected">Empleos</a></li>
     <hr>
-    <li><img src="../../../assets/imgs/moon-1.svg" alt="dark-mode" style=" height: 30px; margin: auto 0; aspect-ratio: 1/1;"></li>
+    <!-- <li><img src="../../../assets/imgs/moon-1.svg" alt="dark-mode" id="theme-button"></li> -->
     <li *ngIf="!isLoggedIn">
       <button id="login" mat-button [matMenuTriggerFor]="menu"><a>Registrarse</a></button>
         <mat-menu #menu="matMenu">
-          <a routerLink="/sign-up" mat-menu-item>Usuarios</a>
-          <a routerLink="/sign-up-company" mat-menu-item>Empresas</a>
+          <a routerLink="/sign-up" routerLinkActive="active-btn" mat-menu-item>Usuarios</a>
+          <a routerLink="/sign-up-company" routerLinkActive="active-btn" mat-menu-item>Empresas</a>
         </mat-menu>
     </li>
-    <li *ngIf="!isLoggedIn" routerLink="/sign-in" id="login"><a mat-button>Entrar</a></li>
+    <li *ngIf="!isLoggedIn"><button id="login"  routerLink="sign-in" mat-button><a>Ingresar</a></button></li>
     <li *ngIf="isLoggedIn">
       <button id="userLogged" mat-mini-fab color="primary" [matMenuTriggerFor]="menu"><i class="fa-solid fa-user"></i></button>
         <mat-menu class="mt-1" #menu="matMenu">
