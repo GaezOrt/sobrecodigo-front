@@ -1,39 +1,13 @@
-<mat-card class="jobCard" >
-
-    <mat-card-header >
-      <mat-card-title class="title-job">{{cardInfo.title}}
-      </mat-card-title>
-      <mat-card-subtitle class="subtitle-job">{{cardInfo.position.position}}</mat-card-subtitle>
-      <img mat-card-avatar src="../../assets/imgs/img-company.png" class="img-company">
-    </mat-card-header>
-
-    <mat-card-content class="content-job">
-        <mat-card-subtitle class="description-job">
-          <p style="text-align: justify;">{{cardInfo.description}}</p>
-        </mat-card-subtitle>
-        <div *ngIf="showFull">
-        <app-job-full-info ></app-job-full-info>
+<div class="jobCard" >
+  <div class="img-container">
+      <img src="../../assets/imgs/img-company.png" class="img-company">
+    </div>
+    <div class="text-container">
+      <h2 class="title-job">{{ cardInfo.title }}</h2>
+      <h3 class="subtitle-job">{{ cardInfo.position.position }}</h3>
+      <div class="description-container ">
+        <p class="description-job">{{cardInfo.description}}</p>
       </div>
-    </mat-card-content>
-    <mat-card-footer class="p-3 d-flex justify-content-end">
-      
-      <div class="apply">
-        <button 
-        type="button"
-        class="btn btn-primary btn-sm" 
-        data-bs-toggle="modal"
-        data-bs-target="#application-form"
-        (click)="showDetails()" 
-        *ngIf="showFull">Aplicar</button>
-        <app-application-form></app-application-form>
-      </div>
-
-      <button 
-      class="btn btn-primary btn-sm" 
-      (click)="showDetails()" 
-     >
-      <a routerLink="/job-details" class = "leermas">Leer más</a></button>
-      
-    </mat-card-footer>
-
-  </mat-card>
+      <button routerLink="/job-details" class="read-more"><a >Leer Más</a></button>
+    </div>
+  </div>
