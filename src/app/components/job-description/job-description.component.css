@@ -1,42 +1,86 @@
-/* @import url('../../jobs-card/jobs-card.component.css'); */
 .jobCard {
-  width: 295px;
-  border-radius: 15px;
-  }
-
-  .title-job {
-    font-family: "Roboto";
-    font-style: normal;
-    font-weight: 600;
-    font-size: 20px;
-    line-height: 30px;
-    letter-spacing: -0.02em;
-    color: #212121;
-
-  }
-.leermas{
-  color:white;
+  width: 433px;
+  height: 209px;
+  border-radius: 16px;
+  padding: 20px;
+  gap: 22px;
+  background-color: rgba(255, 255, 255, 1);
+  border: solid rgba(0, 0, 0, 0.3) 2px;
+  box-shadow: 6px 6px 15px 0px rgba(0, 0, 0, 0.25);
+  display: flex;
+  align-items: center;
 }
-  .subtitle-job {
-    font-family: "Roboto";
-    font-style: italic;
-    font-weight: 400;
-    font-size: 14px;
-    color: #3d3d3d;
-  }
-  .content-job {
-    padding: 0px;
 
-  }
-  .cards {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-    gap: 20px;
-    padding: auto;
-    width: 1500px;
-    margin: 10px auto;
-    margin-top:40px;
-  }
+.img-container {
+  margin-left: 4px;
+}
 
+.img-container img {
+  width: 109px;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  border: 4px solid #6d65f0;
+  box-sizing: content-box;
+}
+
+.title-job {
+  font-family: "Roboto";
+  font-weight: 800;
+  font-size: 16px;
+  line-height: 22.4px;
+  color: rgba(79, 79, 79, 1);
+  margin: 0 0;
+}
+.read-more {
+  background-color: rgba(92, 85, 199, 1);
+  border-radius: 6px;
+  border: none;
+  width: 100px;
+  height: 40px;
+}
+.read-more a {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 1);
+  font-size: 15px;
+  line-height: 21px;
+  font-weight: 400;
+}
+.leermas:hover {
+  background-color: #7e79d7;
+  transition: all 750ms;
+}
+.subtitle-job {
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19.6px;
+  color: rgba(171, 171, 171, 1);
+  margin: 0 0;
+  /* margin-top: 10px; */
+}
+.text-container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.description-container {
+  overflow: hidden;
+  height: 57px;
+}
+.description-job {
+  padding: 0px;
+  font-size: 12px;
+  line-height: 19.2px;
+  font-family: "Roboto";
+  font-weight: 400;
+  color: rgba(79, 79, 79, 1);
+  margin: 0 0;
+  /* Multi-line Ellipsis */
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  white-space: normal;
+  text-align: left;
+}
