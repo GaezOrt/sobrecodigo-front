@@ -1,71 +1,83 @@
-main{
-    /* inline-size: 100%; */
-    margin: 0 0;
-    overflow: hidden;
-    padding-top: 20px;
+main {
+  /* inline-size: 100%; */
+  margin: 0 0;
+  overflow: hidden;
+  padding-top: 20px;
 }
-.main-card{
-    width:50%;
-    margin:auto;
-    margin-top: 15%;
-    height:200px;
-    transition: transform .2s;
-    background-color: #043050;
+.main-card {
+  width: 50%;
+  margin: auto;
+  margin-top: 15%;
+  height: 200px;
+  transition: transform 0.2s;
+  background-color: #043050;
 }
-.card{
-    margin:auto;
-    height:600px;
+.card {
+  margin: auto;
+  height: 600px;
 }
-.main-card:hover{
-    transform: scale(1.2);
+.main-card:hover {
+  transform: scale(1.2);
 }
 
-.header{
-    width: 100%;
-    padding: 25px;
-    box-sizing:border-box ;
+.header {
+  width: 100%;
+  padding: 25px;
+  box-sizing: border-box;
 }
 .header h1 {
-    font-size: 28px;
-    font-weight:bold;
-    margin:  0 0;
+  font-size: 28px;
+  font-weight: bold;
+  margin: 0 0;
 }
 
-span{
-    color: #1a98cf;
+span {
+  color: #1a98cf;
 }
 
-.row{
-    margin-left:40px;
+.row {
+  margin-left: 40px;
 }
-hr{
-    width: calc(100vw - 5%);
-    border-color: var(--blue-light);
-    margin: 0 auto;
-    margin-bottom: 10px;
+hr {
+  width: calc(100vw - 5%);
+  border-color: var(--blue-light);
+  margin: 0 auto;
+  margin-bottom: 10px;
 }
 
-.dropdowns{
-    width:200px;
-    border-width: 2px;
-    border-radius: 1%;
-    margin-right: 2%;
-    color: black;
-    border : 1px solid #666666;
-  }
+.dropdowns {
+  width: 200px;
+  border-width: 2px;
+  border-radius: 1%;
+  margin-right: 2%;
+  color: black;
+  border: 1px solid #666666;
+}
 
-  .cards {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content:flex-start;
-    align-items: center;
-    gap: 20px;
-    padding: auto;
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 20px;
+  padding: auto;
+}
+.jobList {
+  margin-top: 50px;
+}
 
-  }
-  .jobList{
-    margin-top:50px;
-  }
+.example-tab-icon {
+  color: rgba(92, 85, 199, 1);
+}
+.jobcard {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 1em;
+}
 
-  /*Queda agregar las vistas responsive*/
+:host ::ng-deep .mat-ink-bar {
+  display: none !important;
+}
 
+/*Queda agregar las vistas responsive*/
