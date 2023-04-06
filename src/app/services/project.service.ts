@@ -22,4 +22,8 @@ export class ProjectService {
     return this.http.get(ApiLink.Api +"/1.0/projects/by-id/"+id);
   }
 
+  getAllProjects():Observable<any>{
+    return this.http.get(ApiLink.Api + "/1.0/projects");
+  }
+
 }
