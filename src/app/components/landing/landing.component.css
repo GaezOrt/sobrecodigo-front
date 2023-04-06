@@ -22,28 +22,24 @@ main {
 
 .header {
   width: 100%;
-  padding: 25px;
-  box-sizing: border-box;
+  padding: 0 3em;
+}
+.row {
+  margin: 0 4em;
 }
 .header h1 {
-  font-size: 28px;
+  font-size: 24px;
   font-weight: bold;
-  margin: 0 0;
+  margin: 1em 0;
 }
 
 span {
-  color: #1a98cf;
+  /* color: #1a98cf; */
+  color: rgba(92, 85, 199, 1);
 }
 
-.row {
-  margin-left: 40px;
-}
-hr {
-  width: calc(100vw - 5%);
-  border-color: var(--blue-light);
-  margin: 0 auto;
-  margin-bottom: 10px;
-}
+
+
 
 .dropdowns {
   width: 200px;
@@ -79,5 +75,18 @@ hr {
 :host ::ng-deep .mat-ink-bar {
   display: none !important;
 }
+:host ::ng-deep .mat-tab-header {
+  border: none !important;
+}
+
+:host ::ng-deep .mat-tab-label {
+  padding: 0 !important;
+  min-width: 24px;
+  width: fit-content;
+  height: fit-content;
+  margin: 0 10px; 
+}
+
+
 
 /*Queda agregar las vistas responsive*/
