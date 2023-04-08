@@ -8,28 +8,18 @@ import { Router } from '@angular/router';
 })
 export class UserCardComponent implements OnInit {
 
-  @Input() id:string;
   @Input() i:number;
-  @Input() username: string;
-  @Input() challengesCompleted: string;
-  @Input() amountContributions: string;
-  @Input() image:string;
-  @Input() projectsDone:string;
-  @Input() position:string;
-  @Input() technology:any;
+  @Input() user:any;
   constructor(private router:Router) { }
 
   ngOnInit(): void {
-    console.log(this.technology);
-    console.log(this.id);
-    this.projectsDone = "25";
-    this.position = "Trainee"
+    
   }
 
 
   navigateToProfile(){
-    console.log(this.id);
-    this.router.navigate(['profile-page/'+Number(this.id)]);
+    console.log(this.user.id);
+    this.router.navigate(['profile-page/'+Number(this.user.id)]);
   }
 
 }
