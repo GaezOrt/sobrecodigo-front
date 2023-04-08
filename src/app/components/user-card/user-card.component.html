@@ -2,11 +2,12 @@
   <div class="rank"><h4>#{{i}}</h4></div>
   <div id="card-head">
     <div id="img-container" routerLink="/profile-page">
-      <img src="../../assets/imgs/img-company.png" alt="user-image">
+      <!-- <img src="../../assets/imgs/img-company.png" alt="user-image"> -->
+      <img src={{user.profileImageUrl}} alt="user-image">
     </div>
     <div id="name-container">
-      <p id="user-name" (click)="navigateToProfile()">SobreCodigoArgentinaffffffffffffffffffff</p>
-      <p id="seniority">{{position}}</p>
+      <p id="user-name" (click)="navigateToProfile()">{{user.username}}</p>
+      <p id="seniority">{{user.position}}</p>
     </div>
   </div> 
 
@@ -15,11 +16,11 @@
     <div id="stats-container">
       <div class="stats">
         <p class="stat-name" >Desafíos Completados.</p>
-        <p>{{challengesCompleted}}</p>
+        <p>{{user.desafiosCompletados}}</p>
       </div>
       <div class="stats">
         <p class="stat-name" >Proyectos Completados.</p>
-        <p>{{projectsDone}}</p>
+        <p>{{user.proyectosCompletados}}</p>
       </div>
     </div>
 
