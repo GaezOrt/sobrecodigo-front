@@ -1,8 +1,2 @@
-#card-container{
-  width: 95%;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-start;
-  margin: 20px auto;
-  box-sizing: border-box;
-}
+/* This container has "user-cards" components inside, therefore it works well with the same reponsive css as "active users container" in home page*/
+@import url("../cards-active-users/cards-active-users.component.css");
