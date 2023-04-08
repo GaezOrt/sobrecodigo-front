@@ -211,7 +211,9 @@
     clip-path: ellipse(95% 57% at 50% 100%);
   }
   #card-head{
+    width: 100%;
     flex-direction: row;
+    justify-content: flex-start;
     gap:22px;
   }
   #name-container{
