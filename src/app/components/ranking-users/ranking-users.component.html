@@ -1,6 +1,3 @@
-<div id="card-container">
-  <app-user-card *ngFor=" let ranking of rankings" id={{ranking.id}} image={{ranking.profileImageUrl}}
-    position={{ranking.position}} projectsDone={{ranking.proyectosCompletados}} username={{ranking.username}}
-    challengesCompleted={{ranking.desafiosCompletados}}
-    amountContributions={{ranking.contribucionesGit}}></app-user-card>
-</div> 
+<div class="cards-list">
+  <app-user-card *ngFor="let userRanked of rankings" [user]="userRanked"></app-user-card>
+</div>  
