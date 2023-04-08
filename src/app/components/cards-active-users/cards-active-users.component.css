@@ -11,6 +11,7 @@
   row-gap: 35px;
   margin: 0 auto;
   padding-inline:15px ;
+  padding-block: 40px;
 }
 
 @media (min-width:750px) and (max-width:1024px){
