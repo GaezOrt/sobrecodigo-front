@@ -35,9 +35,9 @@ span{
     color: #1a98cf;
 }
 
-.row{
+/* .row{
     margin-left:40px;
-}
+} */
 hr{
     width: calc(100vw - 5%);
     border-color: var(--blue-light);
