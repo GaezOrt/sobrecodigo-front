@@ -45,19 +45,18 @@
 }
 /* Position Number Styles */
 .rank {
-  display: none;
-  top:0px;
-  left: 0px;
+  top:11px;
+  left: 12px;
   max-width: 30px;
   position: absolute;
   text-align: center;
-  padding: 5px;
 }
 .rank h4{
-  font-size: 14px;
-  font-weight: 400;
+  font-size: 12px;
+  font-weight: 500;
   color: rgba(171, 171, 171, 1);
   margin:  0 0;
+  letter-spacing: 1px;
 }
 /* Inner cards behavior */
 #card-head {
@@ -251,6 +250,9 @@
   .contact{
     gap: 22px;
   }
+  .rank h4{
+    font-size: 14px;
+  }
 }
 
 /* Styles to desktop */
@@ -294,5 +296,8 @@
   .contact{
     gap: 22px;
 
+  }
+  .rank h4{
+    font-size: 16px;
   }
 }
