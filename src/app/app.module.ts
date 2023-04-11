@@ -40,6 +40,7 @@ import { JobFilterPipe } from './jobs-page/job-filter.pipe';
 import {MatGridListModule} from '@angular/material/grid-list'
 import { Loading } from './components/loading/loading.component'
 
+import {MatTabsModule} from '@angular/material/tabs';
 import { MatSnackBar, MatSnackBarModule } from '@angular/material/snack-bar';
 import { AppFooter } from './components/footer/footer.component';
 import { ProjectDetailsPageComponent } from './components/project-details-page/project-details-page.component'
@@ -49,6 +50,7 @@ import { JobCardSimpleComponent } from './components/job-card-simple/job-card-si
 import { ApplicationFormComponent } from './components/modals/application-form/application-form.component';
 import { ChallengesPageComponent } from './challenges-page/challenges-page.component';
 import { JobDetailsComponent } from './job-details/job-details.component';
+
 
 @NgModule({
   declarations: [
@@ -102,8 +104,8 @@ import { JobDetailsComponent } from './job-details/job-details.component';
     FormsModule,
     CommonModule,
     RouterModule,
-    MatSnackBarModule
-
+    MatSnackBarModule,
+    MatTabsModule
   ],
   providers: [{ provide: HTTP_INTERCEPTORS, useClass: AuthInterceptor, multi: true }],
   bootstrap: [AppComponent]
