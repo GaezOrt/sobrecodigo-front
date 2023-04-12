@@ -100,3 +100,8 @@ form input:not([type="password"]):valid:focus {
 form input[type="password"]:valid:focus {
   outline-color: var(--blue-light);
 }
+
+.form-check:has(input:checked) label{
+  color: #5c53cf;
+  transition: 0.3s;
+}
