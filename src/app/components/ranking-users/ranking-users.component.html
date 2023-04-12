@@ -1,3 +1,3 @@
 <div class="cards-list">
-  <app-user-card *ngFor="let userRanked of rankings" [user]="userRanked"></app-user-card>
+  <app-user-card *ngFor="let userRanked of rankings; let i = index" i={{i+1}} [user]="userRanked"></app-user-card>
 </div>  
