@@ -13,7 +13,13 @@
 .img-container {
   margin-left: 4px;
 }
-
+.description-job{
+  display: -webkit-box;
+  -webkit-line-clamp: 3; /* number of lines to show */
+  -webkit-box-orient: vertical;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
 .img-container img {
   width: 109px;
   aspect-ratio: 1/1;
@@ -63,23 +69,10 @@
   flex-direction: column;
   gap: 10px;
 }
-.description-container {
-  overflow: hidden;
-  height: 57px;
-}
 .description-job {
-  padding: 0px;
-  font-size: 12px;
-  line-height: 19.2px;
-  font-family: "Roboto";
-  font-weight: 400;
-  color: rgba(79, 79, 79, 1);
-  margin: 0 0;
-  /* Multi-line Ellipsis */
-  overflow: hidden;
   display: -webkit-box;
+  -webkit-line-clamp: 2; /* number of lines to show */
   -webkit-box-orient: vertical;
-  -webkit-line-clamp: 3;
-  white-space: normal;
-  text-align: left;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
