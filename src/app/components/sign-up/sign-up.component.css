@@ -6,6 +6,7 @@ body {
 .form-container {
   max-width: 400px;
   min-width: 200px;
+  min-height: 200px;
   margin: 50px auto;
   border-radius: 15px;
   /* possible global variable */
@@ -13,6 +14,9 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
+
+  justify-content: center;
+
 }
 
 .answers{
@@ -104,4 +108,10 @@ form input[type="password"]:valid:focus {
 .form-check:has(input:checked) label{
   color: #5c53cf;
   transition: 0.3s;
+}
+
+.hide{
+  opacity: 0.5;
+  pointer-events: none;
+  touch-action: none;
 }

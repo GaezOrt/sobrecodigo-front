@@ -2,8 +2,9 @@
 
   <div class="form-container">
 
-    <h1 id="header">Registro</h1>
-    <form action="" method="post">
+    <h1 id="header" [ngClass]="{'hide': loader}">Registro</h1>
+
+    <form action="" method="post" [ngClass]="{'hide': loader}">
 
       <label>Usuario<span>*</span> </label>
       <input type="text" name="name" required [(ngModel)]="username" #ctrl="ngModel" required
@@ -77,9 +78,10 @@
       <input type="password" name="confirm-password" required minlength="8" [(ngModel)]="confirmPassword"
         #ctrl="ngModel" required [ngModelOptions]="{standalone: true}">
       <input type="submit" (click)="submitRegister()" value="Registrarme">
-
     </form>
 
+    <loading *ngIf="loader"></loading>
+    
   </div>
 
 </body>

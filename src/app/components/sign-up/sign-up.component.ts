@@ -19,6 +19,7 @@ export class SignUpComponent implements OnInit {
   linkedIn:string;
   technologies:any;
   github:string;
+  loader: boolean = false;
   selectedTechnologies:SelectedTechnologies={
     angular: false,
     springBoot: false,
@@ -37,6 +38,7 @@ export class SignUpComponent implements OnInit {
   
   
   submitRegister(){
+    this.loader= true;
     console.log(this.selectedTechnologies);
     this.snackBar.open("Signing Up", undefined, {
       duration: 3000,
@@ -49,15 +51,15 @@ export class SignUpComponent implements OnInit {
           duration: 3000,
           panelClass: 'my-custom-snackbar-success'
         })
-        this.router.navigate(['/home']);
+        this.router.navigate(['/sign-in']);
       }else{
         this.snackBar.open("Email already in use.", undefined, {
           duration: 3000,
           panelClass: 'my-custom-snackbar-error'
         })
       }
+        this.loader = false;
     });
-
   }
 
 
