@@ -1,9 +1,12 @@
 <div class="cards-list">
 
-  <div class="card 1" *ngFor="let project of projectsList " routerLink="/project-details/{{project.id}}">
+  <div class="card" *ngFor="let project of projectsList " routerLink="/project-details/{{project.id}}">
 
     <div>
-      <div class="card_image"> <img src={{project.image}} /> </div>
+
+      <div class="card_image"> 
+        <img src={{project.image}} /> 
+      </div>
 
 
       <div class="card_title title-white">
@@ -15,9 +18,11 @@
           <p>{{project.quickDescription}}</p>
         </div>
       </div>
+
     </div>
 
     <div class="tecnologies">
+
       <div *ngFor="let tecnologies of project.projectTechnologiesDtos">
 
         <img src="{{tecnologies.icon}}" alt="" style="height:30px; width:30px;">
@@ -25,6 +30,7 @@
         <img src="{{tecnologies.icon}}" alt="" style="height:30px; width:30px;"> -->
 
       </div>
+      
     </div>
 
   </div>

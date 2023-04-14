@@ -1,8 +1,11 @@
+body {
+  min-width: 460px;
+}
 main {
   /* inline-size: 100%; */
-  margin: 0 0;
-  overflow: hidden;
-  padding-top: 20px;
+  margin: 0 auto;
+  max-width: 1400px;
+  padding-top: 1rem;
 }
 .main-card {
   width: 50%;
@@ -25,12 +28,12 @@ main {
   padding: 0 3em;
 }
 .row {
-  margin: 0 4em;
+  margin: 0 3em;
 }
 .header h1 {
   font-size: 24px;
   font-weight: bold;
-  margin: 1em 0;
+  margin: 0.6em 0;
 }
 
 span {
@@ -67,6 +70,11 @@ span {
   display: flex;
   justify-content: center;
   padding: 1em;
+}
+
+:host ::ng-deep .jobCard {
+  width: 100% !important;
+  max-width: 433px !important;
 }
 
 :host ::ng-deep .mat-ink-bar {

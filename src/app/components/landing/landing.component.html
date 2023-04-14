@@ -1,3 +1,6 @@
+<body>
+  
+
 <main>
   <div class="first header">
     <h1>Proyectos <span>Destacados</span></h1>
@@ -20,7 +23,7 @@
     </p>
   </div>
 
-  <div>
+  <div class="row">
     <app-cards-active-users></app-cards-active-users>
   </div>
 
@@ -34,7 +37,7 @@
     </p>
   </div>
 
-  <mat-tab-group
+  <mat-tab-group class="row"
     mat-align-tabs="center"
     animationDuration="1000ms"
     headerPosition="below"
@@ -44,8 +47,10 @@
         <mat-icon class="example-tab-icon">circle</mat-icon>
       </ng-template>
       <div class="jobcard">
-        <app-job-description [cardInfo]="job"></app-job-description>
+        <app-job-description [cardInfo]="job" id="jobDescription"></app-job-description>
       </div>
     </mat-tab>
   </mat-tab-group>
+
 </main>
+</body>
