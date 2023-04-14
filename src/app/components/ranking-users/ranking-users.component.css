@@ -1,2 +1,50 @@
 /* This container has "user-cards" components inside, therefore it works well with the same reponsive css as "active users container" in home page*/
 @import url("../cards-active-users/cards-active-users.component.css");
+
+form {
+    padding: 5px;
+    display: flex;
+    justify-content: flex-start;
+    gap: 15px;
+    margin-left: 18px;
+  }
+  form select {
+    text-align: center;
+    font-size: 14px;
+    font-family: "Roboto";
+    border-radius: 0.25em;
+    padding-inline: 8px;
+    padding-block: 5px;
+    text-transform: capitalize;
+  }
+  select:active {
+    outline-color: var(--blue);
+  }
+  select:enabled {
+    outline-color: var(--blue-light);
+  }
+  option {
+    color: rgb(158, 158, 158);
+    border-radius: 14px;
+  }
+  label {
+    display: none;
+  }
+
+  .btn-limpiar {
+    padding: 5px;
+    gap: 15px;
+    margin-left: 24px;
+  }
+
+  @media (max-width: 768px) {
+    form {
+      justify-content: space-around;
+      flex-wrap: wrap;
+      align-items: center;
+      margin: 0 auto;
+      gap: 15px;
+    }
+  }
+  
+  
