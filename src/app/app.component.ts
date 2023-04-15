@@ -9,11 +9,22 @@ import { Router } from '@angular/router';
 })
 export class AppComponent implements OnInit{
   title = 'sobrecodigo-front';
+  showPopUp:boolean = false;
   constructor(private router: Router) {
 
    }
 
+  acceptCookies(){
+    document.cookie = "key=value"
+    this.declineCookies()
+  }
+  declineCookies(){
+    this.showPopUp = false;    
+  }
    ngOnInit() {
     this.router.navigateByUrl('/home');
+    if (document.cookie.length <= 0){
+      this.showPopUp = true;
+    }
   }
 }
