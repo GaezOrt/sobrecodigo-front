@@ -1,12 +1,13 @@
 .loading{
   display: flex;
-    position: fixed;
+    position: relative;
     flex-direction: column;
     align-items: center;
-    height: 100%;
-    width: 100%;
-    top: 50%;
+    top: 0px;
+    left: 0px;
     overflow: hidden;
     overflow-x: hidden;
     overflow-y: hidden;
+    color: #5c53cf;
+    padding: 20px;
 }
