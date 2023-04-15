@@ -4,6 +4,39 @@ body{
     flex-direction:column; 
     justify-content: space-between;
 }
+.cookies-popUp{
+    min-height: 200px;
+    z-index: 100;
+    width:100%;
+    max-width: 400px;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    position: sticky;
+    bottom: 10px;
+    left: 10px;
+    background-color: white;
+    border-radius: 16px;
+    border: solid grey 2px;
+    padding: 25px;
+}
+.cookies-popUp .clear-icon{
+    position: absolute;
+    top: 15px;
+    right: 20px;
+}
 
-
-
+.cookies-popUp p {
+    text-align: justify;
+}
+.cookies-popUp button {
+    width: 100%;
+    line-height: 2;
+}
+.cookies-popUp h2{
+    margin: 0 0;
+}
+.show{
+    display: flex;
+}

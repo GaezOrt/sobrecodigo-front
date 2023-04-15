@@ -8,4 +8,10 @@
     <footer>
         <app-footer></app-footer>
     </footer>
+    <div [ngClass]="{'show': showPopUp}" class="cookies-popUp">
+        <mat-icon class="clear-icon" (click)="declineCookies();">clear</mat-icon>
+        <h2>Cookies & Privacidad</h2>
+        <p>Usamos cookies para asegurarte una mejor experiencia de usuario <a href="">Más Info.</a></p>
+        <button (click)="acceptCookies();" >Aceptar</button>
+    </div>
 </body>
