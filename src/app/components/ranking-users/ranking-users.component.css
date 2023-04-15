@@ -1,6 +1,15 @@
 /* This container has "user-cards" components inside, therefore it works well with the same reponsive css as "active users container" in home page*/
 @import url("../cards-active-users/cards-active-users.component.css");
 
+body{
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.filters {
+  margin: 1.5em 1.5em;
+}
+
 form {
     padding: 5px;
     display: flex;
