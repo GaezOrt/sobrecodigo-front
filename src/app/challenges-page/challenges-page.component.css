@@ -1,22 +1,63 @@
-img {
-    width: 80%;
+h1 {
+    font-size: 24px;
+  font-weight: bold;
+}
+
+
+span {
+    color: rgba(92, 85, 199, 1);
 }
 
 .container {
     width: 80%;
+    margin: 2rem auto;
+}
+
+.challenge-section {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 5rem auto;
+    width: 100%;
+    margin: 2rem auto;
+    gap:5%;
 }
 
-.answers{
-    width: inherit;
-    align-items: start;
-    margin-top: 2rem;
+.image {
+    width: 100%;
+    background-image: url("../../assets/imgs/portada-desafios.jpg");
+    background-size: cover;
 }
 
-.cont{
-    margin: 2rem;
-    font-size: 4rem;
+.description {
+    margin-top: 1rem;
 }
+
+.timer{
+    display: block;
+    text-align: center;
+    font-size: 5rem;
+    font-weight: 800;
+    color: rgb(69, 69, 69);
+}
+
+.answer {
+    margin: 1rem 0;
+}
+
+.form-check-label {
+    padding-left: 0.5rem;
+}
+
+#login {
+    display: block;
+    margin: 1rem auto;
+    background-color:#5c53cf;
+    border-radius: 7px;
+    padding: 3px 13px;
+    color: white;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 400ms;
+  }
+  
+  #login:hover {
+    background-color:#5b53cfbb;
+  }
