@@ -1,43 +1,56 @@
-<!-- filters -->
-<form #myForm="ngForm">
-  <label for="location">Ubicación</label>
-  <select id="location" name="location" >
-      <option value="" disabled selected>ubicacion</option>
-      <option value="remoto">Remoto</option>
-      <option value="buenos Aires">Buenos Aires</option>
-      <option value="cordoba">Cordoba</option>
-  </select>
-  <label for="position">Puesto</label>
-  <select name="position" id="position" >
-      <option class="default" value="" disabled selected>posicion</option>
-      <option value="full Stack">Full Stack</option>
-      <option value="frontend">Frontend</option>
-      <option value="backend">Backend</option>
-  </select>
-  <label for="experience">Experiencia</label>
-  <select name="experience" id="experience" >
-      <option value="" disabled selected>experiencia</option>
-      <option value="trainee">Trainee</option>
-      <option value="junior">Junior</option>
-      <option value="semi Senior">Semi Senior</option>
-      <option value="senior">Senior</option>
-  </select>
-  <label for="tecnologia">Tecnologia</label>
-  <select name="tecnologia" id="tecnologia" >
-      <option value="" disabled selected>tecnologia</option>
-      <option value="trainee">Java</option>
-      <option value="junior">React</option>
-      <option value="semi Senior">Angular</option>
-      <option value="senior">Python</option>
-  </select>
-</form>
+<body>
 
-<div id="button-container">
-  <button class="btn btn-primary btn-sm btn-limpiar" >
-      Limpiar Filtro
-  </button>
-</div>
+  <div class="filters">
 
-<div class="cards-list">
-  <app-user-card *ngFor="let userRanked of rankings; let i = index" i={{i+1}} [user]="userRanked"></app-user-card>
-</div>  
+    <!-- filters -->
+    <form #myForm="ngForm">
+      <label for="location">Ubicación</label>
+      <select id="location" name="location">
+        <option value="" disabled selected>ubicacion</option>
+        <option value="remoto">Remoto</option>
+        <option value="buenos Aires">Buenos Aires</option>
+        <option value="cordoba">Cordoba</option>
+      </select>
+      <label for="position">Puesto</label>
+      <select name="position" id="position">
+        <option class="default" value="" disabled selected>posicion</option>
+        <option value="full Stack">Full Stack</option>
+        <option value="frontend">Frontend</option>
+        <option value="backend">Backend</option>
+      </select>
+      <label for="experience">Experiencia</label>
+      <select name="experience" id="experience">
+        <option value="" disabled selected>experiencia</option>
+        <option value="trainee">Trainee</option>
+        <option value="junior">Junior</option>
+        <option value="semi Senior">Semi Senior</option>
+        <option value="senior">Senior</option>
+      </select>
+      <label for="tecnologia">Tecnologia</label>
+      <select name="tecnologia" id="tecnologia">
+        <option value="" disabled selected>tecnologia</option>
+        <option value="trainee">Java</option>
+        <option value="junior">React</option>
+        <option value="semi Senior">Angular</option>
+        <option value="senior">Python</option>
+      </select>
+    </form>
+
+    <div id="button-container">
+      <button class="btn btn-primary btn-sm btn-limpiar">
+        Limpiar Filtro
+      </button>
+    </div>
+
+  </div>
+
+
+
+  <!-- user cards -->
+  <div class="cards-list">
+    <app-user-card class="card" *ngFor="let userRanked of rankings; let i = index" i={{i+1}}
+      [user]="userRanked" style="border: none;"></app-user-card>
+  </div>
+
+
+</body>

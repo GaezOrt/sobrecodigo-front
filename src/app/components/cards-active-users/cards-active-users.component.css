@@ -6,7 +6,8 @@
   display: grid;
   grid-template-columns:50% 50% ;
   place-items: center;
-  gap: 1%;
+row-gap: 1.5em;
+column-gap: 1%;
   margin-bottom: 10px;
 }
 
