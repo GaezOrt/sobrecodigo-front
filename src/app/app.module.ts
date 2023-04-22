@@ -50,6 +50,7 @@ import { JobCardSimpleComponent } from './components/job-card-simple/job-card-si
 import { ApplicationFormComponent } from './components/modals/application-form/application-form.component';
 import { ChallengesPageComponent } from './challenges-page/challenges-page.component';
 import { JobDetailsComponent } from './job-details/job-details.component';
+import { EditProfileComponent } from './components/edit-profile/edit-profile.component';
 
 
 @NgModule({
@@ -85,6 +86,7 @@ import { JobDetailsComponent } from './job-details/job-details.component';
     ApplicationFormComponent,
     ChallengesPageComponent,
     JobDetailsComponent,
+    EditProfileComponent,
   ],
   imports: [
     BrowserModule,
