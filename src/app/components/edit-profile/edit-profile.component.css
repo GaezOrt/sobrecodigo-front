@@ -1,0 +1,44 @@
+.cardEdit__profile {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #E0E0E0;
+box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+border-radius: 16px;
+width: 1200px;
+}
+
+.cardEdit__profile___left {
+  width: 399px;
+  height: 1119px;
+ 
+
+  background: url(../../../assets/imgs/bgeditprofile.png),
+    rgba(196, 196, 196, 0.15);
+  border-radius: 16px 0px 0px 16px;
+}
+
+.cardEdit__profile___right {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.cardEdit__profile___right__title {
+    font-size: 1.5rem;
+}
+
+.cardEdit__profile___right__avatar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.cardEdit__profile___right__avatarImg {
+    border-radius: 50%;
+    width: 150px;
+}
+.cardEdit__profile___right__formUpdate {
+    display: flex;
+    flex-direction: column;
+}

@@ -13,6 +13,7 @@ import { JobsPageComponent } from './jobs-page/jobs-page.component';
 import { ProjectDetailsPageComponent } from './components/project-details-page/project-details-page.component';
 import { ChallengesPageComponent } from './challenges-page/challenges-page.component';
 import { JobDetailsComponent } from './job-details/job-details.component';
+import { EditProfileComponent } from './components/edit-profile/edit-profile.component';
 
 const routes: Routes = [
   { path: 'sign-up', component: SignUpComponent },
@@ -20,6 +21,7 @@ const routes: Routes = [
   { path: 'sign-in', component: SignInComponent },
   { path: 'ranking-users', component: RankingUsersComponent },
   { path: 'profile-page/:id', component: ProfilePageComponent },
+  { path: 'edit-profile', component: EditProfileComponent },
   { path: 'company-profile', component: CompanyProfileComponent },
   { path: 'project-page', component: ProjectPageComponent },
   { path: 'project-details/:id', component: ProjectDetailsPageComponent },

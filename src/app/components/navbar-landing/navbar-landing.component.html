@@ -25,6 +25,8 @@
     <hr>
     <li><a routerLink="/jobs-page" routerLinkActive="selected">Empleos</a></li>
     <hr>
+    <li><a routerLink="/edit-profile" routerLinkActive="selected">Editar Perfil</a></li>
+    <hr>
     <!-- <li><img src="../../../assets/imgs/moon-1.svg" alt="dark-mode" id="theme-button"></li> -->
     <li *ngIf="!isLoggedIn">
       <button id="login" mat-button [matMenuTriggerFor]="menu"><a>Registrarse</a></button>
@@ -44,7 +46,7 @@
             <a routerLink="/profile-page/{{userId}}" class="text-center" [ngClass]="{'selected' : route === '/profile-page'}">Mi Perfil</a>
           </div>
           <div mat-menu-item class="d-flex flex-column align-content-center">
-            <a class="text-center" [ngClass]="{'selected' : route === '/profile-page'}">Editar Perfil</a>
+            <a class="text-center" [ngClass]="{'selected' : route === '/edit-profile'}">Editar Perfil</a>
           </div>
           <div class="d-flex justify-content-center m-1">
             <!-- Logout button -->
