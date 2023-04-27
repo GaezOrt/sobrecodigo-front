@@ -36,10 +36,12 @@ import { SignUpCompanyComponent } from './components/sign-up-company/sign-up-com
 import { JobsPageComponent } from './jobs-page/jobs-page.component';
 import {JobFormComponent } from './components/modals/job-form/job-form.component'
 import { FormsModule } from '@angular/forms';
+import { ReactiveFormsModule } from '@angular/forms';
 import { JobFilterPipe } from './jobs-page/job-filter.pipe';
 import {MatGridListModule} from '@angular/material/grid-list'
 import { Loading } from './components/loading/loading.component'
 
+import {MatDialogModule} from '@angular/material/dialog';
 import {MatTabsModule} from '@angular/material/tabs';
 import { MatSnackBar, MatSnackBarModule } from '@angular/material/snack-bar';
 import { AppFooter } from './components/footer/footer.component';
@@ -102,10 +104,12 @@ import { JobDetailsComponent } from './job-details/job-details.component';
     MatSelectModule,
     RouterModule,
     FormsModule,
+    ReactiveFormsModule,
     CommonModule,
     RouterModule,
     MatSnackBarModule,
-    MatTabsModule
+    MatTabsModule,
+    MatDialogModule
   ],
   providers: [{ provide: HTTP_INTERCEPTORS, useClass: AuthInterceptor, multi: true }],
   bootstrap: [AppComponent]

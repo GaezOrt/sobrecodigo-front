@@ -1,25 +1,99 @@
-body {
-    font-family: Arial, sans-serif;
-    font-size: 14px;
+
+  main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 60vw;
+    margin: 0 auto;
+    border-radius: 30px;
   }
+
+  .img-container{
+    width: 100%;
+    height: 100%;
+    background: url(https://novapublishers.com/wp-content/uploads/2020/10/9781536189896-1000x1587.jpg);
+    border-top-left-radius: inherit;
+    border-bottom-left-radius: inherit;
+  }
+
+
 
   .form-container {
-    max-width: 400px;
-    min-width: 200px;
-    margin: 50px auto;
-    border-radius: 15px;
-    /* possible global variable */
-    box-shadow: 0px 4px 20px 3px rgba(0, 0, 0, 0.25);
+    padding: 3em 4em;
+  }
+
+  .form-container form {
     display: flex;
     flex-direction: column;
+    gap: 2em;
+  }
+
+  #header {
+    font-size: 40px;
+    font-weight: 500;
+  }
+  #header span {
+    color: #5c53cf;
+  }
+
+
+  .input-text label {
+    font-weight: 500;
+    padding-bottom: 0.5em;
+  }
+  .input-text input {
+    border-radius: 5px;
+    width: 100%;
+    border: 0.5px solid rgba(0, 0, 0, 0.3);
+    padding: 0.5em 1em;
+  }
+  .input-text input:focus{
+    border: 1px solid #5c53cf;
+    outline: none;
+  }
+
+  .invalid-input {
+    border: 1px solid red !important;
+  }
+
+
+
+  .input-boolean {
+    display: flex;
+    align-items: center;
+  }
+
+  .input-boolean input[type="checkbox"] {
+    height: 1.2em;
+    width: 1.2em;
+    margin-right: 1em;
+    accent-color: #5c53cf;
+  }
+  
+
+
+
+
+
+
+  .btn-container {
+    display: flex;
     justify-content: center;
   }
-
-  form {
-    padding: 20px;
+  .btn-container #login {
+    background-color:#5c53cf;
+    border-radius: 7px;
+    padding: 3px 13px;
+    cursor: pointer;
+    transition: all 400ms;
+    color: white;
+    margin: 0 auto;
   }
+  .btn-container #login:hover {
+    background-color:#5b53cfbb;
+  }
+  
 
-  input[type="text"],
+  /* input[type="text"],
   input[type="password"],
   input[type="email"] {
     width: 100%;
@@ -51,12 +125,6 @@ body {
     margin-left: 13px;
   }
 
-  #header {
-    text-align: center;
-    padding-top: 30px;
-    margin: 0 0;
-  }
-
   form input:required:focus {
     outline-color: blue;
   }
@@ -67,4 +135,4 @@ body {
 
   form input[type="password"]:valid:focus {
     outline-color: var(--blue-light);
-  }
+  } */

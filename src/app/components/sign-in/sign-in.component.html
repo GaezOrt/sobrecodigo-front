@@ -1,26 +1,51 @@
 
+  <main>
 
-<body>
+    <div class="img-container">
 
-  <div class="form-container">
-
-    <h1 id="header">Entrar</h1>
-    <form action="" method="post">
-
-      <label>Email</label>
-      <input type="email" name="email" required [(ngModel)]="email" #ctrl="ngModel" required [ngModelOptions]="{standalone: true}">
-      <label>Contraseña</label>
-      <input type="password" name="password" required minlength="8"[(ngModel)]="password" #ctrl="ngModel" required [ngModelOptions]="{standalone: true}">
-
-      <div class="d-grid gap-2">
-        <button class="btn btn-primary" type="submit" [disabled]="isLoading" (click)="submitLogin()">Entrar</button>
-      </div>
+    </div>
 
 
+    <div class="form-container">
 
-    </form>
+      <form [formGroup]="form" (ngSubmit)="login(form.value)"> 
 
-  </div>
+        <h1 id="header" >Ingresa a la <br>
+          <span>plataforma</span> 
+          
+        </h1>
 
+
+        <div class="input-text">
+          <label>Email</label>
+          <input type="email" placeholder="Email" formControlName="email" 
+          [ngClass]=" { 'invalid-input' :
+           form.get('email')?.touched && form.get('email')?.hasError('required') || 
+           form.get('email')?.touched && form.get('email')?.hasError('email') } "
+          >
+        </div>
+
+        <div class="input-text">
+          <label>Contraseña</label>
+          <input type="password" placeholder="Contraseña" formControlName="password" 
+          [ngClass]=" { 'invalid-input' : 
+          form.get('password')?.touched && form.get('password')?.hasError('required') } "
+          >
+        </div>
+
+
+        <div class="input-boolean">
+        <input id="remember" type="checkbox"> <label for="remember">Recordarme</label>
+        </div>
+
+        <div class="btn-container">
+          <button id="login" mat-button type="submit">Ingresar</button>
+        </div>
+
+      </form>
+
+    </div>
+
+
+  </main>
   <loading *ngIf="isLoading"></loading>
-</body>

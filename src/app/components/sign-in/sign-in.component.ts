@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { MatSnackBar } from '@angular/material/snack-bar';
 import { LoginService } from 'src/app/services/login-service.service';
 
@@ -12,10 +13,26 @@ export class SignInComponent implements OnInit {
   email: string = '';
   password: string = '';
   isLoading: boolean = false;
-  constructor(private loginService:LoginService,  private snackBar:MatSnackBar) { }
+
+  form: FormGroup;
+  constructor(private loginService:LoginService,  private snackBar:MatSnackBar, private formBuilder: FormBuilder) {
+    this.form = this.formBuilder.group({
+      email: ['', [Validators.required, Validators.email]],
+      password: ['', Validators.required]
+    })
+   }
 
   ngOnInit(): void {
   }
+
+  login(form : any){
+    // console.log(form);
+    this.email = form.email;
+    this.password = form.password;
+    this.submitLogin();
+  }
+
+
 
   async submitLogin(){
     this.isLoading = true

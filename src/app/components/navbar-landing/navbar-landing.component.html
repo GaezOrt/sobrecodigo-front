@@ -33,7 +33,9 @@
           <a routerLink="/sign-up-company" routerLinkActive="active-btn" mat-menu-item>Empresas</a>
         </mat-menu>
     </li>
-    <li *ngIf="!isLoggedIn"><button id="login"  routerLink="sign-in" mat-button><a>Ingresar</a></button></li>
+    <li *ngIf="!isLoggedIn"><button id="login"  mat-button
+      (click)="openDialog()"
+      ><a>Ingresar</a></button></li>
     <li *ngIf="isLoggedIn">
       <button id="userLogged" mat-mini-fab color="primary" [matMenuTriggerFor]="menu"><i class="fa-solid fa-user"></i></button>
         <mat-menu class="mt-1" #menu="matMenu">

@@ -73,7 +73,7 @@ span {
 }
 
 :host ::ng-deep .jobCard {
-  width: 100% !important;
+  /* width: 100% !important; */
   max-width: 433px !important;
 }
 
