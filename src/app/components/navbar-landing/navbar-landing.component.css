@@ -1,3 +1,7 @@
+::ng-deep .dialog-style .mat-dialog-container{ 
+  padding: 0; 
+  border-radius: 30px;
+}
 
 nav{
   display: flex;
