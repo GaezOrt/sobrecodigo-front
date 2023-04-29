@@ -5,20 +5,22 @@
     width: 60vw;
     margin: 0 auto;
     border-radius: 30px;
+    background-color: rgb(224, 224, 224);
   }
 
-  .img-container{
+  .img-container {
+    height: fit-content;
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.9);
+  }
+  .img-container img {
     width: 100%;
-    height: 100%;
-    background: url(https://novapublishers.com/wp-content/uploads/2020/10/9781536189896-1000x1587.jpg);
-    border-top-left-radius: inherit;
-    border-bottom-left-radius: inherit;
+    height: 500px;
+    object-fit: cover;
   }
-
-
 
   .form-container {
     padding: 3em 4em;
+    min-height: 500px;
   }
 
   .form-container form {
@@ -30,15 +32,17 @@
   #header {
     font-size: 40px;
     font-weight: 500;
+    color: rgb(69, 69, 69);
   }
   #header span {
-    color: #5c53cf;
+    color: rgb(92, 85, 199);
   }
 
 
   .input-text label {
     font-weight: 500;
     padding-bottom: 0.5em;
+    color: rgb(79, 79, 79)
   }
   .input-text input {
     border-radius: 5px;
@@ -60,6 +64,7 @@
   .input-boolean {
     display: flex;
     align-items: center;
+    color: rgb(79, 79, 79)
   }
 
   .input-boolean input[type="checkbox"] {
