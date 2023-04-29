@@ -8,4 +8,12 @@
     <footer>
         <app-footer></app-footer>
     </footer>
+    <div [ngClass]="{'show': showPopUp}" class="cookies-popUp">
+        <h2>Usamos Cookies <img src="../assets/imgs/6279_cake_cookie_icon 1.svg" alt=""></h2>
+        <p>Este sitio web usa cookies para asegurar que obtengas la mejor experiencia cuando estes navegando en el.</p>
+       <div class="btn-box">
+        <div class="accept" (click)="acceptCookies();" ><span>Aceptar</span></div>
+        <div class="decline" (click)="declineCookies();" ><span>Cancelar</span></div>
+       </div>
+    </div>
 </body>
