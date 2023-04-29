@@ -1,6 +1,12 @@
 ::ng-deep .dialog-style .mat-dialog-container{ 
   padding: 0; 
   border-radius: 30px;
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+::ng-deep .cdk-overlay-container .cdk-overlay-dark-backdrop {
+  background-color: rgba(36, 36, 36, 0.9) !important;
+  backdrop-filter: blur(4px) !important;
 }
 
 nav{
