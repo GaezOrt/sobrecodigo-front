@@ -1,38 +1,96 @@
 /* The article fills all the space between header & footer */
+*{
+    box-sizing: border-box;
+    transition: all 0.2s;
+    font-family: Roboto;
+}
 body{ 
     display:flex; 
     flex-direction:column; 
     justify-content: space-between;
 }
 .cookies-popUp{
-    min-height: 200px;
+    gap: 20px;
     z-index: 100;
     width:100%;
-    max-width: 400px;
+    max-width: 287px;
     display: none;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
     justify-content: space-evenly;
-    position: sticky;
+    position: fixed;
     bottom: 10px;
     left: 10px;
-    background-color: white;
+    padding: 20px;
+    background: #FFFFFF;
+    border: 2px solid rgba(0, 0, 0, 0.3);
+    box-shadow: 6px 6px 15px rgba(0, 0, 0, 0.25);
     border-radius: 16px;
-    border: solid grey 2px;
-    padding: 25px;
 }
-.cookies-popUp .clear-icon{
-    position: absolute;
-    top: 15px;
-    right: 20px;
+
+.cookies-popUp h2{
+    /* Usamos cookies */
+    font-style: normal;
+    font-weight: 800;
+    font-size: 16px;
+    line-height: 22px;
+    color: #4F4F4F;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
 }
 
 .cookies-popUp p {
     text-align: justify;
+    height: 57px;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 19px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin: 0 0;
+
 }
-.cookies-popUp button {
+.accept,.decline {
+    cursor: pointer;
+    padding: 10px;
+    gap: 10px;
+    border-radius: 6px;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    border: none;
+}
+.accept:hover{
+    background-color: #7671CA;
+}
+.decline:hover{
+    background-color: #495A67;
+}
+.accept span, .decline span{
+    width: 53px;
+    height: 21px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 21px;
+    text-align: center;
+    color: #FFFFFF;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+.btn-box{
+    display: flex;
     width: 100%;
-    line-height: 2;
+    flex-direction: flex start;
+    gap: 10px;
+}
+.accept{
+    background-color: #5C55C7;
+}
+.decline{
+    background-color: #2E3942;
 }
 .cookies-popUp h2{
     margin: 0 0;
