@@ -117,5 +117,7 @@ toggleNext(event:any) {
   this.selectedTechnologies.next = false;
  }
 }
-
+openDialog(){
+  
+}
 }

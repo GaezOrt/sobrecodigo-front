@@ -1,87 +1,100 @@
 <body>
-
-  <div class="form-container">
-
-    <h1 id="header" [ngClass]="{'hide': loader}">Registro</h1>
-
-    <form action="" method="post" [ngClass]="{'hide': loader}">
-
-      <label>Usuario<span>*</span> </label>
-      <input type="text" name="name" required [(ngModel)]="username" #ctrl="ngModel" required
-        [ngModelOptions]="{standalone: true}" >
-      <label>Email<span>*</span></label>
-      <input type="email" name="email" required [(ngModel)]="email" #ctrl="ngModel" required
-        [ngModelOptions]="{standalone: true}">
-      <label>LinkedIn link</label>
-      <input type="linkedIn" name="linkedIn" required minlength="8" [(ngModel)]="linkedIn" #ctrl="ngModel" required
-        [ngModelOptions]="{standalone: true}">
-      <label>GitHub link</label>
-      <input type="github" name="github" required minlength="8" [(ngModel)]="github" #ctrl="ngModel" required
-        [ngModelOptions]="{standalone: true}">
+ <div class="register-box">
+    <img src="../../../assets/imgs/BackgroundSesion.png" alt="">
+    <div class="form-container">
 
 
-      <label>Tecnologías</label>
-      <div class="answers">
+      <form action="/check" method="post" [ngClass]="{'hide': loader}">
+        <h1 id="header" [ngClass]="{'hide': loader}">Bienvenido</h1>
+        <span class="sub-header">Iniciar sesión con su <a (click)="openDialog();">cuenta</a></span>
+        <label class="input-label">Usuario</label>
+        <input type="text" name="name" required [(ngModel)]="username" #ctrl="ngModel" required
+          [ngModelOptions]="{standalone: true}" placeholder="Usuario">
+        <label class="input-label">Email</label>
+        <input type="email" name="email" placeholder="Email" required [(ngModel)]="email" #ctrl="ngModel" required
+          [ngModelOptions]="{standalone: true}">
+        <label class="input-label">LinkedIn</label>
+        <input type="url" name="linkedIn" placeholder="LinkedIn" required minlength="8" [(ngModel)]="linkedIn"
+          #ctrl="ngModel" required [ngModelOptions]="{standalone: true}">
+        <label class="input-label">GitHub</label>
+        <input type="url" name="github" required minlength="8" placeholder="GitHub" [(ngModel)]="github" #ctrl="ngModel"
+          required [ngModelOptions]="{standalone: true}">
 
-        <div class="form-check">
-          <input id="angular" type="checkbox" (change)="toggleAngular($event)" />
-          <label class="form-check-label" for="angular">
-            Angular
-          </label>
+
+        <label class="input-label">Hard Skills</label>
+        <div class="answers">
+
+          <div class="column">
+            <div class="checks">
+              <input id="angular" type="checkbox" (change)="toggleAngular($event)" />
+              <label class="" for="angular">
+                Angular
+              </label>
+            </div>
+            <div class="checks">
+              <input id="react" type="checkbox" ng-model="myCheckboxModel" (change)="toggleReact($event)" />
+              <label for="react">
+                React
+              </label>
+            </div>
+            <div class="checks">
+              <input id="next" type="checkbox" ng-model="myCheckboxModel" (change)="toggleNext($event)" />
+              <label for="next">
+                Next
+              </label>
+            </div>
+
+          </div>
+          <div class="column">
+            <div class="checks">
+              <input id="springboot" type="checkbox" ng-model="myCheckboxModel" (change)="toggleSpringBoot($event)" />
+              <label for="springboot">
+                Spring Boot
+              </label>
+            </div>
+            <div class="checks">
+              <input id="reactnative" type="checkbox" ng-model="myCheckboxModel" (change)="toggleReactNative($event)" />
+              <label for="reactnative">
+                React Native
+              </label>
+            </div>
+            <div class="checks">
+              <input id="nodeJS" type="checkbox" ng-model="myCheckboxModel" (change)="toggleNodeJs($event)" />
+              <label for="nodeJS">
+                Node JS
+              </label>
+            </div>
+
+          </div>
+          <div class="column">
+            <div class="checks">
+              <input id="vue" type="checkbox" ng-model="myCheckboxModel" (change)="toggleVue($event)" />
+              <label for="vue">
+                Vue
+              </label>
+            </div>
+
+
+          </div>
         </div>
-        <div class="form-check">
-          <input id="reactnative" type="checkbox" ng-model="myCheckboxModel" (change)="toggleReactNative($event)" />
-          <label class="form-check-label" for="reactnative">
-            React Native
-          </label>
-        </div>
-        <div class="form-check">
-          <input id="react" type="checkbox" ng-model="myCheckboxModel" (change)="toggleReact($event)" />
-          <label class="form-check-label" for="react">
-            React
-          </label>
-        </div>
-        <div class="form-check">
-          <input id="vue" type="checkbox" ng-model="myCheckboxModel" (change)="toggleVue($event)" />
-          <label class="form-check-label" for="vue">
-            Vue
-          </label>
-        </div>
-        <div class="form-check">
-          <input id="springboot" type="checkbox" ng-model="myCheckboxModel" (change)="toggleSpringBoot($event)" />
-          <label class="form-check-label" for="springboot">
-            Spring Boot
-          </label>
-        </div>
-        <div class="form-check">
-          <input id="nodeJS" type="checkbox" ng-model="myCheckboxModel" (change)="toggleNodeJs($event)" />
-          <label class="form-check-label" for="nodeJS">
-            Node JS
-          </label>
-        </div>
-        <div class="form-check">
-          <input id="next" type="checkbox" ng-model="myCheckboxModel" (change)="toggleNext($event)" />
-          <label class="form-check-label" for="next">
-            Next
-          </label>
-        </div>
-
-      </div>
 
 
-      <label>Contraseña<span>*</span></label>
-      <input type="password" name="password" required minlength="8" [(ngModel)]="password" #ctrl="ngModel" required
-        [ngModelOptions]="{standalone: true}">
+        <label class="input-label">Contraseña</label>
+        <input type="password" name="password" required minlength="8" maxlength="16" [(ngModel)]="password"
+          #ctrl="ngModel" required [ngModelOptions]="{standalone: true}" placeholder="Contraseña">
 
 
-      <label>Confirmar Contraseña<span>*</span></label>
-      <input type="password" name="confirm-password" required minlength="8" [(ngModel)]="confirmPassword"
-        #ctrl="ngModel" required [ngModelOptions]="{standalone: true}">
-      <input type="submit" (click)="submitRegister()" value="Registrarme">
-    </form>
+        <label class="input-label">Confirmar Contraseña</label>
+        <input type="password" name="confirm-password" required minlength="8" maxlength="16"
+          [(ngModel)]="confirmPassword" #ctrl="ngModel" required [ngModelOptions]="{standalone: true}"
+          placeholder="Confirmar Contraseña">
+        <input type="submit" (click)="submitRegister()" value="Registrarme" class="register-btn">
+        <loading *ngIf="loader"></loading>
 
-    <loading *ngIf="loader"></loading>
-    
+      </form>
+
+
+    </div>
+
   </div>
-
 </body>
