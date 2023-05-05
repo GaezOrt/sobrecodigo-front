@@ -1,96 +1,139 @@
-body {
-  font-family: Arial, sans-serif;
-  font-size: 14px;
+*{
+  box-sizing: border-box;
 }
+body {
+  font-family: Roboto;
+  font-style: normal;
+  font-size: 14px;
+  padding: 50px;
+  box-sizing: border-box;
+  display: grid;
+  place-content: center;
+  place-items: center;
+}
+.register-box{
+  width: 824px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 970px;
+}
+
+.register-box img {
+  height: 100%;
+  object-fit: none;
+  object-position: -11px -54px;
+  background: rgba(109, 101, 240, 0.4);
+  box-shadow: 10px 0px 20px rgba(0, 0, 0, 0.25);
+  border-radius: 16px 0px 0px 16px;
+  z-index: 100;
+
+}
+.img-box{
+  width: 50%;
+  height: 100%;
+  background-color: skyblue;
+}
+
 
 .form-container {
-  max-width: 400px;
+  width: 50%;
   min-width: 200px;
   min-height: 200px;
-  margin: 50px auto;
-  border-radius: 15px;
-  /* possible global variable */
-  box-shadow: 0px 4px 20px 3px rgba(0, 0, 0, 0.25);
   display: flex;
   flex-direction: column;
-  justify-content: center;
-
-  justify-content: center;
-
+  align-items: center;  
+  height: 100%;
+  box-sizing: border-box;
+  border-radius: 0px 16px 16px 0px;
+  background: #E0E0E0;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
 }
-
+  
 .answers{
-  width: 100%;
-  margin:8px 0;
+  margin-top: 8px;
+  margin-bottom: 25px;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 35% 40% 25%;
 }
 form {
-  padding: 20px;
-}
-select:active {
-  outline-color: var(--blue);
-}
-select:enabled {
-  outline-color: var(--blue-light);
-}
-form select {
-  text-align: center;
-  font-size: 14px;
-  font-family: "Roboto";
-  border-radius: 0.25em;
-  padding-inline: 8px;
-  padding-block: 5px;
-  text-transform: capitalize;
+  display: flex;
+  flex-direction: column;
+  margin-top: 75px;
 }
 
-input[type="github"],
 input[type="text"],
-input[type="linkedIn"],
+input[type="url"],
 input[type="password"],
 input[type="email"],
 input[type="rubro"] {
-  width: 100%;
+  width: 260px;
+  height: 40px;
   box-sizing: border-box;
-  margin-top: 8px;
-  margin-bottom: 20px;
-  border: 1px solid #ccc;
-  border-radius: 18px;
-  padding: 10px 25px;
+  margin-bottom: 15px;
+  border: 1px solid rgba(177, 177, 177, 1);
+  border-radius: 8px;
+  padding:4px 14px 4px 14px;
+  gap: 10px;
+  background-color: #E8E8E8;
+  outline: none;
 }
 
-input[type="submit"] {
-  background-color: var(--blue);
-  color: white;
-  padding: 12px 20px;
-  margin-top: 10px;
+input:focus{
+  border: 1px solid rgba(109, 101, 240, 1);
+}
+
+input::placeholder{
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 32px;
+  color: rgba(187, 187, 187, 1);
+}
+
+.register-btn {
+  background-color: rgba(92, 85, 199, 1);
+  color: white;  
   border: none;
   cursor: pointer;
-  width: 100%;
-  border-radius: 18px;
+  border-radius: 6px;
+  width: 96px;
+  height: 40px;
+  margin: 0 auto;
+  margin-top: 55px;
 }
-
 input[type="submit"]:hover {
   background-color: var(--blue-light);
 }
 
-form label {
-  color: #ccc;
-  margin-left: 13px;
-}
-form > label {
-  color: rgb(100, 100, 100);
-}
-
-form label span{
-  color: rgba(255, 0, 0, 0.575);
-  font-weight: 800;
+form .input-label {
+  color: rgba(79, 79, 79, 1);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 32px;
 }
 
 #header {
-  text-align: center;
-  padding-top: 30px;
-  margin: 0 0;
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 26px;
+  letter-spacing: 0em;
+  text-align: left;
+  margin-bottom: 9px; 
+  color: rgba(69, 69, 69, 1); 
+}
+.sub-header{
+  color: rgba(69, 69, 69, 1);
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 32px;
+  letter-spacing: 0em;
+  text-align: left;
+  margin-bottom: 21px;  
+}
+.sub-header a {
+  color: rgba(92, 85, 199, 1);
+  text-decoration: none;
+  cursor: pointer;
 }
 
 form input:required:focus {
@@ -105,8 +148,13 @@ form input[type="password"]:valid:focus {
   outline-color: var(--blue-light);
 }
 
-.form-check:has(input:checked) label{
-  color: #5c53cf;
+form input[type="checkbox"]{
+  width: 16px;
+  aspect-ratio: 1/1;
+}
+
+.checks:has(input:checked) label{
+  color:  rgba(92, 85, 199, 1);;
   transition: 0.3s;
 }
 
@@ -114,4 +162,25 @@ form input[type="password"]:valid:focus {
   opacity: 0.5;
   pointer-events: none;
   touch-action: none;
+}
+
+.checks {
+  display: flex;
+  gap: 9px;
+  align-items: baseline;
+  object-fit: cover;
+}
+.checks label{
+  font-family: Roboto;
+  font-size: 13px;
+  font-weight: 400;
+  color: rgba(79, 79, 79, 1);
+  letter-spacing: 0em;
+  min-width: max-content;
+}
+.column{
+  width: min-content;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
 }
