@@ -52,6 +52,7 @@ import { JobCardSimpleComponent } from './components/job-card-simple/job-card-si
 import { ApplicationFormComponent } from './components/modals/application-form/application-form.component';
 import { ChallengesPageComponent } from './challenges-page/challenges-page.component';
 import { JobDetailsComponent } from './job-details/job-details.component';
+import { PrivacyPolicyComponent } from './privacy-policy/privacy-policy.component';
 
 
 @NgModule({
@@ -87,6 +88,7 @@ import { JobDetailsComponent } from './job-details/job-details.component';
     ApplicationFormComponent,
     ChallengesPageComponent,
     JobDetailsComponent,
+    PrivacyPolicyComponent,
   ],
   imports: [
     BrowserModule,
