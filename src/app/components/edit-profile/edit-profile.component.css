@@ -1,44 +1,203 @@
-.cardEdit__profile {
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: Roboto;
+  font-style: normal;
+  font-size: 14px;
+  padding: 50px;
+  box-sizing: border-box;
+  display: grid;
+  place-content: center;
+  place-items: center;
+}
+.edit-box {
+  width: 824px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 970px;
+}
+
+.edit-box img {
+  height: 100%;
+  object-fit: none;
+  object-position: -11px -54px;
+  background: rgba(109, 101, 240, 0.4);
+
+  border-radius: 16px 0px 0px 16px;
+  z-index: 100;
+}
+.img-box {
+  width: 50%;
+  height: 100%;
+  background-color: skyblue;
+}
+
+.form-container {
+  width: 50%;
+  min-width: 200px;
+  min-height: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+  box-sizing: border-box;
+  border-radius: 0px 16px 16px 0px;
+  background: #e0e0e0;
+}
+
+.answers {
+  margin-top: 8px;
+  margin-bottom: 25px;
+  display: grid;
+  grid-template-columns: 35% 40% 25%;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  margin-top: 75px;
+}
+
+input[type="text"],
+input[type="url"],
+input[type="password"],
+input[type="email"],
+input[type="rubro"] {
+  width: 260px;
+  height: 40px;
+  box-sizing: border-box;
+  margin-bottom: 15px;
+  border: 1px solid rgba(177, 177, 177, 1);
+  border-radius: 8px;
+  padding: 4px 14px 4px 14px;
+  gap: 10px;
+  background-color: #e8e8e8;
+  outline: none;
+}
+
+input:focus {
+  border: 1px solid rgba(109, 101, 240, 1);
+}
+
+input::placeholder {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 32px;
+  color: rgba(187, 187, 187, 1);
+}
+
+input[type="submit"]:hover {
+  background-color: var(--blue-light);
+}
+
+form .input-label {
+  color: rgba(79, 79, 79, 1);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 32px;
+}
+
+#header {
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 26px;
+  letter-spacing: 0em;
+  text-align: left;
+  margin-bottom: 9px;
+  color: rgba(69, 69, 69, 1);
+}
+.sub-header {
+  color: rgba(69, 69, 69, 1);
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 32px;
+  letter-spacing: 0em;
+  text-align: left;
+  margin-bottom: 21px;
+}
+.sub-header a {
+  color: rgba(92, 85, 199, 1);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+form input:required:focus {
+  outline-color: var(--blue);
+}
+
+form input:not([type="password"]):valid:focus {
+  outline-color: var(--blue-light);
+}
+
+form input[type="password"]:valid:focus {
+  outline-color: var(--blue-light);
+}
+
+form input[type="checkbox"] {
+  width: 16px;
+  aspect-ratio: 1/1;
+}
+
+.checks:has(input:checked) label {
+  color: rgba(92, 85, 199, 1);
+  transition: 0.3s;
+}
+
+.hide {
+  opacity: 0.5;
+  pointer-events: none;
+  touch-action: none;
+}
+
+.checks {
+  display: flex;
+  gap: 9px;
+  align-items: baseline;
+  object-fit: cover;
+}
+.checks label {
+  font-family: Roboto;
+  font-size: 13px;
+  font-weight: 400;
+  color: rgba(79, 79, 79, 1);
+  letter-spacing: 0em;
+  min-width: max-content;
+}
+.column {
+  width: min-content;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.buttons-edit {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: #E0E0E0;
-box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
-border-radius: 16px;
-width: 1200px;
 }
 
-.cardEdit__profile___left {
-  width: 399px;
-  height: 1119px;
- 
+.btn-save,
+.btn-cancel {
+  
+  margin: 8px;
+  border-radius: 6px;
 
-  background: url(../../../assets/imgs/bgeditprofile.png),
-    rgba(196, 196, 196, 0.15);
-  border-radius: 16px 0px 0px 16px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  color: #ffffff;
 }
 
-.cardEdit__profile___right {
-    display: flex;
-    flex-direction: column;
-
+.btn-save {
+  background-color: #5C55C7;
+  width: 140px;
+  height: 40px;
 }
 
-.cardEdit__profile___right__title {
-    font-size: 1.5rem;
-}
-
-.cardEdit__profile___right__avatar {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.cardEdit__profile___right__avatarImg {
-    border-radius: 50%;
-    width: 150px;
-}
-.cardEdit__profile___right__formUpdate {
-    display: flex;
-    flex-direction: column;
+.btn-cancel {
+  background-color: #2E3942;
+  width: 80px;
+  height: 40px;
 }

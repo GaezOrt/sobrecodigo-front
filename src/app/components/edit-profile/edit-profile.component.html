@@ -1,33 +1,106 @@
-<div class="cardEdit__profile">
-    <div class="cardEdit__profile___left">
-        
-    </div>
-    <div class="cardEdit__profile___right">
-        
-        <div class="cardEdit__profile___right__avatar">
-            <h3 class="cardEdit__profile___right__title">Editar Perfil</h3>
-            <img src="../../../assets/imgs/img-profile.png" alt="" class="cardEdit__profile___right__avatarImg">
-            <button class="cardEdit__profile___right__avatarbtn">Cambiar</button>
+<body>
+  <div class="edit-box">
+    <img src="../../../assets/imgs/bgeditprofile.png" alt="" />
+    <div class="form-container">
+      <form action="/check" method="post">
+        <h1 id="header">Editar</h1>
+        <span class="sub-header">Usuario</span>
+        <label class="input-label">Nombre</label>
+        <input type="text" name="name" required placeholder="Nombre" />
+        <label class="input-label">Apellido</label>
+        <input type="text" name="surname" required placeholder="Apellido" />
+        <label class="input-label">Usuario</label>
+        <input type="text" name="username" required placeholder="Usuario" />
+        <label class="input-label">Email</label>
+        <input type="email" name="email" placeholder="Email" required />
+        <label class="input-label">LinkedIn</label>
+        <input
+          type="url"
+          name="linkedIn"
+          placeholder="LinkedIn"
+          required
+          minlength="8"
+        />
+        <label class="input-label">GitHub</label>
+        <input
+          type="url"
+          name="github"
+          required
+          minlength="8"
+          placeholder="GitHub"
+        />
+
+        <label class="input-label">Hard Skills</label>
+        <div class="answers">
+          <div class="column">
+            <div class="checks">
+              <input id="angular" type="checkbox" />
+              <label class="" for="angular"> Angular </label>
+            </div>
+            <div class="checks">
+              <input id="react" type="checkbox" ng-model="myCheckboxModel" />
+              <label for="react"> React </label>
+            </div>
+            <div class="checks">
+              <input id="next" type="checkbox" ng-model="myCheckboxModel" />
+              <label for="next"> Next </label>
+            </div>
+          </div>
+          <div class="column">
+            <div class="checks">
+              <input
+                id="springboot"
+                type="checkbox"
+                ng-model="myCheckboxModel"
+              />
+              <label for="springboot"> Spring Boot </label>
+            </div>
+            <div class="checks">
+              <input
+                id="reactnative"
+                type="checkbox"
+                ng-model="myCheckboxModel"
+              />
+              <label for="reactnative"> React Native </label>
+            </div>
+            <div class="checks">
+              <input id="nodeJS" type="checkbox" ng-model="myCheckboxModel" />
+              <label for="nodeJS"> Node JS </label>
+            </div>
+          </div>
+          <div class="column">
+            <div class="checks">
+              <input id="vue" type="checkbox" ng-model="myCheckboxModel" />
+              <label for="vue"> Vue </label>
+            </div>
+          </div>
         </div>
 
-        <form class="cardEdit__profile___right__formUpdate">
-            <label for="name">Nombre</label>
-            <input type="text" placeholder="Nombre">
-            <label for="lastName">Apellido</label>
-            <input type="text" placeholder="Apellido">
-            <label for="username">Usuario</label>
-            <input type="text" placeholder="Usuario">
-            <label for="email">Email</label>
-            <input type="text" placeholder="Email">
-            <label for="linkedin">LinkedIn</label>
-            <input type="text" placeholder="https://linkedin.com/in/your-user">
-            <label for="github">Github</label>
-            <input type="text" placeholder="https://github.com/your-username">
-            <label for="cv">CV</label>
-            <input type="text" placeholder="Enlace al CV">
-            <button>Actualizar</button>
-        </form>
-        
+        <label class="input-label">Contraseña Anterior</label>
+        <input
+          type="password"
+          name="password"
+          required
+          minlength="8"
+          maxlength="16"
+          placeholder="Contraseña"
+        />
 
+        <label class="input-label">Nueva Contraseña</label>
+        <input
+          type="password"
+          name="confirm-password"
+          required
+          minlength="8"
+          maxlength="16"
+          placeholder="Confirmar Contraseña"
+        />
+        <div class="buttons-edit">
+            <button class="btn-save">Guardar Cambios</button>
+            <button class="btn-cancel">Cancelar</button>
+          </div>
+      </form>
+      
     </div>
-</div>
+  </div>
+</body>
